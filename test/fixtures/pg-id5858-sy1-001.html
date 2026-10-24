@@ -1,0 +1,1694 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Skanoteka - Baza skanów dokumentów o wartości genealogicznej</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://skanoteka.genealodzy.pl/images/PTG_Logo_Skanoteka_pl_PL_200.png" />
+<meta name="author" content="Genealodzy.PL Genealogia">
+<meta name="copyright" content="Copyright (c) 2006-2026 Polskie Towarzystwo Genealogiczne">
+<meta name="description" content="Baza skanów dokumentów o wartości genealogicznej.">
+<meta name="revisit-after" content="1 days">
+<link rel="canonical" href="https://skanoteka.genealodzy.pl">
+<link rel="stylesheet" href="style/style.css?=v6" type="text/css">
+<link rel="stylesheet" href="style/ajaxcss.css?=v2" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?=v2">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?=v2">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?=v2">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="shortcut icon" href="/images/favicon.ico?=v2">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<style>
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #f3e2e7;
+	border: 1px solid #c5c5c5;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #f3d0e7;
+	border: 1px solid #c5c5c5;
+	color: black;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 0px 0px;
+	background: none;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url("https://code.jquery.com/ui/1.13.2/themes/base/images/ui-icons_444444_256x240.png");
+}
+
+:root
+{
+	--background-image-url: url('/images/back-pink.gif');
+}</style><link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="style/podglad.css?v=7" type="text/css">
+	</head>
+	<body>
+								
+				<div class="sidebar" id="sideLeft">
+					&nbsp;<a href="/"><img src="images/navmapa.gif" width="20" height="20" alt="Strona główna" title="Strona główna" border="0"></a>
+					&nbsp;<a href="index.php?op=kt&amp;id=5858&amp;se=&amp;sy=1&amp;kt="><img src="images/navzasob.gif" width="20" height="20" alt="Przejdź do jednostki" title="Przejdź do jednostki" border="0"></a>
+					&nbsp;<a href="https://metbox3.genealodzy.pl/9/metryka_get.php?op=download&amp;dir=hBXwmiyFiMLCid11-u2rRp60Jo4aFt7ySjLbdI1dDkU,&amp;znak=QetVSxxqFsEFAs_WV9Y71A,,&amp;plik=001.jpg"><img src="images/navzapisz.gif" width="20" height="20" alt="Pobierz zdjęcie" title="Pobierz zdjęcie" border="0"></a>
+
+					<div class="button" onclick="powieksz()">Powiększ</div>
+					<div class="button" onclick="pomniejsz()">Pomniejsz</div><br>
+					<div class="button" onclick="nextImage()">Następne zdjęcie</div>
+					<div class="button" onclick="prevImage()">Poprzednie zdjęcie</div><br>
+					<div id="prvContainer">
+						<canvas id="prvCanvas"></canvas>
+					</div>
+
+					<br><span class="bold">
+						Miejscowość:</span><br>
+					Owczary (Rychwałd)
+					<br><span class="bold">Jednostka:</span><br>
+																1 Towarzystwo trzeźwości parafii Rychwałd
+																<br><span class="bold">Lata:</span><br>
+						1845-1890
+										<br><span class="bold">Plik:</span><br>
+					001.jpg (1 z 16)
+
+															<span id="tagowanie_login"><br><br><br>
+					<a href="https://genealodzy.pl/user.php?op=loginscreen&module=User" target="_blank">Zaloguj</a> się na genealodzy.pl w celu tagowania zdjęć
+					</span>
+										<br><br>
+					<a href="https://skanoteka.genealodzy.pl/optgi" target="_blank">Instrukcja tagowania</a>
+									</div>
+				<div id="tag">
+												</div>
+					<div id="mainArea">
+					<div id="content">
+						<img src="images/ajax-loader.gif" id="loader" style="position:absolute;left:50%;top:50%"/>
+						<canvas id="imgCanvas"></canvas>
+						<canvas id="selectionCanvas"></canvas>
+												<button id="showTranslationsBtn" onclick="selectionManager.toggleViewingMode()">
+							<span class="btn-icon">📜</span>Pokaż tłumaczenia
+						</button>
+											</div>
+					<div id="transcriptionPanel" class="transcription-panel">
+						<div class="transcription-header">
+							<span id="transcriptionTitle">Zapis #1</span>
+							<span class="transcription-close" onclick="closeTranscriptionPanel()">&times;</span>
+						</div>
+						<div class="transcription-body">
+							<div class="transcription-section">
+								<div class="transcription-section-title">Transliteracja:</div>
+								<div id="panelTransliteration" class="transcription-text"></div>
+							</div>
+							<div class="transcription-section">
+								<div class="transcription-section-title">Tłumaczenie:</div>
+								<div id="panelTranslation" class="transcription-text"></div>
+							</div>
+													</div>
+					</div>
+				</div>
+		<script>
+
+var imgMoving = 0;
+var prvMoving = 0;
+var opening = 1;
+var drawing = 0;
+var imgCanvas = document.getElementById('imgCanvas');
+var content = document.getElementById('content');
+var imgContext = imgCanvas.getContext('2d');
+var imgContainer = document.getElementById('container');
+var prvCanvas = document.getElementById('prvCanvas');
+var prvContext = prvCanvas.getContext('2d');
+var prvContainer = document.getElementById('prvContainer');
+var prvScaleWidth;
+var prvScaleHeight;
+var prvLeft,
+prvTop;
+var prvDiffLeft,
+prvDiffTop;
+let wheelEventEndTimeout = null;
+let prevDiff = -1;
+
+var imageObj = new Image();
+var imagePutLeft = 0;
+var imagePutTop = 0;
+var imagePutWidth = 0;
+var imagePutHeight = 0;
+var lastmX = 0;
+var lastmY = 0;
+var data,
+prvImgData;
+var loader = document.getElementById('loader');
+var loggedin_username = '';
+var Scale;
+var imgTop = 0;
+var imgLeft = 0;
+let pinchStart = {};
+var username = '';
+var session_id = '';
+var isTouchSupported = 'ontouchstart' in window;
+var startEvent = isTouchSupported ? 'touchstart' : 'mousedown';
+var moveEvent = isTouchSupported ? 'touchmove' : 'mousemove';
+var endEvent = isTouchSupported ? 'touchend' : 'mouseup';
+var keyUpEvent = 'keyup';
+
+var imageLink = 'index.php?op=pg&amp;id=5858&amp;se=&amp;sy=1&amp;kt=&amp;plik=';
+
+// Przełączanie trybu pracy (tagowanie / znakowanie)
+function switchWorkMode(mode, save) {
+	var tagowaniPanel = document.getElementById('tagowanie');
+	var selectionPanel = document.getElementById('selectionPanel');
+	var prvContainer = document.getElementById('prvContainer');
+
+	if (mode === 'tagging') {
+		if (tagowaniPanel) tagowaniPanel.style.display = 'block';
+		if (selectionPanel) selectionPanel.style.display = 'none';
+		if (prvContainer) prvContainer.style.display = 'block';
+	} else if (mode === 'selection') {
+		if (tagowaniPanel) tagowaniPanel.style.display = 'none';
+		if (selectionPanel) selectionPanel.style.display = 'block';
+		if (prvContainer) prvContainer.style.display = 'none';
+	}
+
+	// Zaznacz odpowiedni radio button
+	var radio = document.querySelector('input[name="workMode"][value="' + mode + '"]');
+	if (radio) radio.checked = true;
+
+	// Odśwież selekcje (jeśli selectionManager już istnieje)
+	if (typeof selectionManager !== 'undefined') {
+		selectionManager.redraw();
+	}
+
+	// Zapisz w cookies (domyślnie zapisuj)
+	if (save !== false) {
+		document.cookie = 'workMode=' + mode + ';path=/;max-age=31536000'; // 1 rok
+	}
+}
+
+// Odczytaj tryb z cookies przy starcie
+function initWorkMode() {
+	var match = document.cookie.match(/workMode=(tagging|selection)/);
+	var mode = match ? match[1] : 'tagging';
+	switchWorkMode(mode, false);
+}
+
+// Inicjalizacja trybu przy starcie (tylko dla adminów)
+if (document.getElementById('modeToggle')) {
+	initWorkMode();
+}
+
+function tagAdd(typ) {
+
+  $.ajax({
+    url: "/?op=tagowanie&opd=create",
+    cache: false,
+	type: "GET",
+    data: {tekst1 : (typ == 1) ? document.getElementById("tag_imie").value : document.getElementById("tag_miejsce").value,
+	       tekst2 : (typ == 1) ? document.getElementById("tag_nazwisko").value : '',
+	       typ: typ, plik: "001.jpg", sy_id: 185767, session: session_id},
+    dataType: "html"
+  }).done(function(dat){ 
+	document.getElementById("tag_imie").value = '';
+	document.getElementById("tag_miejsce").value = '';
+	document.getElementById("tag_nazwisko").value = '';
+	window.location.reload() 
+	});
+}
+
+function tagAdd2(typ, event) {
+  event.preventDefault();
+
+	history.pushState({
+	page: ""
+	}, "", (imageLink + "001.jpg" + "&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+
+  $.ajax({
+    url: "/?op=tagowanie&opd=create",
+    cache: false,
+	type: "GET",
+    data: {tekst1 : (typ == 1) ? document.getElementById("tag_imie").value : document.getElementById("tag_miejsce").value,
+	       tekst2 : (typ == 1) ? document.getElementById("tag_nazwisko").value : '',
+	       typ: typ, plik: "001.jpg", sy_id: 185767, session: session_id},
+    dataType: "html"
+  }).done(function(dat){ 
+	document.getElementById("tag_imie").value = '';
+	document.getElementById("tag_miejsce").value = '';
+	document.getElementById("tag_nazwisko").value = '';
+	const urlParams = new URLSearchParams(window.location.search);
+	urlParams.set('tagging', '1');
+	window.location.search = urlParams;
+	});
+	return false;
+}
+
+function tagRemove(id) {
+  $.ajax({
+    url: "/?op=tagowanie&opd=remove",
+    cache: false,
+	type: "GET",
+    data: {st_id: id, session: session_id},
+    dataType: "html"
+  }).done(function(dat){ window.location.reload() });
+}
+
+function readZoom() {
+	const params = new URLSearchParams(window.location.search)
+
+	if (params.has('zoom')) {
+		Scale = parseFloat(params.get('zoom'));
+	} else if (imageObj.width > 0 && imgCanvas.clientWidth > 0) {
+		Scale = Math.max(imageObj.width / imgCanvas.clientWidth, imageObj.height / imgCanvas.clientHeight);
+		Scale = Number(Scale.toFixed(2));
+	} else {
+		Scale = 1;
+	}
+
+	if (isNaN(Scale)) {
+		Scale = 1;
+	}
+}
+
+function readPosition() {
+	const params = new URLSearchParams(window.location.search)
+	readZoom();
+
+	imgLeft = parseInt(params.get('x'));
+	if (isNaN(imgLeft)) 
+		imgLeft = 0;
+
+	imgTop = parseInt(params.get('y'));
+	if (isNaN(imgTop)) 
+		imgTop = 0;
+}
+
+// Calculate distance between two fingers
+function distance(event) {
+	return Math.hypot(event.touches[0].pageX - event.touches[1].pageX, event.touches[0].pageY - event.touches[1].pageY);
+}
+
+function getHashValue(key) {
+if (typeof key !== 'string') {
+key = '';
+} else {
+key = key.toLowerCase();
+}
+
+var keyAndHash = location.hash.toLowerCase().match(new RegExp(key + '=([^&]*)'));
+var value = '';
+
+if (keyAndHash) {
+value = keyAndHash[1];
+}
+
+return value;
+}
+
+window.onresize = setResize;
+
+/*window.onmessage = function(e) {
+  if (event.origin === 'https://genealodzy.pl') {
+	if (e.data.username != '') {
+	  document.getElementById("tagowanie").style.display = "initial";
+	  document.getElementById("tagowanie_login").style.display = "hidden";
+	  document.getElementById("username").innerHTML = e.data.username; 
+
+	  const params = new URLSearchParams(window.location.search)
+
+	  if (params.has('tagging')) {
+		document.getElementById("tag_imie").focus();
+	  }
+
+	  //console.log(e.data);
+	  $( ".tagowanie-"+e.data.userid ).css( "display", "initial" );
+	  //$( ".tagowanie" ).css( "display", "initial" );
+      username = e.data.username;
+	  userid = e.data.userid;
+	  session_id = e.data.session;
+	  return;
+	}
+  }
+  document.getElementById("tagowanie_login").style.display = "initial";
+};*/
+
+//document.getElementById("login").addEventListener('load', () => {  
+    //const iframeWindow = document.getElementById("login");
+	//var y = (iframeWindow.contentWindow || iframeWindow.contentDocument);
+    //var pre_info = y.document.body.innerHTML;
+    //console.log(pre_info); // Window about:blank > courseData {...}
+//})
+
+document.getElementById("imgCanvas").addEventListener('mouseout', function (evt) {
+	imgMoving = 0;
+}, false);
+document.getElementById("prvCanvas").addEventListener('mouseout', function (evt) {
+	prvMoving = 0;
+}, false);
+
+document.getElementById("imgCanvas").addEventListener(startEvent, function (evt) {
+	var mcoords = isTouchSupported ? evt.touches[0] : evt;
+	evt.preventDefault();
+	if (isTouchSupported && evt.touches.length === 2) {
+		pinchStart.x = (evt.touches[0].pageX + evt.touches[1].pageX) / 2;
+		pinchStart.y = (evt.touches[0].pageY + evt.touches[1].pageY) / 2;
+		pinchStart.distance = distance(evt);
+	}
+	lastmX = mcoords.clientX;
+	lastmY = mcoords.clientY;
+	imgMoving = 1;
+}, false);
+
+document.getElementById("prvCanvas").addEventListener(startEvent, function (evt) {
+	var mcoords = isTouchSupported ? evt.touches[0] : evt;
+	var rect = prvCanvas.getBoundingClientRect();
+	evt.preventDefault();
+
+	prvDiffLeft = (mcoords.pageX - rect.left) - prvLeft;
+	prvDiffTop = (mcoords.pageY - rect.top) - prvTop;
+	lastmX = mcoords.clientX;
+	lastmY = mcoords.clientY;
+	prvMoving = 1;
+}, false);
+
+window.addEventListener("keyup", function (e) {
+	if (e.ctrlKey) {
+		return;
+	}
+	if (e.altKey) {
+		return;
+	}
+	;
+	if (((document.activeElement === document.getElementById('tag_imie'))&&(document.getElementById('tag_imie').value != ''))||
+		((document.activeElement === document.getElementById('tag_nazwisko'))&&(document.getElementById('tag_nazwisko').value != ''))||
+		((document.activeElement === document.getElementById('tag_miejsce'))&&(document.getElementById('tag_miejsce').value != ''))) {
+		return;
+	}
+
+	if (e.keyCode === 39) {
+		nextImage();
+	}
+	if (e.keyCode === 37) {
+		prevImage();
+	}
+	if (e.keyCode === 38) {
+		powieksz();
+	}
+	if (e.keyCode === 40) {
+		pomniejsz();
+	}
+	// Insert - nowy zapis (tylko w trybie znakowania)
+	if (e.keyCode === 45) {
+		var selectionPanel = document.getElementById('selectionPanel');
+		if (selectionPanel && selectionPanel.style.display !== 'none') {
+			selectionManager.startNewRecord();
+		}
+	}
+});
+
+window.addEventListener("mouseup", function (e) {
+if (imgMoving || prvMoving) {
+	history.pushState({
+	page: ""
+	}, "", (imageLink + "001.jpg" + "&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+}
+imgMoving = 0;
+prvMoving = 0;
+});
+
+window.addEventListener("popstate", function () {
+	readPosition();
+	imgContext.putImageData(data, 0, 0);
+	imgPaint();
+});
+
+function imgPaint() {
+	if (opening != 0) {
+		return;
+	}
+
+	if ((imgCanvas.clientWidth * Scale > imageObj.width) && (imgCanvas.clientHeight * Scale > imageObj.height)) {
+		Scale = (imgCanvas.clientHeight > imgCanvas.clientWidth) ? (imageObj.width / imgCanvas.clientWidth) : (imageObj.height / imgCanvas.clientHeight);
+		Scale = Number(Scale.toFixed(2));
+	}
+	if (imgTop + (imgCanvas.clientHeight * Scale) > imageObj.height - 1) 
+		imgTop = imageObj.height -(imgCanvas.clientHeight * Scale);
+
+
+	if (imgLeft + (imgCanvas.clientWidth * Scale) > imageObj.width - 1) 
+		imgLeft = imageObj.width -(imgCanvas.clientWidth * Scale);
+
+
+	if (imgTop < 0) 
+		imgTop = 0;
+	if (imgLeft < 0) 
+		imgLeft = 0;
+
+	imgLeft = Math.floor(imgLeft);
+	imgTop = Math.floor(imgTop);
+	imgWidth = Math.floor(imgCanvas.clientWidth * Scale);
+	imgHeight = Math.floor(imgCanvas.clientHeight * Scale);
+	imagePutLeft = imgWidth - imageObj.width > 0 ? (imgWidth - imageObj.width) / Scale / 2 : 0;
+	imagePutTop = imgHeight - imageObj.height > 0 ? (imgHeight - imageObj.height) / Scale / 2 : 0;
+	imagePutWidth = imageObj.width / Scale;
+	imagePutHeight = imageObj.height / Scale;
+
+    if (imagePutHeight > imgCanvas.clientHeight) {
+		imagePutHeight = imgCanvas.clientHeight;
+	}
+
+    if (imagePutWidth > imgCanvas.clientWidth) {
+		imagePutWidth = imgCanvas.clientWidth;
+	}
+
+	if (imgWidth > imageObj.width) {
+		imgWidth = imageObj.width;
+	}
+	if (imgHeight > imageObj.height) {
+		imgHeight = imageObj.height;
+	}
+
+	imgContext.clearRect(0, 0, imgCanvas.width, imgCanvas.height);
+	imgContext.drawImage(imageObj, imgLeft, imgTop, imgWidth, imgHeight, imagePutLeft, imagePutTop, imagePutWidth, imagePutHeight);
+
+	if (prvLeft + Math.floor((imgCanvas.clientWidth * Scale) / prvScaleWidth) >= prvCanvas.clientWidth) 
+		prvLeft = prvCanvas.clientWidth - Math.floor((imgCanvas.clientWidth * Scale) / prvScaleWidth);
+
+	if (prvTop + Math.floor((imgCanvas.clientHeight * Scale) / prvScaleHeight) >= prvCanvas.clientHeight) 
+		prvTop = prvCanvas.clientHeight - Math.floor((imgCanvas.clientHeight * Scale) / prvScaleHeight);
+
+	if (prvLeft < 0) 
+		prvLeft = 0;
+	if (prvTop < 0) 
+		prvTop = 0;
+
+	prvContext.putImageData(prvImgData, 0, 0);
+	prvContext.fillStyle = "rgba(128, 128, 128, 0.4)";
+	prvContext.fillRect(prvLeft, prvTop, Math.floor((imgCanvas.clientWidth * Scale) / prvScaleWidth), Math.floor((imgCanvas.clientHeight * Scale) / prvScaleHeight));
+	drawing = 0;
+}
+
+
+function setResize() {
+
+	resizeWindows();
+	if (opening == 0) {
+		imgPaint();
+	}
+}
+
+function resizeWindows() {
+    imgCanvas.width = content.clientWidth;
+	imgCanvas.height = content.clientHeight;
+	/*imgCanvas.width = content.clientWidth - 180;
+	imgCanvas.height = window.innerHeight - 20;*/
+
+	if (window.devicePixelRatio > 1) {
+    	var canvasWidth = imgCanvas.width;
+    	var canvasHeight = imgCanvas.height;
+
+    	imgCanvas.width = canvasWidth * window.devicePixelRatio;
+    	imgCanvas.height = canvasHeight * window.devicePixelRatio;
+    	imgCanvas.style.width = canvasWidth + "px";
+    	imgCanvas.style.height = canvasHeight + "px";
+
+    	imgContext.scale(window.devicePixelRatio, window.devicePixelRatio);
+	}
+}
+
+imageObj.onload = function () {
+
+	resizeWindows();
+
+	if (opening == 1) {
+		//var exif = EXIF.readFromBinaryFile(new BinaryFile(this.result));
+		readPosition();
+		data = imgContext.getImageData(0, 0, imgCanvas.clientWidth - 1, imgCanvas.clientHeight - 1);
+
+		prvCanvas.width = 150;
+		prvCanvas.height = prvCanvas.width * (imageObj.height / imageObj.width);
+
+		prvScaleWidth = imageObj.width / prvCanvas.width;
+		prvScaleHeight = imageObj.height / prvCanvas.height;
+		prvLeft = Math.floor(imgLeft / prvScaleWidth);
+		prvTop = Math.floor(imgTop / prvScaleHeight);
+
+		prvContext.drawImage(imageObj, 0, 0, imageObj.width, imageObj.height, 0, 0, prvCanvas.width, prvCanvas.height);
+		prvImgData = prvContext.getImageData(0, 0, prvCanvas.clientWidth - 1, prvCanvas.clientHeight - 1);
+	}
+
+	opening = 0;
+	loader.style.visibility = 'hidden';
+	imgPaint();
+	loggedin_username = document.getElementById("myFrame");
+
+}
+
+imageObj.crossOrigin = 'anonymous';
+imageObj.src = 'https://metbox3.genealodzy.pl/metryka_get.php?dir=hBXwmiyFiMLCid11-u2rRp60Jo4aFt7ySjLbdI1dDkU,&amp;znak=QetVSxxqFsEFAs_WV9Y71A,,&amp;plik=001.jpg'.replace(/&amp;/g, '&');
+
+function pomniejsz() {
+	Scale = Scale + 0.25;
+	weryfikujSkale();
+
+	history.pushState({
+		page: ""
+		}, "", (imageLink + "001.jpg&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+ 	imgContext.putImageData(data, 0, 0);
+ 	imgPaint();
+}
+
+function powieksz() {
+	Scale = Scale - 0.25;
+	weryfikujSkale();
+
+	history.pushState({
+		page: ""
+		}, "", (imageLink + "001.jpg&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+
+	imgPaint();
+}
+
+function weryfikujSkale() {
+	if (Scale > 6.25) 
+		Scale = 6.25;
+	if (Scale < 0.25) 
+		Scale = 0.25;
+}
+
+function pelnyekran() {
+	var doc = window.document;
+	var docEl = doc.documentElement;
+	var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+	var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+	if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+		requestFullScreen.call(docEl);
+	}
+	else {
+		cancelFullScreen.call(doc);
+	}
+}
+
+function nextImage() {
+	loader.style.visibility = 'visible';
+	var tagging = '';
+	if ((document.activeElement === document.getElementById('tag_imie'))||
+		(document.activeElement === document.getElementById('tag_nazwisko'))||
+		(document.activeElement === document.getElementById('tag_miejsce'))) {
+		tagging = '&tagging=1';
+	}
+
+	readZoom();
+	window.location = (imageLink + '002.jpg' + '&zoom=' + Scale + tagging).replace(/&amp;/g, '&');
+}
+
+function prevImage() {
+	loader.style.visibility = 'visible';
+	var tagging = '';
+	if ((document.activeElement === document.getElementById('tag_imie'))||
+		(document.activeElement === document.getElementById('tag_nazwisko'))||
+		(document.activeElement === document.getElementById('tag_miejsce'))) {
+		tagging = '&tagging=1';
+	}
+
+	readZoom();
+	window.location = (imageLink + '016.jpg' + '&zoom=' + Scale + tagging).replace(/&amp;/g, '&');
+}
+
+document.getElementById("imgCanvas").addEventListener(moveEvent, function (evt) {
+	var mcoords = isTouchSupported ? evt.touches[0] : evt;
+	evt.preventDefault();
+
+	if (isTouchSupported && evt.touches.length === 2 && pinchStart) {
+		let deltaDistance = distance(event);
+		let scale = deltaDistance / pinchStart.distance;
+		clearTimeout(wheelEventEndTimeout);
+		pos = getCursorPos(evt);
+		var posYBefore = Math.floor(pos.y * Scale);
+		var posXBefore = Math.floor(pos.x * Scale);
+		if (scale > 1) { 
+			scale = scale * -1;
+		} else {
+			scale = scale;
+		}
+		Scale += scale * 0.05;
+		Scale = Number(Scale.toFixed(2));
+		weryfikujSkale();
+
+		var posXAfter = Math.floor(pos.x * Scale);
+		var posYAfter = Math.floor(pos.y * Scale);
+
+		imgLeft = imgLeft + Math.floor(posXBefore - posXAfter);
+		imgTop = imgTop + Math.floor(posYBefore - posYAfter);
+		if (imgLeft < 0) 
+			imgLeft = 0;
+		prvTop = imgTop / prvScaleHeight;
+		prvLeft = imgLeft / prvScaleWidth;
+		imgPaint();
+	
+		pinchStart.x = (evt.touches[0].pageX + evt.touches[1].pageX) / 2;
+		pinchStart.y = (evt.touches[0].pageY + evt.touches[1].pageY) / 2;
+		pinchStart.distance = distance(evt);
+
+		wheelEventEndTimeout = setTimeout(() => {
+			history.pushState({
+			page: ""
+			}, "", (imageLink + "001.jpg" + "&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+	    }, 100);
+
+	} else if ((imgMoving == 1) && ((lastmX != mcoords.clientX) || (lastmY != mcoords.clientY))) {
+    	imgTop = imgTop + ((lastmY - mcoords.clientY) * Scale);
+    	imgLeft = imgLeft + ((lastmX - mcoords.clientX) * Scale);
+    	prvTop = imgTop / prvScaleHeight;
+    	prvLeft = imgLeft / prvScaleWidth;
+		imgPaint();
+    	lastmX = mcoords.clientX;
+    	lastmY = mcoords.clientY;
+  	}
+}, false);
+
+function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = imgCanvas.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+
+
+document.getElementById("imgCanvas").addEventListener("wheel", function (evt) {
+	evt.preventDefault();
+	if (evt.ctrlKey) {
+		clearTimeout(wheelEventEndTimeout);
+		pos = getCursorPos(evt);
+		var posYBefore = Math.floor(pos.y * Scale);
+		var posXBefore = Math.floor(pos.x * Scale);
+		Scale += evt.deltaY * 0.03;
+		Scale = Number(Scale.toFixed(2));
+		weryfikujSkale();
+
+		var posXAfter = Math.floor(pos.x * Scale);
+		var posYAfter = Math.floor(pos.y * Scale);
+
+		imgLeft = imgLeft + Math.floor(posXBefore - posXAfter);
+		imgTop = imgTop + Math.floor(posYBefore - posYAfter);
+		if (imgLeft < 0) 
+			imgLeft = 0;
+		prvTop = imgTop / prvScaleHeight;
+		prvLeft = imgLeft / prvScaleWidth;
+		imgPaint();
+		wheelEventEndTimeout = setTimeout(() => {
+			history.pushState({
+			page: ""
+			}, "", (imageLink + "001.jpg" + "&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+	    }, 100);
+	} else {
+		imgTop = imgTop + (evt.deltaY * Scale);
+	    imgLeft = imgLeft + (evt.deltaX * Scale);
+    	prvTop = imgTop / prvScaleHeight;
+		prvLeft = imgLeft / prvScaleWidth;
+		imgPaint();
+	}
+
+}, false);
+
+document.getElementById("prvCanvas").addEventListener("wheel", function (evt) {
+	evt.preventDefault();
+	imgTop = imgTop + (evt.deltaY * Scale);
+    imgLeft = imgLeft + (evt.deltaX * Scale);
+    prvLeft = imgLeft / prvScaleWidth;
+    prvTop = imgTop / prvScaleHeight;
+    imgPaint();
+}, false);
+
+document.getElementById("prvCanvas").addEventListener(moveEvent, function (evt) {
+  var mcoords = isTouchSupported ? evt.touches[0] : evt;
+
+  if ((prvMoving == 1) && ((lastmX != mcoords.clientX) || (lastmY != mcoords.clientY))) {
+    var rect = prvCanvas.getBoundingClientRect();
+    prvLeft = (mcoords.pageX - rect.left) - prvDiffLeft;
+	prvTop = (mcoords.pageY - rect.top) - prvDiffTop;
+	imgLeft = Math.floor(prvLeft * prvScaleWidth);
+	imgTop = Math.floor(prvTop * prvScaleHeight);
+	imgPaint();
+	lastmX = mcoords.clientX;
+	lastmY = mcoords.clientY;
+	}
+}, true);
+
+// ============================================
+// Selection Manager - zarządzanie zaznaczeniami
+// ============================================
+var selectionManager = (function() {
+	var selectionCanvas = document.getElementById('selectionCanvas');
+	var selectionCtx = selectionCanvas ? selectionCanvas.getContext('2d') : null;
+
+
+	var state = {
+		activeRecordId: null,
+		activeRecordNumber: null, // numer zapisu w ramach sygnatury
+		isDrawing: false,
+		isPanning: false, // przeciąganie obrazu w trybie viewing
+		wasPanning: false, // czy właśnie zakończono panning (blokuje click)
+		panStartX: 0,
+		panStartY: 0,
+		drawingMode: false,
+		viewingMode: false, // tryb przeglądania tłumaczeń
+		startX: 0,
+		startY: 0,
+		currentX: 0,
+		currentY: 0,
+		selections: [],
+		allSelections: [], // wszystkie selekcje dla bieżącej sygnatury
+		currentTranscriptionRecordId: null // ID rekordu wyświetlanego w panelu transkrypcji
+	};
+
+	var config = {
+		zs_id: 5858,
+		sy_id: 185767,
+		kt_id: null,
+		filename: '001.jpg'
+	};
+
+	// Kolory dla różnych rekordów
+	var recordColors = [
+		'rgba(255, 99, 132, 0.3)',
+		'rgba(54, 162, 235, 0.3)',
+		'rgba(255, 206, 86, 0.3)',
+		'rgba(75, 192, 192, 0.3)',
+		'rgba(153, 102, 255, 0.3)',
+		'rgba(255, 159, 64, 0.3)',
+		'rgba(199, 199, 199, 0.3)',
+		'rgba(83, 102, 255, 0.3)',
+		'rgba(255, 99, 255, 0.3)',
+		'rgba(99, 255, 132, 0.3)'
+	];
+
+	function getColorForRecord(recordId) {
+		return recordColors[recordId % recordColors.length];
+	}
+
+	function getBorderColorForRecord(recordId) {
+		return recordColors[recordId % recordColors.length].replace('0.3', '0.8');
+	}
+
+	function resizeSelectionCanvas() {
+		if (!selectionCanvas) return;
+		selectionCanvas.width = content.clientWidth;
+		selectionCanvas.height = content.clientHeight;
+
+		if (window.devicePixelRatio > 1) {
+			var canvasWidth = selectionCanvas.width;
+			var canvasHeight = selectionCanvas.height;
+			selectionCanvas.width = canvasWidth * window.devicePixelRatio;
+			selectionCanvas.height = canvasHeight * window.devicePixelRatio;
+			selectionCanvas.style.width = canvasWidth + "px";
+			selectionCanvas.style.height = canvasHeight + "px";
+			selectionCtx.scale(window.devicePixelRatio, window.devicePixelRatio);
+		}
+	}
+
+	function init() {
+		if (!selectionCanvas) return;
+
+		resizeSelectionCanvas();
+		loadSelections();
+		loadActiveRecord();
+		setupEventListeners();
+
+		// Reaguj na zmianę rozmiaru
+		var originalResize = window.onresize;
+		window.onresize = function() {
+			if (originalResize) originalResize();
+			resizeSelectionCanvas();
+			redrawSelections();
+		};
+	}
+
+	function setupEventListeners() {
+		selectionCanvas.addEventListener('mousedown', onMouseDown);
+		selectionCanvas.addEventListener('mousemove', onMouseMove);
+		selectionCanvas.addEventListener('mouseup', onMouseUp);
+		selectionCanvas.addEventListener('click', onCanvasClick);
+		selectionCanvas.addEventListener('wheel', function(evt) {
+			evt.preventDefault();
+			imgCanvas.dispatchEvent(new WheelEvent('wheel', {
+				deltaX: evt.deltaX, deltaY: evt.deltaY, deltaZ: evt.deltaZ,
+				deltaMode: evt.deltaMode, ctrlKey: evt.ctrlKey,
+				clientX: evt.clientX, clientY: evt.clientY,
+				pageX: evt.pageX, pageY: evt.pageY,
+				screenX: evt.screenX, screenY: evt.screenY,
+				bubbles: false
+			}));
+		}, false);
+		document.addEventListener('keydown', function(e) {
+			if (e.key === 'Escape' && state.drawingMode) {
+				// 1. Jeśli jest w trakcie rysowania - anuluj rysowanie
+				if (state.isDrawing) {
+					state.isDrawing = false;
+					redrawSelections();
+					return;
+				}
+				// 2. Jeśli są zapisane selekcje dla aktywnego rekordu - usuń ostatnią
+				var currentRecordSelections = state.allSelections.filter(function(s) {
+					return s.sel_record_id == state.activeRecordId;
+				});
+				if (currentRecordSelections.length > 0) {
+					var lastSelection = currentRecordSelections[currentRecordSelections.length - 1];
+					deleteSelectionSilent(lastSelection.sel_id);
+					return;
+				}
+				// 3. Brak selekcji - usuń pusty aktywny rekord i wyjdź z trybu zaznaczania
+				if (state.activeRecordId) {
+					deleteEmptyRecord(state.activeRecordId);
+				} else {
+					state.drawingMode = false;
+					updateDrawingModeUI();
+					document.cookie = 'drawingMode=0;path=/;max-age=3600';
+				}
+			}
+		});
+	}
+
+	function deleteSelectionSilent(selId) {
+		fetch('/?op=sel&opd=delete&sel_id=' + selId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					// Sprawdź czy to było ostatnie zaznaczenie dla aktywnego rekordu
+					var remainingSelections = state.allSelections.filter(function(s) {
+						return s.sel_record_id == state.activeRecordId && s.sel_id != selId;
+					});
+
+					if (remainingSelections.length === 0 && state.activeRecordId) {
+						// Usuń pusty rekord żeby nie marnować numeru
+						deleteEmptyRecord(state.activeRecordId);
+					} else {
+						loadSelections();
+					}
+				}
+			})
+			.catch(function(err) {
+				console.error('Error deleting selection:', err);
+			});
+	}
+
+	function deleteEmptyRecord(recordId) {
+		fetch('/?op=sel&opd=delete_record&record_id=' + recordId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					// Wyłącz tryb rysowania i wyczyść aktywny rekord
+					if (state.drawingMode) {
+						state.drawingMode = false;
+						updateDrawingModeUI();
+						document.cookie = 'drawingMode=0;path=/;max-age=3600';
+					}
+					state.activeRecordId = null;
+					state.activeRecordNumber = null;
+					updateActiveRecordUI();
+					loadSelections();
+				}
+			})
+			.catch(function(err) {
+				console.error('Error deleting empty record:', err);
+				loadSelections();
+			});
+	}
+
+	function onMouseDown(e) {
+		var rect = selectionCanvas.getBoundingClientRect();
+		var mouseX = e.clientX - rect.left;
+		var mouseY = e.clientY - rect.top;
+
+		// Tryb rysowania - rysuj selekcję
+		if (state.drawingMode && state.activeRecordId) {
+			state.isDrawing = true;
+			state.startX = mouseX;
+			state.startY = mouseY;
+			state.currentX = state.startX;
+			state.currentY = state.startY;
+			return;
+		}
+
+		// Tryb viewing - włącz panning
+		if (state.viewingMode) {
+			state.isPanning = true;
+			state.panStartX = e.clientX;
+			state.panStartY = e.clientY;
+			selectionCanvas.style.cursor = 'grabbing';
+		}
+	}
+
+	function onMouseMove(e) {
+		var rect = selectionCanvas.getBoundingClientRect();
+		var mouseX = e.clientX - rect.left;
+		var mouseY = e.clientY - rect.top;
+
+		// Tryb panning (przeciąganie obrazu w viewing mode)
+		if (state.isPanning) {
+			var deltaX = e.clientX - state.panStartX;
+			var deltaY = e.clientY - state.panStartY;
+
+			if (deltaX !== 0 || deltaY !== 0) {
+				imgTop = imgTop - (deltaY * Scale);
+				imgLeft = imgLeft - (deltaX * Scale);
+				prvTop = imgTop / prvScaleHeight;
+				prvLeft = imgLeft / prvScaleWidth;
+				imgPaint();
+				state.panStartX = e.clientX;
+				state.panStartY = e.clientY;
+				state.wasPanning = true; // oznacz że było faktyczne przesunięcie
+			}
+			return;
+		}
+
+		// Obsługa hover w trybie viewing - zmiana kursora dla przetworzonych selekcji
+		if (state.viewingMode && !state.isDrawing) {
+			var hoveredSelection = findSelectionAt(mouseX, mouseY);
+			if (hoveredSelection && hoveredSelection.rec_status === 'processed') {
+				selectionCanvas.style.cursor = 'pointer';
+			} else {
+				selectionCanvas.style.cursor = 'grab';
+			}
+		}
+
+		if (!state.isDrawing) return;
+
+		state.currentX = mouseX;
+		state.currentY = mouseY;
+
+		redrawSelections();
+		drawCurrentSelection();
+	}
+
+	function onMouseUp(e) {
+		// Koniec panning w trybie viewing
+		if (state.isPanning) {
+			state.isPanning = false;
+			selectionCanvas.style.cursor = 'grab';
+			// Zapisz pozycję do historii tylko jeśli było przesunięcie
+			if (state.wasPanning) {
+				history.pushState({
+					page: ""
+				}, "", (imageLink + "001.jpg" + "&x=" + imgLeft + "&y=" + imgTop + '&zoom=' + Scale).replace(/&amp;/g, '&'));
+			}
+			return;
+		}
+
+		if (!state.isDrawing) return;
+		state.isDrawing = false;
+
+		var rect = selectionCanvas.getBoundingClientRect();
+		state.currentX = e.clientX - rect.left;
+		state.currentY = e.clientY - rect.top;
+
+		// Oblicz wymiary na ekranie
+		var screenX = Math.min(state.startX, state.currentX);
+		var screenY = Math.min(state.startY, state.currentY);
+		var screenWidth = Math.abs(state.currentX - state.startX);
+		var screenHeight = Math.abs(state.currentY - state.startY);
+
+		// Minimalna wielkość
+		if (screenWidth < 10 || screenHeight < 10) {
+			redrawSelections();
+			return;
+		}
+
+		// Przelicz na współrzędne obrazu
+		var imgX = Math.floor(imgLeft + (screenX - imagePutLeft) * Scale);
+		var imgY = Math.floor(imgTop + (screenY - imagePutTop) * Scale);
+		var imgWidth = Math.floor(screenWidth * Scale);
+		var imgHeight = Math.floor(screenHeight * Scale);
+
+		// Ogranicz do granic obrazu
+		if (imgX < 0) { imgWidth += imgX; imgX = 0; }
+		if (imgY < 0) { imgHeight += imgY; imgY = 0; }
+		if (imgX + imgWidth > imageObj.width) imgWidth = imageObj.width - imgX;
+		if (imgY + imgHeight > imageObj.height) imgHeight = imageObj.height - imgY;
+
+		if (imgWidth > 0 && imgHeight > 0) {
+			saveSelection(imgX, imgY, imgWidth, imgHeight);
+		}
+
+		redrawSelections();
+	}
+
+	function onCanvasClick(e) {
+		// Reaguj tylko w trybie viewing
+		if (!state.viewingMode) return;
+
+		// Ignoruj click po zakończeniu nawigacji (panning)
+		if (state.wasPanning) {
+			state.wasPanning = false;
+			return;
+		}
+
+		var rect = selectionCanvas.getBoundingClientRect();
+		var clickX = e.clientX - rect.left;
+		var clickY = e.clientY - rect.top;
+
+		// Znajdź selekcję pod kursorem
+		var clickedSelection = findSelectionAt(clickX, clickY);
+
+		if (clickedSelection && clickedSelection.rec_status === 'processed') {
+			showTranscription(clickedSelection.sel_record_id);
+		}
+	}
+
+	function findSelectionAt(clickX, clickY) {
+		// Przeszukaj selekcje od końca (ostatnia narysowana jest na wierzchu)
+		for (var i = state.allSelections.length - 1; i >= 0; i--) {
+			var sel = state.allSelections[i];
+
+			// Przelicz współrzędne obrazu na ekran
+			var screenX = (sel.sel_x - imgLeft) / Scale + imagePutLeft;
+			var screenY = (sel.sel_y - imgTop) / Scale + imagePutTop;
+			var screenWidth = sel.sel_width / Scale;
+			var screenHeight = sel.sel_height / Scale;
+
+			// Sprawdź czy kliknięcie jest w obszarze selekcji
+			if (clickX >= screenX && clickX <= screenX + screenWidth &&
+				clickY >= screenY && clickY <= screenY + screenHeight) {
+				return sel;
+			}
+		}
+		return null;
+	}
+
+	function drawCurrentSelection() {
+		var x = Math.min(state.startX, state.currentX);
+		var y = Math.min(state.startY, state.currentY);
+		var w = Math.abs(state.currentX - state.startX);
+		var h = Math.abs(state.currentY - state.startY);
+
+		selectionCtx.strokeStyle = 'rgba(255, 0, 0, 0.8)';
+		selectionCtx.lineWidth = 2;
+		selectionCtx.setLineDash([5, 5]);
+		selectionCtx.strokeRect(x, y, w, h);
+		selectionCtx.setLineDash([]);
+	}
+
+	function redrawSelections() {
+		if (!selectionCtx) return;
+
+		selectionCtx.clearRect(0, 0, selectionCanvas.width / (window.devicePixelRatio || 1), selectionCanvas.height / (window.devicePixelRatio || 1));
+
+		// Sprawdź czy panel znakowania jest widoczny (tryb admina)
+		var selectionPanel = document.getElementById('selectionPanel');
+		var isSelectionPanelVisible = selectionPanel && selectionPanel.style.display !== 'none';
+
+		// Rysuj selekcje w trybie viewing, drawing lub gdy panel znakowania jest widoczny
+		if (!state.viewingMode && !state.drawingMode && !isSelectionPanelVisible) return;
+
+		// Rysuj wszystkie zapisane selekcje
+		state.allSelections.forEach(function(sel) {
+			drawSelection(sel);
+		});
+	}
+
+	function drawSelection(sel) {
+		// Przelicz współrzędne obrazu na ekran
+		var screenX = (sel.sel_x - imgLeft) / Scale + imagePutLeft;
+		var screenY = (sel.sel_y - imgTop) / Scale + imagePutTop;
+		var screenWidth = sel.sel_width / Scale;
+		var screenHeight = sel.sel_height / Scale;
+
+		// Sprawdź czy selekcja jest widoczna
+		var canvasW = selectionCanvas.width / (window.devicePixelRatio || 1);
+		var canvasH = selectionCanvas.height / (window.devicePixelRatio || 1);
+
+		if (screenX + screenWidth < 0 || screenX > canvasW ||
+			screenY + screenHeight < 0 || screenY > canvasH) {
+			return; // poza widokiem
+		}
+
+		var recordId = sel.sel_record_id;
+		var recordNumber = sel.rec_number || recordId; // użyj rec_number, fallback do rec_id
+		var isActive = recordId == state.activeRecordId;
+		var recName = sel.rec_name || '';
+		var recStatus = sel.rec_status || 'draft';
+
+		// Wypełnienie
+		selectionCtx.fillStyle = getColorForRecord(recordNumber);
+		selectionCtx.fillRect(screenX, screenY, screenWidth, screenHeight);
+
+		// Ramka
+		selectionCtx.strokeStyle = isActive ? 'rgba(255, 0, 0, 0.9)' : getBorderColorForRecord(recordNumber);
+		selectionCtx.lineWidth = isActive ? 3 : 2;
+		selectionCtx.strokeRect(screenX, screenY, screenWidth, screenHeight);
+
+		// Etykieta z numerem i podsumowaniem
+		var label = '#' + recordNumber;
+		if (recName) {
+			label += ': ' + recName;
+		}
+
+		// Stała wielkość czcionki - taka sama jak tekst w panelu bocznym
+		var fontSize = 14;
+
+		// Oblicz wymiary etykiety
+		selectionCtx.font = 'bold ' + fontSize + 'px Arial';
+		var textWidth = selectionCtx.measureText(label).width;
+		var statusWidth = recStatus === 'completed' ? fontSize + 6 : 0; // miejsce na ptaszek
+		var labelWidth = textWidth + 12 + statusWidth;
+		var labelHeight = fontSize + 10;
+
+		// Pozycja etykiety - nad ramką
+		var labelX = screenX;
+		var labelY = screenY - labelHeight - 3;
+
+		// Jeśli etykieta wychodziłaby poza górę ekranu, umieść ją wewnątrz ramki
+		if (labelY < 0) {
+			labelY = screenY + 3;
+		}
+
+		// Tło etykiety z zaokrąglonymi rogami
+		var bgColor = isActive ? 'rgba(200, 0, 0, 0.9)' : 'rgba(60, 60, 60, 0.85)';
+		selectionCtx.fillStyle = bgColor;
+		drawRoundRect(selectionCtx, labelX, labelY, labelWidth, labelHeight, 4);
+		selectionCtx.fill();
+
+		// Tekst etykiety
+		selectionCtx.fillStyle = 'white';
+		selectionCtx.font = 'bold ' + fontSize + 'px Arial';
+		selectionCtx.fillText(label, labelX + 6, labelY + fontSize + 3);
+
+		// Ikona statusu (jeśli zakończony) - za tekstem
+		if (recStatus === 'completed') {
+			selectionCtx.fillStyle = '#4CAF50';
+			selectionCtx.font = 'bold ' + fontSize + 'px Arial';
+			selectionCtx.fillText('✓', labelX + textWidth + 10, labelY + fontSize + 3);
+		}
+	}
+
+	// Helper do rysowania zaokrąglonych prostokątów
+	function drawRoundRect(ctx, x, y, width, height, radius) {
+		ctx.beginPath();
+		ctx.moveTo(x + radius, y);
+		ctx.lineTo(x + width - radius, y);
+		ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+		ctx.lineTo(x + width, y + height - radius);
+		ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+		ctx.lineTo(x + radius, y + height);
+		ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+		ctx.lineTo(x, y + radius);
+		ctx.quadraticCurveTo(x, y, x + radius, y);
+		ctx.closePath();
+	}
+
+	function loadSelections() {
+		fetch('/?op=sel&opd=list&sy_id=' + config.sy_id + '&filename=' + encodeURIComponent(config.filename))
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.selections) {
+					state.allSelections = data.selections;
+					redrawSelections();
+					updateSelectionsList();
+					updateTranslationsButton();
+				}
+			})
+			.catch(function(err) {
+				console.error('Error loading selections:', err);
+			});
+	}
+
+	function updateTranslationsButton() {
+		var btn = document.getElementById('showTranslationsBtn');
+		if (!btn) return;
+
+		// Sprawdź czy są przetworzone selekcje na tym zdjęciu
+		var hasProcessed = state.allSelections.some(function(sel) {
+			return sel.rec_status === 'processed' && sel.sel_filename === config.filename;
+		});
+
+		btn.style.display = hasProcessed ? 'block' : 'none';
+	}
+
+	function toggleViewingMode() {
+		state.viewingMode = !state.viewingMode;
+		var btn = document.getElementById('showTranslationsBtn');
+
+		if (state.viewingMode) {
+			selectionCanvas.classList.add('viewing');
+			btn.classList.add('active');
+			btn.innerHTML = '<span class="btn-icon">✕</span>Ukryj tłumaczenia';
+			redrawSelections();
+		} else {
+			selectionCanvas.classList.remove('viewing');
+			btn.classList.remove('active');
+			btn.innerHTML = '<span class="btn-icon">📜</span>Pokaż tłumaczenia';
+			// Ukryj selekcje i zamknij panel
+			closeTranscriptionPanel();
+			selectionCtx.clearRect(0, 0, selectionCanvas.width / (window.devicePixelRatio || 1), selectionCanvas.height / (window.devicePixelRatio || 1));
+		}
+	}
+
+	function loadActiveRecord() {
+		fetch('/?op=sel&opd=get_record&sy_id=' + config.sy_id)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.record) {
+					state.activeRecordId = data.record.rec_id;
+					state.activeRecordNumber = data.record.rec_number;
+					updateActiveRecordUI();
+					// Przywróć tryb rysowania z cookies
+					var match = document.cookie.match(/drawingMode=1/);
+					if (match && state.activeRecordId) {
+						state.drawingMode = true;
+						updateDrawingModeUI();
+					}
+				}
+			})
+			.catch(function(err) {
+				console.error('Error loading active record:', err);
+			});
+	}
+
+	function saveSelection(x, y, width, height) {
+		var params = new URLSearchParams({
+			record_id: state.activeRecordId,
+			zs_id: config.zs_id,
+			sy_id: config.sy_id,
+			kt_id: config.kt_id || '',
+			filename: config.filename,
+			x: x,
+			y: y,
+			width: width,
+			height: height
+		});
+
+		fetch('/?op=sel&opd=create&' + params.toString())
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					loadSelections();
+				} else {
+					alert('Błąd zapisu: ' + (data.error || 'nieznany'));
+				}
+			})
+			.catch(function(err) {
+				console.error('Error saving selection:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function startNewRecord() {
+		// Jeśli jest aktywny zapis, sprawdź czy ma zaznaczenia (na wszystkich stronach)
+		if (state.activeRecordId) {
+			// Pobierz liczbę selekcji dla aktywnego rekordu z serwera (uwzględnia wszystkie strony)
+			fetch('/?op=sel&opd=count_record_selections&record_id=' + state.activeRecordId)
+				.then(function(r) { return r.json(); })
+				.then(function(data) {
+					if (data.count === 0) {
+						// Aktywny zapis bez zaznaczeń - nic nie rób
+						return;
+					}
+
+					// Zakończ poprzedni zapis automatycznie
+					fetch('/?op=sel&opd=complete&record_id=' + state.activeRecordId)
+						.then(function(r) { return r.json(); })
+						.then(function(data) {
+							// Wyłącz tryb rysowania
+							if (state.drawingMode) {
+								state.drawingMode = false;
+								updateDrawingModeUI();
+							}
+							// Teraz utwórz nowy zapis
+							createNewRecordRequest();
+						})
+						.catch(function(err) {
+							console.error('Error completing previous record:', err);
+							// Mimo błędu spróbuj utworzyć nowy
+							createNewRecordRequest();
+						});
+				})
+				.catch(function(err) {
+					console.error('Error counting selections:', err);
+				});
+			return;
+		}
+
+		createNewRecordRequest();
+	}
+
+	function createNewRecordRequest() {
+		fetch('/?op=sel&opd=new_record&zs_id=' + config.zs_id + '&sy_id=' + config.sy_id)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					state.activeRecordId = data.record_id;
+					state.activeRecordNumber = data.record_number;
+					updateActiveRecordUI();
+					loadSelections(); // Odśwież listę żeby pokazać zakończony poprzedni
+					// Automatycznie włącz tryb rysowania
+					if (!state.drawingMode) {
+						toggleDrawingMode();
+					}
+				} else {
+					alert('Błąd tworzenia zapisu: ' + (data.error || 'nieznany'));
+				}
+			})
+			.catch(function(err) {
+				console.error('Error creating record:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function toggleDrawingMode() {
+		if (!state.activeRecordId) {
+			alert('Najpierw utwórz nowy zapis lub wybierz istniejący');
+			return;
+		}
+
+		state.drawingMode = !state.drawingMode;
+		updateDrawingModeUI();
+		// Zapisz stan w cookies
+		document.cookie = 'drawingMode=' + (state.drawingMode ? '1' : '0') + ';path=/;max-age=3600'; // 1 godzina
+	}
+
+	function updateDrawingModeUI() {
+		if (state.drawingMode) {
+			selectionCanvas.classList.add('drawing');
+			document.getElementById('btnAddArea').classList.add('active');
+		} else {
+			selectionCanvas.classList.remove('drawing');
+			document.getElementById('btnAddArea').classList.remove('active');
+		}
+	}
+
+	function completeRecord() {
+		if (!state.activeRecordId) {
+			alert('Brak aktywnego zapisu do zakończenia');
+			return;
+		}
+
+		// Pobierz liczbę selekcji dla aktywnego rekordu z serwera (uwzględnia wszystkie strony)
+		fetch('/?op=sel&opd=count_record_selections&record_id=' + state.activeRecordId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.count === 0) {
+					alert('Zapis nie ma żadnych zaznaczonych obszarów');
+					return;
+				}
+
+				completeRecordRequest();
+			})
+			.catch(function(err) {
+				console.error('Error counting selections:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function completeRecordRequest() {
+		fetch('/?op=sel&opd=complete&record_id=' + state.activeRecordId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					// Wyłącz tryb rysowania przed wyczyszczeniem activeRecordId
+					if (state.drawingMode) {
+						state.drawingMode = false;
+						updateDrawingModeUI();
+						document.cookie = 'drawingMode=0;path=/;max-age=3600';
+					}
+					state.activeRecordId = null;
+					state.activeRecordNumber = null;
+					updateActiveRecordUI();
+					loadSelections();
+				} else {
+					alert('Błąd: ' + (data.error || 'nieznany'));
+				}
+			})
+			.catch(function(err) {
+				console.error('Error completing record:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function deleteSelection(selId) {
+		if (!confirm('Czy na pewno usunąć to zaznaczenie?')) return;
+
+		// Znajdź rekord dla tego zaznaczenia
+		var selection = state.allSelections.find(function(s) { return s.sel_id == selId; });
+		var recordId = selection ? selection.sel_record_id : null;
+		var recStatus = selection ? selection.rec_status : null;
+
+		fetch('/?op=sel&opd=delete&sel_id=' + selId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					// Sprawdź czy rekord ma jeszcze jakieś zaznaczenia
+					if (recordId) {
+						var remainingSelections = state.allSelections.filter(function(s) {
+							return s.sel_record_id == recordId && s.sel_id != selId;
+						});
+
+						// Usuń pusty rekord jeśli nie jest przetworzony/przetwarzany
+						if (remainingSelections.length === 0 && !['processed', 'processing'].includes(recStatus)) {
+							deleteEmptyRecord(recordId);
+							return;
+						}
+					}
+					loadSelections();
+				} else {
+					alert('Błąd: ' + (data.error || 'nieznany'));
+				}
+			})
+			.catch(function(err) {
+				console.error('Error deleting selection:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function updateActiveRecordUI() {
+		var info = document.getElementById('activeRecordInfo');
+		var btnComplete = document.getElementById('btnCompleteRecord');
+		var btnAddArea = document.getElementById('btnAddArea');
+
+		if (state.activeRecordId) {
+			var displayNumber = state.activeRecordNumber || state.activeRecordId;
+			info.innerHTML = 'Aktywny zapis: <strong>#' + displayNumber + '</strong>';
+			info.classList.remove('no-record');
+			btnComplete.classList.remove('disabled');
+			btnAddArea.classList.remove('disabled');
+		} else {
+			info.innerHTML = 'Brak aktywnego zapisu';
+			info.classList.add('no-record');
+			btnComplete.classList.add('disabled');
+			btnAddArea.classList.add('disabled');
+		}
+	}
+
+	function updateSelectionsList() {
+		var list = document.getElementById('selectionsList');
+		if (!list) return;
+
+		var currentFileSelections = state.allSelections.filter(function(s) {
+			return s.sel_filename === config.filename;
+		});
+
+		if (currentFileSelections.length === 0) {
+			list.innerHTML = '<div style="color:#888;font-size:10px;">Brak zaznaczeń na tym zdjęciu</div>';
+			return;
+		}
+
+		var html = '<div style="font-size:10px;color:#666;margin-bottom:5px;">Zaznaczenia na tym zdjęciu:</div>';
+		currentFileSelections.forEach(function(sel) {
+			var isActive = sel.sel_record_id == state.activeRecordId;
+			var displayNumber = sel.rec_number || sel.sel_record_id;
+			var label = '#' + displayNumber;
+			if (sel.rec_name) {
+				label += ': ' + sel.rec_name.substring(0, 15) + (sel.rec_name.length > 15 ? '...' : '');
+			}
+
+			var statusIcon = '';
+			var rowClass = 'selection-item' + (isActive ? ' active' : '');
+			var rowClick = '';
+
+			if (sel.rec_status === 'processed') {
+				statusIcon = ' <span style="color:#4CAF50">✓</span>';
+				rowClass += ' clickable';
+				rowClick = ' onclick="selectionManager.showTranscription(' + sel.sel_record_id + ')"';
+			} else if (sel.rec_status === 'processing') {
+				statusIcon = ' <span class="record-status-processing">⏳</span>';
+			} else if (sel.rec_status === 'error') {
+				statusIcon = ' <span class="record-status-error" title="Błąd przetwarzania">✗</span>';
+			} else if (sel.rec_status === 'completed') {
+				statusIcon = ' <span style="color:#888" title="Oczekuje na przetworzenie">○</span>';
+			}
+
+			html += '<div class="' + rowClass + '"' + rowClick + '>' +
+				'<span>' + label + statusIcon + '</span>' +
+				'<span class="delete-btn" onclick="event.stopPropagation(); selectionManager.deleteSelection(' + sel.sel_id + ')">[x]</span>' +
+				'</div>';
+		});
+
+		list.innerHTML = html;
+	}
+
+	// Podłącz się do istniejącej funkcji imgPaint
+	var originalImgPaint = window.imgPaint;
+	window.imgPaint = function() {
+		originalImgPaint();
+		redrawSelections();
+	};
+
+	// Inicjalizacja po załadowaniu obrazu
+	var originalOnLoad = imageObj.onload;
+	imageObj.onload = function() {
+		originalOnLoad.call(this);
+		setTimeout(init, 100);
+	};
+
+	function showTranscription(recordId) {
+		fetch('/?op=sel&opd=get_transcription&record_id=' + recordId)
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.record) {
+					var rec = data.record;
+					state.currentTranscriptionRecordId = recordId;
+
+					var title = '#' + (rec.rec_number || rec.rec_id);
+					if (rec.rec_name) {
+						title += ': ' + rec.rec_name;
+					}
+					document.getElementById('transcriptionTitle').textContent = title;
+
+					var translitEl = document.getElementById('panelTransliteration');
+					var translationEl = document.getElementById('panelTranslation');
+
+					if (rec.rec_transliteration) {
+						translitEl.textContent = rec.rec_transliteration;
+						translitEl.classList.remove('empty');
+					} else {
+						translitEl.textContent = 'Brak transliteracji';
+						translitEl.classList.add('empty');
+					}
+
+					if (rec.rec_translation) {
+						translationEl.textContent = rec.rec_translation;
+						translationEl.classList.remove('empty');
+					} else {
+						translationEl.textContent = 'Brak tłumaczenia';
+						translationEl.classList.add('empty');
+					}
+
+					// Wyczyść pole sugestii
+					var suggestionEl = document.getElementById('panelAiSuggestion');
+					if (suggestionEl) {
+						suggestionEl.value = rec.rec_ai_suggestion || '';
+					}
+
+					// Włącz split-view
+					document.getElementById('mainArea').classList.add('split-view');
+					// Odśwież wymiary canvas
+					setTimeout(function() {
+						resizeSelectionCanvas();
+						setResize();
+					}, 50);
+
+					// Podświetl tagi należące do tego rekordu
+					highlightTagsForRecord(recordId);
+				} else {
+					alert('Nie można pobrać danych rekordu');
+				}
+			})
+			.catch(function(err) {
+				console.error('Error fetching transcription:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	function highlightTagsForRecord(recordId) {
+		// Usuń podświetlenie ze wszystkich tagów
+		var allTags = document.querySelectorAll('.tag-item');
+		allTags.forEach(function(tag) {
+			tag.classList.remove('tag-highlighted');
+		});
+
+		// Podświetl tagi należące do wybranego rekordu
+		if (recordId) {
+			var matchingTags = document.querySelectorAll('.tag-item[data-record-id="' + recordId + '"]');
+			matchingTags.forEach(function(tag) {
+				tag.classList.add('tag-highlighted');
+			});
+		}
+	}
+
+	function reprocessWithAi() {
+		if (!state.currentTranscriptionRecordId) {
+			alert('Brak aktywnego rekordu');
+			return;
+		}
+
+		var suggestionEl = document.getElementById('panelAiSuggestion');
+		var suggestion = suggestionEl ? suggestionEl.value.trim() : '';
+
+		if (!suggestion) {
+			if (!confirm('Czy na pewno chcesz przetworzyć ponownie bez sugestii?')) {
+				return;
+			}
+		}
+
+		var params = new URLSearchParams({
+			record_id: state.currentTranscriptionRecordId,
+			suggestion: suggestion
+		});
+
+		fetch('/?op=sel&opd=reprocess_ai&' + params.toString())
+			.then(function(r) { return r.json(); })
+			.then(function(data) {
+				if (data.success) {
+					alert('Rekord został oznaczony do ponownego przetworzenia przez AI');
+					closeTranscriptionPanel();
+					loadSelections();
+				} else {
+					alert('Błąd: ' + (data.error || 'nieznany'));
+				}
+			})
+			.catch(function(err) {
+				console.error('Error reprocessing:', err);
+				alert('Błąd połączenia');
+			});
+	}
+
+	return {
+		startNewRecord: startNewRecord,
+		toggleDrawingMode: toggleDrawingMode,
+		toggleViewingMode: toggleViewingMode,
+		completeRecord: completeRecord,
+		deleteSelection: deleteSelection,
+		redraw: redrawSelections,
+		resizeCanvas: resizeSelectionCanvas,
+		showTranscription: showTranscription,
+		reprocessWithAi: reprocessWithAi
+	};
+})();
+
+// Funkcja zamykania panelu transkrypcji
+function closeTranscriptionPanel() {
+	document.getElementById('mainArea').classList.remove('split-view');
+	// Usuń podświetlenie tagów
+	var allTags = document.querySelectorAll('.tag-item');
+	allTags.forEach(function(tag) {
+		tag.classList.remove('tag-highlighted');
+	});
+	// Odśwież wymiary canvas - dajemy czas na zmianę layoutu
+	setTimeout(function() {
+		setResize();
+		selectionManager.resizeCanvas();
+		selectionManager.redraw();
+	}, 100);
+}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Skanoteka - Baza skanów dokumentów o wartości genealogicznej</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://skanoteka.genealodzy.pl/images/PTG_Logo_Skanoteka_pl_PL_200.png" />
+<meta name="author" content="Genealodzy.PL Genealogia">
+<meta name="copyright" content="Copyright (c) 2006-2026 Polskie Towarzystwo Genealogiczne">
+<meta name="description" content="Baza skanów dokumentów o wartości genealogicznej.">
+<meta name="revisit-after" content="1 days">
+<link rel="canonical" href="https://skanoteka.genealodzy.pl">
+<link rel="stylesheet" href="style/style.css?=v6" type="text/css">
+<link rel="stylesheet" href="style/ajaxcss.css?=v2" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?=v2">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?=v2">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?=v2">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="shortcut icon" href="/images/favicon.ico?=v2">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<style>
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #f3e2e7;
+	border: 1px solid #c5c5c5;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #f3d0e7;
+	border: 1px solid #c5c5c5;
+	color: black;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 0px 0px;
+	background: none;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url("https://code.jquery.com/ui/1.13.2/themes/base/images/ui-icons_444444_256x240.png");
+}
+
+:root
+{
+	--background-image-url: url('/images/back-pink.gif');
+}</style><link rel="shortcut icon" href="images/favicon.ico">
+
+		<script async src="https://platform.twitter.com/widgets.js"></script>
+		<script src="ajax/ajaxcore.js"></script>
+		<script src="ajax/ajax.js"></script>
+		<script src="style/centeredpop.js"></script>
+		<script>
+			var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22184319-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+var ga = document.createElement('script');
+ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+		</script>
+			</head>
+
+	<body id="body">
+		<script src="/cookies_komunikat.js"></script>
+		<div>
+			<br>
+			<table style="border-collapse: collapse; width: 1000px; margin: 0 auto; border: 1px solid rgb(100,100,100)">
+				<tr>
+					<td class="head">
+													<a href="/" target="_self" title="https://metryki.genealodzy.pl/">
+								<img style="display: block;max-width: 1000px" src=/images/PTG_Banner_Skanoteka-OPP_pl_PL.png?v3 alt="metryki.genealodzy.pl" title="metryki.genealodzy.pl"></a>
+											</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+													<div class="center">
+
+								<table border="0" cellpadding="0" cellspacing="0" width="98%">
+									<tr>
+										<td width="100%">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td width="230" class="left valign-middle">
+																											</td>
+													<td width="220" class="valign-middle">
+														<div id="fb-root"></div>
+														<script>
+															(function (d, s, id) {
+var js,
+fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) 
+return;
+
+
+js = d.createElement(s);
+js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+														</script>
+														<div class="fb-share-button" data-href="https://skanoteka.genealodzy.pl" data-layout="button"></div>
+														<a href="https://twitter.com/intent/tweet?button_hashtag=Skanoteka&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Projekt digitalizacji i indeksacji metryk" data-url="https://skanoteka.genealodzy.pl" data-show-count="false"></a>
+
+													</td>
+													<td width="400" class="valign-middle">
+														<a href="https://genealodzy.pl"><img class="valign-sub" src="images/navhome.gif" width="20" height="20" alt="Genealodzy.PL" title="Genealodzy.PL"></a>
+&nbsp;&nbsp;&nbsp;
+<a href="/"><img class="valign-sub" src="images/navmapa.gif" width="20" height="20" alt="Strona główna" title="Strona główna"></a>
+<a href="https://geneteka.genealodzy.pl/plany.php"><img src="images/navplany.gif" class="valign-sub" width="20" height="20" alt="Zasoby w trakcie indeksacji" title="Zasoby w trakcie indeksacji"></a>
+<a href="https://geneteka.genealodzy.pl/jak-indeksowac-U-Z.php"><img src="images/navhelp.gif" class="valign-sub" width="20" height="20" alt="Jak indeksować" title="Jak indeksować"></a>
+<a href="opjk"><img src="images/navjak.gif" class="valign-sub" width="20" height="20" alt="Jak wyszukiwać" title="Jak wyszukiwać"></a>
+<a href="https://genealodzy.pl/donate-pol"><img src="images/navdonate.gif" class="valign-sub" width="20" height="20" alt="Jak wspomóc" title="Jak wspomóc"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/?op=lang&amp;lang=pl_PL"><img src="images/flag-pol.png" class="valign-middle" alt="flag-pol.png" width="30" height="16" title="polski"></a>
+<a href="/?op=lang&amp;lang=en_EN"><img src="images/flag-eng.png" class="valign-middle" alt="flag-eng.png" width="30" height="16" title="english"></a>
+													</td>
+													<td></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+											</td>
+				</tr>
+
+				<tr>
+					<td>
+							<script>
+		$(function () {
+			var $acc = $("#accordion");
+		$acc.accordion({heightStyle: "content", header: "h5", navigation: true,
+				activate: function (event, ui) {
+        // nowy nagłówek (kliknięty / otwarty)
+        var $header = ui.newHeader;
+
+        if ($header.length) {
+            // np. <h3 id="panel-1"> ... </h3>
+            var id = $header.attr("id");
+
+            if (id) {
+                // zmień hash bez przeładowania
+                history.replaceState(null, "", "#" + id);
+                // prostsza wersja:
+                // location.hash = id;
+            }
+        }
+		 }
+});
+
+	var hash = window.location.hash;
+    if (hash) {
+        // szukamy nagłówka z tym ID
+        var $header = $acc.find(hash); // działa jak $("#accordion #panel-2")
+        if ($header.length) {
+            // który to numer nagłówka w accordionie?
+            var index = $acc.find("> h5").index($header);
+            if (index !== -1) {
+				$acc.accordion("option", "animate", false);
+                $acc.accordion("option", "active", index);
+				$acc.accordion("option", "animate", true);
+
+                // opcjonalnie przewinięcie do nagłówka:
+                $('html, body').scrollTop($header.offset().top);
+            }
+        }
+    }
+
+});
+	</script>
+	<table width="100%">
+		<tr>
+			<td width="70%" class="valign-top">
+									<span class="grey">Województwo:
+						<a href="woj-PK">podkarpackie</a>,
+						Powiat:
+						<a href="pow-286"> rzeszowski</a>
+					</span>
+					<br>
+								Zespół:
+				<span class="bold">
+					99901
+					/
+					Księgi parafialne w parafiach diecezji rzeszowskiej
+					<a href="opozespole-id5617">O zespole</a>
+				</span>
+				<p>
+											<div class="center">
+							<a href="/?op=tg&id=5617">Wyszukaj w tagach (46)</a><br>
+							<br>
+							Serie i jednostki zespołu<br><br></div>
+
+						<div id="accordion">
+															<h5 id="seria-6">Seria:
+									Biecz-Fara, Parafia Bożego Ciała</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se6>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se6>
+					Księga bierzmowanych t. I
+				</a>
+			</td>
+			<td>1889-1926</td>
+			<td title="Księga bierzmowanych t. I">
+															</td>
+			<td class="right">
+				37
+			</td>
+						<td class="right">
+				1
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se6>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se6>
+					Księga bierzmowanych t. II
+				</a>
+			</td>
+			<td>1929</td>
+			<td title="Księga bierzmowanych t. II">
+															</td>
+			<td class="right">
+				20
+			</td>
+						<td class="right">
+				1
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-33">Seria:
+									Dębowiec, Parafia św. Bartłomieja Apostoła</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se33>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se33>
+					Księga członków Towarzystwa Wstrzemięźliwości
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Księga członków Towarzystwa Wstrzemięźliwości">
+															</td>
+			<td class="right">
+				36
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se33>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se33>
+					Księga ludności
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Księga ludności">
+															</td>
+			<td class="right">
+				180
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy3-se33>
+					3
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy3-se33>
+					Status animarum
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status animarum">
+															</td>
+			<td class="right">
+				212
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-35">Seria:
+									Dobrzechów, Parafia św. Stanisława Biskupa </h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se35>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se35>
+					Status animarum m. Dobrzechów
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Dobrzechów">
+															</td>
+			<td class="right">
+				139
+			</td>
+						<td class="right">
+				1
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se35>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se35>
+					Status animarum m. Grodzisko
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Grodzisko">
+															</td>
+			<td class="right">
+				167
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy3-se35>
+					3
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy3-se35>
+					Status animarum m. Grudeczna Golcówka-Wysoka
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Grudeczna Golcówka-Wysoka">
+															</td>
+			<td class="right">
+				128
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy4-se35>
+					4
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy4-se35>
+					Status animarum m. Kalembina
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Kalembina">
+															</td>
+			<td class="right">
+				48
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy5-se35>
+					5
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy5-se35>
+					Status animarum m. Kozłówek
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Kozłówek">
+															</td>
+			<td class="right">
+				117
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy6-se35>
+					6
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy6-se35>
+					Status animarum m. Kożuchów
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Kożuchów">
+															</td>
+			<td class="right">
+				54
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy7-se35>
+					7
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy7-se35>
+					Status animarum m. Markuszowa
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Markuszowa">
+															</td>
+			<td class="right">
+				88
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy8-se35>
+					8
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy8-se35>
+					Status animarum m. Różanka
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Różanka">
+															</td>
+			<td class="right">
+				74
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy9-se35>
+					9
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy9-se35>
+					Status animarum m. Stodolina Oparówka-Wysoka
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Stodolina Oparówka-Wysoka">
+															</td>
+			<td class="right">
+				296
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy10-se35>
+					10
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy10-se35>
+					Status animarum m. Tułkowice
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Tułkowice">
+															</td>
+			<td class="right">
+				47
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy11-se35>
+					11
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy11-se35>
+					Status animarum m. Zawadka
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status animarum m. Zawadka">
+															</td>
+			<td class="right">
+				88
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-62">Seria:
+									Harklowa, Parafia św. Doroty</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se62>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se62>
+					Status animarum
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status animarum">
+															</td>
+			<td class="right">
+				96
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-95">Seria:
+									Kołaczyce, Parafia św. Anny</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se95>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se95>
+					Księga bierzmowanych
+				</a>
+			</td>
+			<td>1893-1908</td>
+			<td title="Księga bierzmowanych">
+															</td>
+			<td class="right">
+				37
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se95>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se95>
+					Księga odwiedzin chorych
+				</a>
+			</td>
+			<td>1859-1945</td>
+			<td title="Księga odwiedzin chorych">
+															</td>
+			<td class="right">
+				77
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy3-se95>
+					3
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy3-se95>
+					Księga parafialna
+				</a>
+			</td>
+			<td></td>
+			<td title="Księga parafialna">
+															</td>
+			<td class="right">
+				17
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-105">Seria:
+									Libusza, Parafia Narodzenia Najświętszej Maryi Panny</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se105>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se105>
+					Księga Bractwa Niepokalanego Poczęcia Najświętszej Maryi Panny w Bieczu
+				</a>
+			</td>
+			<td>1755-1880</td>
+			<td title="Księga Bractwa Niepokalanego Poczęcia Najświętszej Maryi Panny w Bieczu">
+															</td>
+			<td class="right">
+				74
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se105>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se105>
+					Status animarum
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status animarum">
+															</td>
+			<td class="right">
+				198
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-117">Seria:
+									Łączki Kucharskie, Parafia św. Bartłomieja Apostoła</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se117>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se117>
+					Zmarli bracia i siostry arcybractwa różańcowego
+				</a>
+			</td>
+			<td>1902</td>
+			<td title="Zmarli bracia i siostry arcybractwa różańcowego">
+															</td>
+			<td class="right">
+				13
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-120">Seria:
+									Łężyny, Parafia św. Mikołaja</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se120>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se120>
+					Księga bierzmowanych
+				</a>
+			</td>
+			<td>1883-1923</td>
+			<td title="Księga bierzmowanych">
+															</td>
+			<td class="right">
+				37
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se120>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se120>
+					Spis członków Papieskiego Dzieła Rozkrzewienia wiary
+				</a>
+			</td>
+			<td>1844-1889</td>
+			<td title="Spis członków Papieskiego Dzieła Rozkrzewienia wiary">
+															</td>
+			<td class="right">
+				10
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-143">Seria:
+									Nockowa, Parafia św. Michała Archanioła</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se143>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se143>
+					Meszne
+				</a>
+			</td>
+			<td>1837-1871</td>
+			<td title="Meszne">
+															</td>
+			<td class="right">
+				63
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se143>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se143>
+					Meszne spisy gospodarzy
+				</a>
+			</td>
+			<td>1720-1765</td>
+			<td title="Meszne spisy gospodarzy">
+															</td>
+			<td class="right">
+				150
+			</td>
+						<td class="right">
+				38
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-150">Seria:
+									Osiek Jasielski, Parafia Przemienienia Pańskiego</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se150>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se150>
+					Status Animarum T. I
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status Animarum T. I">
+															</td>
+			<td class="right">
+				57
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se150>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se150>
+					Status Animarum T. II
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status Animarum T. II">
+															</td>
+			<td class="right">
+				36
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-157">Seria:
+									Połomia, Parafia św. Mikołaja</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se157>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se157>
+					Inwentarz krów kościelnych
+				</a>
+			</td>
+			<td>1822</td>
+			<td title="Inwentarz krów kościelnych">
+															</td>
+			<td class="right">
+				6
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-206">Seria:
+									Rzeszów-Przybyszówka, Parafia Matki Bożej Pocieszenia</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se206>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se206>
+					Status Animarum m. Bzianka
+				</a>
+			</td>
+			<td>1775-1855</td>
+			<td title="Status Animarum m. Bzianka">
+															</td>
+			<td class="right">
+				30
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-219">Seria:
+									Samoklęski, Parafia św. Marii Magdaleny</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se219>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se219>
+					Status Animarum T. I
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status Animarum T. I">
+															</td>
+			<td class="right">
+				179
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se219>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se219>
+					Status Animarum T. II
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status Animarum T. II">
+															</td>
+			<td class="right">
+				222
+			</td>
+						<td class="right">
+				1
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy3-se219>
+					3
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy3-se219>
+					Status Animarum T. III
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status Animarum T. III">
+															</td>
+			<td class="right">
+				307
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy4-se219>
+					4
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy4-se219>
+					Variae
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Variae">
+															</td>
+			<td class="right">
+				10
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-225">Seria:
+									Skalnik, Parafia św. Klemensa Papieża</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se225>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se225>
+					Status animarum
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status animarum">
+															</td>
+			<td class="right">
+				72
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-231">Seria:
+									Stary Żmigród, Parafia św. Katarzyny</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se231>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se231>
+					Księga bierzmowanych
+				</a>
+			</td>
+			<td>1906-1923</td>
+			<td title="Księga bierzmowanych">
+															</td>
+			<td class="right">
+				30
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se231>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se231>
+					Księga Bractwa Różańca Św. Żywego
+				</a>
+			</td>
+			<td>1865-1904</td>
+			<td title="Księga Bractwa Różańca Św. Żywego">
+															</td>
+			<td class="right">
+				48
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-250">Seria:
+									Trzcinica, Parafia Przemienienia Pańskiego i św. Doroty</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se250>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se250>
+					Księga Towarzystwa Wstrzemięźliwości i Trzeźwości 
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Księga Towarzystwa Wstrzemięźliwości i Trzeźwości ">
+															</td>
+			<td class="right">
+				42
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-272">Seria:
+									Zabierzów, Parafia Wszystkich Świętych</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se272>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se272>
+					Status Animarum
+				</a>
+			</td>
+			<td>około 1830-1925</td>
+			<td title="Status Animarum">
+															</td>
+			<td class="right">
+				221
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-279">Seria:
+									Załęże, Parafia św. Jana Chrzciciela</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se279>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se279>
+					Księga Arcystowarzyszenia Najświętszej Rodziny
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Księga Arcystowarzyszenia Najświętszej Rodziny">
+															</td>
+			<td class="right">
+				30
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se279>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se279>
+					Księga bractwa Najświętszego Sakramentu
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Księga bractwa Najświętszego Sakramentu">
+															</td>
+			<td class="right">
+				15
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy3-se279>
+					3
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy3-se279>
+					Księga bractwa Trzeźwości
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Księga bractwa Trzeźwości">
+															</td>
+			<td class="right">
+				25
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy4-se279>
+					4
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy4-se279>
+					Status animarum
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td title="Status animarum">
+															</td>
+			<td class="right">
+				136
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-282">Seria:
+									Zgłobień, Parafia św. Andrzeja Apostoła</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se282>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se282>
+					Status Animarum
+				</a>
+			</td>
+			<td>XIX wiek</td>
+			<td title="Status Animarum">
+															</td>
+			<td class="right">
+				349
+			</td>
+						<td class="right">
+				4
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+															<h5 id="seria-284">Seria:
+									Żyznów, Parafia Przemienienia Pańskiego</h5>
+								<div>
+																		<table width="100%" border="0">
+	<tr>
+		<td class="top center">Jednostka</td>
+		<td class="top">Opis</td>
+		<td class="top sygnatury-lata">Lata</td>
+		<td class="top">Info</td>
+		<td class="top right">Pliki</td>
+				<td class="top right">Tagi</td>
+			</tr>
+
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy1-se284>
+					1
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy1-se284>
+					Protokoły ślubne m. Bonarówka
+				</a>
+			</td>
+			<td>1828-1944</td>
+			<td title="Protokoły ślubne m. Bonarówka">
+															</td>
+			<td class="right">
+				82
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	
+
+				<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			
+			<td class="center">
+				<a href=id5617-sy2-se284>
+					2
+				</a>
+			</td>
+			<td class=bad>
+				<a href=id5617-sy2-se284>
+					Protokoły ślubne m. Bonarówka
+				</a>
+			</td>
+			<td>1928-1935</td>
+			<td title="Protokoły ślubne m. Bonarówka">
+															</td>
+			<td class="right">
+				104
+			</td>
+						<td class="right">
+				0
+			</td>
+			
+		</tr>
+	</table>
+								</div>
+													</div>
+					
+					<br>
+											<a href="opza-ar9">powrót do archiwum</a>
+									</p>
+			</td>
+			<td width="30%" class="right-table valign-top">
+				<span class="center">
+					<p>
+													Autorzy zdjęć wybranego zespołu:<br><br><pre>Tomasz Sączawa
+Mateusz Reczek
+Damian Zygarlicki
+Szymon Nowak
+Joanna Cieplak</pre>
+											</p>
+				</span><br>&nbsp;
+
+			</td>
+		</tr>
+	</td>
+</tr></table>					</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+
+													<div class="center">
+								<a href="https://genealodzy.pl/donate-pol"><img src="images/donate.jpg" alt="donate"></a><br>
+								<span class="darkslateblue">&copy; 2010-2026
+									<a href="http://genealodzy.pl">Polskie Towarzystwo Genealogiczne</a>
+								::
+								<script>
+									user = 'skanoteka';
+									site = "genealodzy.pl";
+									document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+									document.write('Administrator<\/a> ');
+								</script>
+								::
+								</span>
+							</div>
+											</td>
+				</tr>
+
+			</table>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,8519 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Skanoteka - Baza skanów dokumentów o wartości genealogicznej</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://skanoteka.genealodzy.pl/images/PTG_Logo_Skanoteka_pl_PL_200.png" />
+<meta name="author" content="Genealodzy.PL Genealogia">
+<meta name="copyright" content="Copyright (c) 2006-2026 Polskie Towarzystwo Genealogiczne">
+<meta name="description" content="Baza skanów dokumentów o wartości genealogicznej.">
+<meta name="revisit-after" content="1 days">
+<link rel="canonical" href="https://skanoteka.genealodzy.pl">
+<link rel="stylesheet" href="style/style.css?=v6" type="text/css">
+<link rel="stylesheet" href="style/ajaxcss.css?=v2" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?=v2">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?=v2">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?=v2">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="shortcut icon" href="/images/favicon.ico?=v2">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<style>
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #f3e2e7;
+	border: 1px solid #c5c5c5;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #f3d0e7;
+	border: 1px solid #c5c5c5;
+	color: black;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 0px 0px;
+	background: none;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url("https://code.jquery.com/ui/1.13.2/themes/base/images/ui-icons_444444_256x240.png");
+}
+
+:root
+{
+	--background-image-url: url('/images/back-pink.gif');
+}</style><link rel="shortcut icon" href="images/favicon.ico">
+
+		<script async src="https://platform.twitter.com/widgets.js"></script>
+		<script src="ajax/ajaxcore.js"></script>
+		<script src="ajax/ajax.js"></script>
+		<script src="style/centeredpop.js"></script>
+		<script>
+			var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22184319-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+var ga = document.createElement('script');
+ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+		</script>
+			</head>
+
+	<body id="body">
+		<script src="/cookies_komunikat.js"></script>
+		<div>
+			<br>
+			<table style="border-collapse: collapse; width: 1000px; margin: 0 auto; border: 1px solid rgb(100,100,100)">
+				<tr>
+					<td class="head">
+													<a href="/" target="_self" title="https://metryki.genealodzy.pl/">
+								<img style="display: block;max-width: 1000px" src=/images/PTG_Banner_Skanoteka-OPP_pl_PL.png?v3 alt="metryki.genealodzy.pl" title="metryki.genealodzy.pl"></a>
+											</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+													<div class="center">
+
+								<table border="0" cellpadding="0" cellspacing="0" width="98%">
+									<tr>
+										<td width="100%">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td width="230" class="left valign-middle">
+																											</td>
+													<td width="220" class="valign-middle">
+														<div id="fb-root"></div>
+														<script>
+															(function (d, s, id) {
+var js,
+fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) 
+return;
+
+
+js = d.createElement(s);
+js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+														</script>
+														<div class="fb-share-button" data-href="https://skanoteka.genealodzy.pl" data-layout="button"></div>
+														<a href="https://twitter.com/intent/tweet?button_hashtag=Skanoteka&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Projekt digitalizacji i indeksacji metryk" data-url="https://skanoteka.genealodzy.pl" data-show-count="false"></a>
+
+													</td>
+													<td width="400" class="valign-middle">
+														<a href="https://genealodzy.pl"><img class="valign-sub" src="images/navhome.gif" width="20" height="20" alt="Genealodzy.PL" title="Genealodzy.PL"></a>
+&nbsp;&nbsp;&nbsp;
+<a href="/"><img class="valign-sub" src="images/navmapa.gif" width="20" height="20" alt="Strona główna" title="Strona główna"></a>
+<a href="https://geneteka.genealodzy.pl/plany.php"><img src="images/navplany.gif" class="valign-sub" width="20" height="20" alt="Zasoby w trakcie indeksacji" title="Zasoby w trakcie indeksacji"></a>
+<a href="https://geneteka.genealodzy.pl/jak-indeksowac-U-Z.php"><img src="images/navhelp.gif" class="valign-sub" width="20" height="20" alt="Jak indeksować" title="Jak indeksować"></a>
+<a href="opjk"><img src="images/navjak.gif" class="valign-sub" width="20" height="20" alt="Jak wyszukiwać" title="Jak wyszukiwać"></a>
+<a href="https://genealodzy.pl/donate-pol"><img src="images/navdonate.gif" class="valign-sub" width="20" height="20" alt="Jak wspomóc" title="Jak wspomóc"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/?op=lang&amp;lang=pl_PL"><img src="images/flag-pol.png" class="valign-middle" alt="flag-pol.png" width="30" height="16" title="polski"></a>
+<a href="/?op=lang&amp;lang=en_EN"><img src="images/flag-eng.png" class="valign-middle" alt="flag-eng.png" width="30" height="16" title="english"></a>
+													</td>
+													<td></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+											</td>
+				</tr>
+
+				<tr>
+					<td>
+							<br><h2 class="center">Parafia</h2><br>
+		<div style="text-align: center">Szukaj:
+		<input type="text" id="nazwa" onkeyup="var nazwa=encodeURIComponent(document.getElementById(&#039;nazwa&#039;).value);callBoczek(&#039;index.php?op=sz&amp;ar=9&amp;nazwa=&#039;+nazwa,&#039;boczek&#039;,&#039;&#039;)">
+	</div><br>
+	<div id="boczek">
+		<h2 style="text-align:center">Znalezione zespoły</h2>
+<table style="margin: 0 auto; width: 90%; border-collapse: separate" border="0">
+	<tr>
+		<td class="top">L.p.</td>
+		<td class="top right">Zespół</td>
+		<td class="top">Opis zespołu</td>
+		<td class="top">Zakres lat</td>
+		<td class="top right">Ilość plików</td>
+	</tr>
+
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>1</td>
+
+						<td class="right">
+				<a href=id5016>
+					80
+				</a>
+			</td>
+			<td>
+				<a href=id5016>
+					Księgi metrykalne parafii rzymskokatolickiej Barcice
+				</a>
+			</td>
+			<td>1762-1901</td>
+			<td class="right">994</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>2</td>
+
+						<td class="right">
+				<a href=id5690>
+					127
+				</a>
+			</td>
+			<td>
+				<a href=id5690>
+					Księgi metrykalne parafii rzymskokatolickiej Bączal Dolny
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1869</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>3</td>
+
+						<td class="right">
+				<a href=id5839>
+					178
+				</a>
+			</td>
+			<td>
+				<a href=id5839>
+					Księgi metrykalne parafii rzymskokatolickiej Będziemyśl
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">519</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>4</td>
+
+						<td class="right">
+				<a href=id4803>
+					190
+				</a>
+			</td>
+			<td>
+				<a href=id4803>
+					Księgi metrykalne parafii rzymskokatolickiej Biadoliny Radłowskie
+				</a>
+			</td>
+			<td>1784-1901</td>
+			<td class="right">727</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>5</td>
+
+						<td class="right">
+				<a href=id5669>
+					274
+				</a>
+			</td>
+			<td>
+				<a href=id5669>
+					Księgi metrykalne parafii rzymskokatolickiej Biecz-Fara
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">3900</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>6</td>
+
+						<td class="right">
+				<a href=id4824>
+					286
+				</a>
+			</td>
+			<td>
+				<a href=id4824>
+					Księgi metrykalne parafii rzymskokatolickiej Bielcza
+				</a>
+			</td>
+			<td>1784-1936</td>
+			<td class="right">1002</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>7</td>
+
+						<td class="right">
+				<a href=id4454>
+					293
+				</a>
+			</td>
+			<td>
+				<a href=id4454>
+					Księgi metrykalne parafii rzymskokatolickiej Bieliny
+				</a>
+			</td>
+			<td>1845-1943</td>
+			<td class="right">765</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>8</td>
+
+						<td class="right">
+				<a href=id1947>
+					300
+				</a>
+			</td>
+			<td>
+				<a href=id1947>
+					Księgi metrykalne parafii rzymskokatolickiej w Rabie Wyżnej
+				</a>
+			</td>
+			<td>1629-1942</td>
+			<td class="right">1829</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>9</td>
+
+						<td class="right">
+				<a href=id2035>
+					305
+				</a>
+			</td>
+			<td>
+				<a href=id2035>
+					Księgi metrykalne parafii rzymskokatolickiej w Radoczy
+				</a>
+			</td>
+			<td>1639-1770</td>
+			<td class="right">212</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>10</td>
+
+						<td class="right">
+				<a href=id2037>
+					310
+				</a>
+			</td>
+			<td>
+				<a href=id2037>
+					Księgi metrykalne parafii rzymskokatolickiej w Graboszycach
+				</a>
+			</td>
+			<td>1726-1774</td>
+			<td class="right">92</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>11</td>
+
+						<td class="right">
+				<a href=id2581>
+					315
+				</a>
+			</td>
+			<td>
+				<a href=id2581>
+					Księgi metrykalne parafii rzymskokatolickiej w Rabce-Zdrój
+				</a>
+			</td>
+			<td>1605-1922</td>
+			<td class="right">4812</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>12</td>
+
+						<td class="right">
+				<a href=id5005>
+					340
+				</a>
+			</td>
+			<td>
+				<a href=id5005>
+					Księgi metrykalne parafii rzymskokatolickiej Biesiadki
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">976</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>13</td>
+
+						<td class="right">
+				<a href=id5803>
+					346
+				</a>
+			</td>
+			<td>
+				<a href=id5803>
+					Księgi metrykalne parafii rzymskokatolickiej Bieździedza
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1612</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>14</td>
+
+						<td class="right">
+				<a href=id5044>
+					347
+				</a>
+			</td>
+			<td>
+				<a href=id5044>
+					Księgi metrykalne parafii rzymskokatolickiej Krzeszów nad Sanem
+				</a>
+			</td>
+			<td>1706-1944</td>
+			<td class="right">9730</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>15</td>
+
+						<td class="right">
+				<a href=id5628>
+					355
+				</a>
+			</td>
+			<td>
+				<a href=id5628>
+					Księgi metrykalne parafii rzymskokatolickiej Binarowa
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1617</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>16</td>
+
+						<td class="right">
+				<a href=id4962>
+					367
+				</a>
+			</td>
+			<td>
+				<a href=id4962>
+					Księgi metrykalne parafii rzymskokatolickiej Biskupice Radłowskie
+				</a>
+			</td>
+			<td>1784-1913</td>
+			<td class="right">398</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>17</td>
+
+						<td class="right">
+				<a href=id4756>
+					411
+				</a>
+			</td>
+			<td>
+				<a href=id4756>
+					Księgi metrykalne parafii rzymskokatolickiej Bobowa
+				</a>
+			</td>
+			<td>1624-1944</td>
+			<td class="right">2813</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>18</td>
+
+						<td class="right">
+				<a href=id4638>
+					426
+				</a>
+			</td>
+			<td>
+				<a href=id4638>
+					Księgi metrykalne parafii rzymskokatolickiej Bochnia
+				</a>
+			</td>
+			<td>1599-1925</td>
+			<td class="right">7702</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>19</td>
+
+						<td class="right">
+				<a href=id5662>
+					449
+				</a>
+			</td>
+			<td>
+				<a href=id5662>
+					Księgi metrykalne parafii rzymskokatolickiej Boguchwała
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">612</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>20</td>
+
+						<td class="right">
+				<a href=id4844>
+					454
+				</a>
+			</td>
+			<td>
+				<a href=id4844>
+					Księgi metrykalne parafii rzymskokatolickiej Bogumiłowice
+				</a>
+			</td>
+			<td>1824-1944</td>
+			<td class="right">240</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>21</td>
+
+						<td class="right">
+				<a href=id5057>
+					476
+				</a>
+			</td>
+			<td>
+				<a href=id5057>
+					Księgi metrykalne parafii rzymskokatolickiej Bolechowice
+				</a>
+			</td>
+			<td>1644-1944</td>
+			<td class="right">3421</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>22</td>
+
+						<td class="right">
+				<a href=id4366>
+					481
+				</a>
+			</td>
+			<td>
+				<a href=id4366>
+					Księgi metrykalne parafii rzymskokatolickiej Bolesław
+				</a>
+			</td>
+			<td>1648-1944</td>
+			<td class="right">3609</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>23</td>
+
+						<td class="right">
+				<a href=id4865>
+					512
+				</a>
+			</td>
+			<td>
+				<a href=id4865>
+					Księgi metrykalne parafii rzymskokatolickiej Borek
+				</a>
+			</td>
+			<td>1886-1921</td>
+			<td class="right">152</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>24</td>
+
+						<td class="right">
+				<a href=id4282>
+					520
+				</a>
+			</td>
+			<td>
+				<a href=id4282>
+					Księgi metrykalne parafii rzymskokatolickiej Borki
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1303</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>25</td>
+
+						<td class="right">
+				<a href=id4286>
+					531
+				</a>
+			</td>
+			<td>
+				<a href=id4286>
+					Księgi metrykalne Parafii Rzymskokatolickiej Borowa k. Dębicy
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">836</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>26</td>
+
+						<td class="right">
+				<a href=id5013>
+					532
+				</a>
+			</td>
+			<td>
+				<a href=id5013>
+					Księgi metrykalne parafii rzymskokatolickiej Borowa k. Mielca
+				</a>
+			</td>
+			<td>1777-1944</td>
+			<td class="right">1664</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>27</td>
+
+						<td class="right">
+				<a href=id4249>
+					550
+				</a>
+			</td>
+			<td>
+				<a href=id4249>
+					Księgi metrykalne parafii rzymskokatolickiej Borusowa
+				</a>
+			</td>
+			<td>1870-1910</td>
+			<td class="right">121</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>28</td>
+
+						<td class="right">
+				<a href=id4969>
+					557
+				</a>
+			</td>
+			<td>
+				<a href=id4969>
+					Księgi metrykalne parafii rzymskokatolickiej Borzęcin
+				</a>
+			</td>
+			<td>1784-1901</td>
+			<td class="right">3235</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>29</td>
+
+						<td class="right">
+				<a href=id4616>
+					596
+				</a>
+			</td>
+			<td>
+				<a href=id4616>
+					Księgi metrykalne parafii rzymskokatolickiej Bratkowice
+				</a>
+			</td>
+			<td>1787-1919</td>
+			<td class="right">1056</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>30</td>
+
+						<td class="right">
+				<a href=id4933>
+					647
+				</a>
+			</td>
+			<td>
+				<a href=id4933>
+					Księgi metrykalne parafii rzymskokatolickiej Bruśnik
+				</a>
+			</td>
+			<td>1784-1921</td>
+			<td class="right">1167</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>31</td>
+
+						<td class="right">
+				<a href=id4961>
+					669
+				</a>
+			</td>
+			<td>
+				<a href=id4961>
+					Księgi metrykalne parafii rzymskokatolickiej Brzesko
+				</a>
+			</td>
+			<td>1790-1944</td>
+			<td class="right">1181</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>32</td>
+
+						<td class="right">
+				<a href=id5820>
+					687
+				</a>
+			</td>
+			<td>
+				<a href=id5820>
+					Księgi metrykalne parafii rzymskokatolickiej Brzeziny
+				</a>
+			</td>
+			<td>1595-1945</td>
+			<td class="right">2844</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>33</td>
+
+						<td class="right">
+				<a href=id4207>
+					692
+				</a>
+			</td>
+			<td>
+				<a href=id4207>
+					Księgi metrykalne parafii rzymskokatolickiej Brzezna
+				</a>
+			</td>
+			<td>1786-1909</td>
+			<td class="right">548</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>34</td>
+
+						<td class="right">
+				<a href=id5014>
+					694
+				</a>
+			</td>
+			<td>
+				<a href=id5014>
+					Księgi metrykalne parafii rzymskokatolickiej Brzeźnica k. Dębicy
+				</a>
+			</td>
+			<td>1762-1890</td>
+			<td class="right">741</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>35</td>
+
+						<td class="right">
+				<a href=id5015>
+					700
+				</a>
+			</td>
+			<td>
+				<a href=id5015>
+					Księgi metrykalne parafii rzymskokatolickiej Brzeźnica k. Bochni
+				</a>
+			</td>
+			<td>1784-1923</td>
+			<td class="right">1286</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>36</td>
+
+						<td class="right">
+				<a href=id5790>
+					711
+				</a>
+			</td>
+			<td>
+				<a href=id5790>
+					Księgi metrykalne parafii rzymskokatolickiej Brzostek
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2288</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>37</td>
+
+						<td class="right">
+				<a href=id5009>
+					718
+				</a>
+			</td>
+			<td>
+				<a href=id5009>
+					Księgi metrykalne parafii rzymskokatolickiej Brzozowa
+				</a>
+			</td>
+			<td>1726-1944</td>
+			<td class="right">1513</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>38</td>
+
+						<td class="right">
+				<a href=id5853>
+					732
+				</a>
+			</td>
+			<td>
+				<a href=id5853>
+					Księgi metrykalne parafii rzymskokatolickiej Brzyska
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2743</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>39</td>
+
+						<td class="right">
+				<a href=id4938>
+					735
+				</a>
+			</td>
+			<td>
+				<a href=id4938>
+					Księgi metrykalne parafii rzymskokatolickiej Buchcice
+				</a>
+			</td>
+			<td>1861-1923</td>
+			<td class="right">125</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>40</td>
+
+						<td class="right">
+				<a href=id4823>
+					739
+				</a>
+			</td>
+			<td>
+				<a href=id4823>
+					Księgi metrykalne parafii rzymskokatolickiej Bucze
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">135</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>41</td>
+
+						<td class="right">
+				<a href=id4902>
+					765
+				</a>
+			</td>
+			<td>
+				<a href=id4902>
+					Księgi metrykalne parafii rzymskokatolickiej Bukowiec
+				</a>
+			</td>
+			<td>1785-1925</td>
+			<td class="right">116</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>42</td>
+
+						<td class="right">
+				<a href=id4850>
+					789
+				</a>
+			</td>
+			<td>
+				<a href=id4850>
+					Księgi metrykalne parafii rzymskokatolickiej Burzyn
+				</a>
+			</td>
+			<td>1859-1920</td>
+			<td class="right">136</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>43</td>
+
+						<td class="right">
+				<a href=id4835>
+					851
+				</a>
+			</td>
+			<td>
+				<a href=id4835>
+					Księgi metrykalne parafii rzymskokatolickiej Bystra
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">828</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>44</td>
+
+						<td class="right">
+				<a href=id5362>
+					0851d
+				</a>
+			</td>
+			<td>
+				<a href=id5362>
+					Księgi metrykalne parafii rzymskokatolickiej Potok Wielki
+				</a>
+			</td>
+			<td>1596-1894</td>
+			<td class="right">5576</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>45</td>
+
+						<td class="right">
+				<a href=id5841>
+					856
+				</a>
+			</td>
+			<td>
+				<a href=id5841>
+					Księgi metrykalne parafii rzymskokatolickiej Bystrzyca
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">669</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>46</td>
+
+						<td class="right">
+				<a href=id4662>
+					868
+				</a>
+			</td>
+			<td>
+				<a href=id4662>
+					Księgi metrykalne parafii rzymskokatolickiej Pysznica
+				</a>
+			</td>
+			<td>1760-1943</td>
+			<td class="right">3996</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>47</td>
+
+						<td class="right">
+				<a href=id4841>
+					906
+				</a>
+			</td>
+			<td>
+				<a href=id4841>
+					Księgi metrykalne parafii rzymskokatolickiej Cerekiew
+				</a>
+			</td>
+			<td>1664-1944</td>
+			<td class="right">1835</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>48</td>
+
+						<td class="right">
+				<a href=id4881>
+					938
+				</a>
+			</td>
+			<td>
+				<a href=id4881>
+					Księgi metrykalne parafii rzymskokatolickiej Chełm
+				</a>
+			</td>
+			<td>1777-1925</td>
+			<td class="right">885</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>49</td>
+
+						<td class="right">
+				<a href=id4284>
+					1034
+				</a>
+			</td>
+			<td>
+				<a href=id4284>
+					Księgi metrykalne parafii rzymskokatolickiej Chomranice
+				</a>
+			</td>
+			<td>1861-1941</td>
+			<td class="right">451</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>50</td>
+
+						<td class="right">
+				<a href=id4191>
+					1041
+				</a>
+			</td>
+			<td>
+				<a href=id4191>
+					Księgi metrykalne Parafii Rzymskokatolickiej Chorzelów
+				</a>
+			</td>
+			<td>1612-1944</td>
+			<td class="right">3306</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>51</td>
+
+						<td class="right">
+				<a href=id4568>
+					1102
+				</a>
+			</td>
+			<td>
+				<a href=id4568>
+					Księgi metrykalne Parafii Rzymskokatolickiej Głogów Małopolski
+				</a>
+			</td>
+			<td>1847-1944</td>
+			<td class="right">643</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>52</td>
+
+						<td class="right">
+				<a href=id4818>
+					1104
+				</a>
+			</td>
+			<td>
+				<a href=id4818>
+					Księgi metrykalne parafii rzymskokatolickiej Chwałowice
+				</a>
+			</td>
+			<td>1786-1924</td>
+			<td class="right">820</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>53</td>
+
+						<td class="right">
+				<a href=id5833>
+					1135
+				</a>
+			</td>
+			<td>
+				<a href=id5833>
+					Księgi metrykalne parafii rzymskokatolickiej Cieklin
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1762</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>54</td>
+
+						<td class="right">
+				<a href=id4935>
+					1145
+				</a>
+			</td>
+			<td>
+				<a href=id4935>
+					Księgi metrykalne parafii rzymskokatolickiej Cieniawa
+				</a>
+			</td>
+			<td>1822-1921</td>
+			<td class="right">149</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>55</td>
+
+						<td class="right">
+				<a href=id4892>
+					1172
+				</a>
+			</td>
+			<td>
+				<a href=id4892>
+					Księgi metrykalne parafii rzymskokatolickiej Ciężkowice
+				</a>
+			</td>
+			<td>1759-1924</td>
+			<td class="right">2500</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>56</td>
+
+						<td class="right">
+				<a href=id4905>
+					1174
+				</a>
+			</td>
+			<td>
+				<a href=id4905>
+					Księgi metrykalne parafii rzymskokatolickiej Cikowice
+				</a>
+			</td>
+			<td>1838-1944</td>
+			<td class="right">1030</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>57</td>
+
+						<td class="right">
+				<a href=id4254>
+					1203
+				</a>
+			</td>
+			<td>
+				<a href=id4254>
+					Księgi metrykalne Parafii Rzymskokatolickiej Czarna k. Tarnowa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">910</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>58</td>
+
+						<td class="right">
+				<a href=id5683>
+					1209
+				</a>
+			</td>
+			<td>
+				<a href=id5683>
+					Księgi metrykalne parafii rzymskokatolickiej Czarna Sędziszowska
+				</a>
+			</td>
+			<td>1819-1945</td>
+			<td class="right">1439</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>59</td>
+
+						<td class="right">
+				<a href=id4228>
+					1232
+				</a>
+			</td>
+			<td>
+				<a href=id4228>
+					Księgi metrykalne parafii rzymskokatolickiej Czarny Potok
+				</a>
+			</td>
+			<td>1776-1934</td>
+			<td class="right">1076</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>60</td>
+
+						<td class="right">
+				<a href=id4917>
+					1241
+				</a>
+			</td>
+			<td>
+				<a href=id4917>
+					Księgi metrykalne parafii rzymskokatolickiej Czchów
+				</a>
+			</td>
+			<td>1726-1944</td>
+			<td class="right">2346</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>61</td>
+
+						<td class="right">
+				<a href=id4827>
+					1268
+				</a>
+			</td>
+			<td>
+				<a href=id4827>
+					Księgi metrykalne parafii rzymskokatolickiej Czermna
+				</a>
+			</td>
+			<td>1710-1944</td>
+			<td class="right">1267</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>62</td>
+
+						<td class="right">
+				<a href=id3828>
+					1306
+				</a>
+			</td>
+			<td>
+				<a href=id3828>
+					Księgi metrykalne parafii rzymskokatolickiej Czerwonka Liwska
+				</a>
+			</td>
+			<td>1618-1722</td>
+			<td class="right">271</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>63</td>
+
+						<td class="right">
+				<a href=id4569>
+					1326
+				</a>
+			</td>
+			<td>
+				<a href=id4569>
+					Księgi metrykalne parafii rzymskokatolickiej Przewrotne
+				</a>
+			</td>
+			<td>1826-1922</td>
+			<td class="right">605</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>64</td>
+
+						<td class="right">
+				<a href=id2507>
+					1372
+				</a>
+			</td>
+			<td>
+				<a href=id2507>
+					Księgi metrykalne parafii rzymskokatolickiej Czulice
+				</a>
+			</td>
+			<td>1655-1944</td>
+			<td class="right">4078</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>65</td>
+
+						<td class="right">
+				<a href=id4248>
+					1443
+				</a>
+			</td>
+			<td>
+				<a href=id4248>
+					Księgi metrykalne parafii rzymskokatolickiej Dąbrowa Tarnowska
+				</a>
+			</td>
+			<td>1611-1944</td>
+			<td class="right">4448</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>66</td>
+
+						<td class="right">
+				<a href=id5400>
+					1456
+				</a>
+			</td>
+			<td>
+				<a href=id5400>
+					Księgi metrykalne parafii rzymskokatolickiej Czudec
+				</a>
+			</td>
+			<td>1784-1941</td>
+			<td class="right">2445</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>67</td>
+
+						<td class="right">
+				<a href=id4341>
+					1469
+				</a>
+			</td>
+			<td>
+				<a href=id4341>
+					Księgi metrykalne parafii rzymskokatolickiej Dąbrówka Wisłocka
+				</a>
+			</td>
+			<td>1784-1906</td>
+			<td class="right">330</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>68</td>
+
+						<td class="right">
+				<a href=id4364>
+					1476
+				</a>
+			</td>
+			<td>
+				<a href=id4364>
+					Księgi metrykalne parafii rzymskokatolickiej Delastowice
+				</a>
+			</td>
+			<td>1844-1944</td>
+			<td class="right">396</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>69</td>
+
+						<td class="right">
+				<a href=id4990>
+					1490
+				</a>
+			</td>
+			<td>
+				<a href=id4990>
+					Księgi metrykalne parafii rzymskokatolickiej Dębica
+				</a>
+			</td>
+			<td>1777-1900</td>
+			<td class="right">3114</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>70</td>
+
+						<td class="right">
+				<a href=id4239>
+					1502
+				</a>
+			</td>
+			<td>
+				<a href=id4239>
+					Księgi metrykalne parafii rzymskokatolickiej Dębno
+				</a>
+			</td>
+			<td>1744-1929</td>
+			<td class="right">1265</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>71</td>
+
+						<td class="right">
+				<a href=id5661>
+					1511
+				</a>
+			</td>
+			<td>
+				<a href=id5661>
+					Księgi metrykalne parafii rzymskokatolickiej Dębowiec
+				</a>
+			</td>
+			<td>1736-1945</td>
+			<td class="right">3318</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>72</td>
+
+						<td class="right">
+				<a href=id4268>
+					1550
+				</a>
+			</td>
+			<td>
+				<a href=id4268>
+					Księgi metrykalne parafii rzymskokatolickiej Dobra
+				</a>
+			</td>
+			<td>1678-1944</td>
+			<td class="right">2259</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>73</td>
+
+						<td class="right">
+				<a href=id4281>
+					1566
+				</a>
+			</td>
+			<td>
+				<a href=id4281>
+					Księgi metrykalne parafii rzymskokatolickiej Dobrków
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1958</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>74</td>
+
+						<td class="right">
+				<a href=id4319>
+					1579
+				</a>
+			</td>
+			<td>
+				<a href=id4319>
+					Księgi metrykalne parafii rzymskokatolickiej Dobrynin
+				</a>
+			</td>
+			<td>1794-1935</td>
+			<td class="right">390</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>75</td>
+
+						<td class="right">
+				<a href=id5720>
+					1582
+				</a>
+			</td>
+			<td>
+				<a href=id5720>
+					Księgi metrykalne parafii rzymskokatolickiej Dobrzechów
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2917</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>76</td>
+
+						<td class="right">
+				<a href=id4586>
+					1619
+				</a>
+			</td>
+			<td>
+				<a href=id4586>
+					Księgi metrykalne Parafii Rzymskokatolickiej Domatków
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">679</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>77</td>
+
+						<td class="right">
+				<a href=id4914>
+					1621
+				</a>
+			</td>
+			<td>
+				<a href=id4914>
+					Księgi metrykalne parafii rzymskokatolickiej Domosławice
+				</a>
+			</td>
+			<td>1783-1944</td>
+			<td class="right">1481</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>78</td>
+
+						<td class="right">
+				<a href=id4412>
+					1622
+				</a>
+			</td>
+			<td>
+				<a href=id4412>
+					Księgi metrykalne parafii rzymskokatolickiej Domostawa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1104</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>79</td>
+
+						<td class="right">
+				<a href=id4807>
+					1660
+				</a>
+			</td>
+			<td>
+				<a href=id4807>
+					Księgi metrykalne parafii rzymskokatolickiej Drwinia
+				</a>
+			</td>
+			<td>1776-1932</td>
+			<td class="right">929</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>80</td>
+
+						<td class="right">
+				<a href=id4618>
+					1667
+				</a>
+			</td>
+			<td>
+				<a href=id4618>
+					Księgi metrykalne parafii rzymskokatolickiej Dub
+				</a>
+			</td>
+			<td>1900-1944</td>
+			<td class="right">1612</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>81</td>
+
+						<td class="right">
+				<a href=id4342>
+					1678
+				</a>
+			</td>
+			<td>
+				<a href=id4342>
+					Księgi metrykalne parafii rzymskokatolickiej Dulcza Mała
+				</a>
+			</td>
+			<td>1843-1901</td>
+			<td class="right">221</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>82</td>
+
+						<td class="right">
+				<a href=id3690>
+					1720
+				</a>
+			</td>
+			<td>
+				<a href=id3690>
+					Księgi metrykalne parafii rzymskokatolickiej Dziekanowice
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">2174</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>83</td>
+
+						<td class="right">
+				<a href=id4744>
+					1736
+				</a>
+			</td>
+			<td>
+				<a href=id4744>
+					Księgi metrykalne parafii rzymskokatolickiej Dzierżaniny
+				</a>
+			</td>
+			<td>1843-1924</td>
+			<td class="right">85</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>84</td>
+
+						<td class="right">
+				<a href=id3869>
+					1757
+				</a>
+			</td>
+			<td>
+				<a href=id3869>
+					Księgi metrykalne parafii rzymskokatolickiej Dzikowiec
+				</a>
+			</td>
+			<td>1802-1939</td>
+			<td class="right">2122</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>85</td>
+
+						<td class="right">
+				<a href=id4742>
+					1809
+				</a>
+			</td>
+			<td>
+				<a href=id4742>
+					Księgi metrykalne parafii rzymskokatolickiej Filipowice
+				</a>
+			</td>
+			<td>1848-1944</td>
+			<td class="right">601</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>86</td>
+
+						<td class="right">
+				<a href=id4992>
+					1828
+				</a>
+			</td>
+			<td>
+				<a href=id4992>
+					Księgi metrykalne parafii rzymskokatolickiej Gaboń
+				</a>
+			</td>
+			<td>1786-1915</td>
+			<td class="right">485</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>87</td>
+
+						<td class="right">
+				<a href=id4691>
+					1831
+				</a>
+			</td>
+			<td>
+				<a href=id4691>
+					Księgi metrykalne parafii rzymskokatolickiej Gaj
+				</a>
+			</td>
+			<td>1694-1944</td>
+			<td class="right">2832</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>88</td>
+
+						<td class="right">
+				<a href=id4866>
+					1857
+				</a>
+			</td>
+			<td>
+				<a href=id4866>
+					Księgi metrykalne parafii rzymskokatolickiej Gawłów
+				</a>
+			</td>
+			<td>1784-1922</td>
+			<td class="right">640</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>89</td>
+
+						<td class="right">
+				<a href=id4932>
+					1979
+				</a>
+			</td>
+			<td>
+				<a href=id4932>
+					Księgi metrykalne parafii rzymskokatolickiej Gierczyce
+				</a>
+			</td>
+			<td>1785-1923</td>
+			<td class="right">790</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>90</td>
+
+						<td class="right">
+				<a href=id5810>
+					2004
+				</a>
+			</td>
+			<td>
+				<a href=id5810>
+					Księgi metrykalne parafii rzymskokatolickiej Glinik Zaborowski
+				</a>
+			</td>
+			<td>1846-1945</td>
+			<td class="right">165</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>91</td>
+
+						<td class="right">
+				<a href=id5804>
+					2053
+				</a>
+			</td>
+			<td>
+				<a href=id5804>
+					Księgi metrykalne parafii rzymskokatolickiej Głojsce
+				</a>
+			</td>
+			<td>1920-1945</td>
+			<td class="right">19</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>92</td>
+
+						<td class="right">
+				<a href=id4732>
+					2099
+				</a>
+			</td>
+			<td>
+				<a href=id4732>
+					Księgi metrykalne parafii rzymskokatolickiej Gnojnik
+				</a>
+			</td>
+			<td>1777-1928</td>
+			<td class="right">1051</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>93</td>
+
+						<td class="right">
+				<a href=id5800>
+					2106
+				</a>
+			</td>
+			<td>
+				<a href=id5800>
+					Księgi metrykalne parafii rzymskokatolickiej Godowa
+				</a>
+			</td>
+			<td>1816-1945</td>
+			<td class="right">778</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>94</td>
+
+						<td class="right">
+				<a href=id5817>
+					2121
+				</a>
+			</td>
+			<td>
+				<a href=id5817>
+					Księgi metrykalne parafii rzymskokatolickiej Gogołów
+				</a>
+			</td>
+			<td>1770-1945</td>
+			<td class="right">1526</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>95</td>
+
+						<td class="right">
+				<a href=id4226>
+					2155
+				</a>
+			</td>
+			<td>
+				<a href=id4226>
+					Księgi metrykalne parafii rzymskokatolickiej Gołkowice
+				</a>
+			</td>
+			<td>1784-1925</td>
+			<td class="right">469</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>96</td>
+
+						<td class="right">
+				<a href=id5848>
+					2156
+				</a>
+			</td>
+			<td>
+				<a href=id5848>
+					Księgi metrykalne parafii rzymskokatolickiej Gołogóry
+				</a>
+			</td>
+			<td>1884-1925</td>
+			<td class="right">174</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>97</td>
+
+						<td class="right">
+				<a href=id5675>
+					2173
+				</a>
+			</td>
+			<td>
+				<a href=id5675>
+					Księgi metrykalne parafii rzymskokatolickiej Gorlice-Fara
+				</a>
+			</td>
+			<td>1776-1945</td>
+			<td class="right">4764</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>98</td>
+
+						<td class="right">
+				<a href=id5006>
+					2212
+				</a>
+			</td>
+			<td>
+				<a href=id5006>
+					Księgi metrykalne parafii rzymskokatolickiej Gosprzydowa
+				</a>
+			</td>
+			<td>1682-1944</td>
+			<td class="right">870</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>99</td>
+
+						<td class="right">
+				<a href=id3145>
+					2263
+				</a>
+			</td>
+			<td>
+				<a href=id3145>
+					Księgi metrykalne parafii rzymskokatolickiej Góra Kalwaria
+				</a>
+			</td>
+			<td>1668-1830</td>
+			<td class="right">1561</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>100</td>
+
+						<td class="right">
+				<a href=id4285>
+					2264
+				</a>
+			</td>
+			<td>
+				<a href=id4285>
+					Księgi metrykalne parafii rzymskokatolickiej Góra Motyczna
+				</a>
+			</td>
+			<td>1847-1942</td>
+			<td class="right">312</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>101</td>
+
+						<td class="right">
+				<a href=id4692>
+					2267
+				</a>
+			</td>
+			<td>
+				<a href=id4692>
+					Księgi metrykalne parafii rzymskokatolickiej Góra Ropczycka
+				</a>
+			</td>
+			<td>1673-1944</td>
+			<td class="right">2263</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>102</td>
+
+						<td class="right">
+				<a href=id4369>
+					2272
+				</a>
+			</td>
+			<td>
+				<a href=id4369>
+					Księgi metrykalne parafii rzymskokatolickiej Góra Świętego Jana
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1236</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>103</td>
+
+						<td class="right">
+				<a href=id4966>
+					2288
+				</a>
+			</td>
+			<td>
+				<a href=id4966>
+					Księgi metrykalne parafii rzymskokatolickiej Górki
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">1295</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>104</td>
+
+						<td class="right">
+				<a href=id4246>
+					2296
+				</a>
+			</td>
+			<td>
+				<a href=id4246>
+					Księgi metrykalne Parafii Rzymskokatolickiej Górno
+				</a>
+			</td>
+			<td>1784-1899</td>
+			<td class="right">696</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>105</td>
+
+						<td class="right">
+				<a href=id4642>
+					2315
+				</a>
+			</td>
+			<td>
+				<a href=id4642>
+					Księgi metrykalne parafii rzymskokatolickiej Grabie
+				</a>
+			</td>
+			<td>1722-1944</td>
+			<td class="right">1959</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>106</td>
+
+						<td class="right">
+				<a href=id4958>
+					2322
+				</a>
+			</td>
+			<td>
+				<a href=id4958>
+					Księgi metrykalne parafii rzymskokatolickiej Grabno
+				</a>
+			</td>
+			<td>1784-1925</td>
+			<td class="right">742</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>107</td>
+
+						<td class="right">
+				<a href=id4346>
+					2361
+				</a>
+			</td>
+			<td>
+				<a href=id4346>
+					Księgi metrykalne parafii rzymskokatolickiej Gręboszów
+				</a>
+			</td>
+			<td>1651-1924</td>
+			<td class="right">4200</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>108</td>
+
+						<td class="right">
+				<a href=id4842>
+					2364
+				</a>
+			</td>
+			<td>
+				<a href=id4842>
+					Księgi metrykalne parafii rzymskokatolickiej Grobla
+				</a>
+			</td>
+			<td>1782-1944</td>
+			<td class="right">1258</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>109</td>
+
+						<td class="right">
+				<a href=id5854>
+					2392
+				</a>
+			</td>
+			<td>
+				<a href=id5854>
+					Księgi metrykalne parafii rzymskokatolickiej Grodzisko Strzyżowskie
+				</a>
+			</td>
+			<td>1841-1935</td>
+			<td class="right">241</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>110</td>
+
+						<td class="right">
+				<a href=id4845>
+					2401
+				</a>
+			</td>
+			<td>
+				<a href=id4845>
+					Księgi metrykalne parafii rzymskokatolickiej Gromnik
+				</a>
+			</td>
+			<td>1776-1944</td>
+			<td class="right">1424</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>111</td>
+
+						<td class="right">
+				<a href=id4903>
+					2412
+				</a>
+			</td>
+			<td>
+				<a href=id4903>
+					Księgi metrykalne parafii rzymskokatolickiej Gródek
+				</a>
+			</td>
+			<td>1788-1944</td>
+			<td class="right">634</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>112</td>
+
+						<td class="right">
+				<a href=id4991>
+					2421
+				</a>
+			</td>
+			<td>
+				<a href=id4991>
+					Księgi metrykalne parafii rzymskokatolickiej Grudna Górna
+				</a>
+			</td>
+			<td>1834-1904</td>
+			<td class="right">204</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>113</td>
+
+						<td class="right">
+				<a href=id4216>
+					2438
+				</a>
+			</td>
+			<td>
+				<a href=id4216>
+					Księgi metrykalne parafii rzymskokatolickiej Gruszów Wielki
+				</a>
+			</td>
+			<td>1786-1900</td>
+			<td class="right">553</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>114</td>
+
+						<td class="right">
+				<a href=id4857>
+					2441
+				</a>
+			</td>
+			<td>
+				<a href=id4857>
+					Księgi metrykalne parafii rzymskokatolickiej Grybów
+				</a>
+			</td>
+			<td>1716-1921</td>
+			<td class="right">2450</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>115</td>
+
+						<td class="right">
+				<a href=id4214>
+					2448
+				</a>
+			</td>
+			<td>
+				<a href=id4214>
+					Księgi metrykalne parafii rzymskokatolickiej Grywałd
+				</a>
+			</td>
+			<td>1788-1921</td>
+			<td class="right">434</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>116</td>
+
+						<td class="right">
+				<a href=id4213>
+					2481
+				</a>
+			</td>
+			<td>
+				<a href=id4213>
+					Księgi metrykalne parafii rzymskokatolickiej Gumniska
+				</a>
+			</td>
+			<td>1836-1853</td>
+			<td class="right">106</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>117</td>
+
+						<td class="right">
+				<a href=id4749>
+					2491
+				</a>
+			</td>
+			<td>
+				<a href=id4749>
+					Księgi metrykalne parafii rzymskokatolickiej Gwoździec
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">810</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>118</td>
+
+						<td class="right">
+				<a href=id5654>
+					2512
+				</a>
+			</td>
+			<td>
+				<a href=id5654>
+					Księgi metrykalne parafii rzymskokatolickiej Harklowa
+				</a>
+			</td>
+			<td>1785-1945</td>
+			<td class="right">1250</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>119</td>
+
+						<td class="right">
+				<a href=id3148>
+					2595
+				</a>
+			</td>
+			<td>
+				<a href=id3148>
+					Księgi metrykalne parafii rzymskokatolickiej Iłża
+				</a>
+			</td>
+			<td>1611-1618</td>
+			<td class="right">55</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>120</td>
+
+						<td class="right">
+				<a href=id4701>
+					2628
+				</a>
+			</td>
+			<td>
+				<a href=id4701>
+					Księgi metrykalne parafii rzymskokatolickiej Iwkowa
+				</a>
+			</td>
+			<td>1777-1920</td>
+			<td class="right">1349</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>121</td>
+
+						<td class="right">
+				<a href=id4840>
+					2637
+				</a>
+			</td>
+			<td>
+				<a href=id4840>
+					Księgi metrykalne parafii rzymskokatolickiej Izdebnik
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1688</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>122</td>
+
+						<td class="right">
+				<a href=id4795>
+					2663
+				</a>
+			</td>
+			<td>
+				<a href=id4795>
+					Księgi metrykalne parafii rzymskokatolickiej Jadowniki
+				</a>
+			</td>
+			<td>1784-1941</td>
+			<td class="right">1429</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>123</td>
+
+						<td class="right">
+				<a href=id4804>
+					2664
+				</a>
+			</td>
+			<td>
+				<a href=id4804>
+					Księgi metrykalne parafii rzymskokatolickiej Jadowniki Mokre
+				</a>
+			</td>
+			<td>1834-1912</td>
+			<td class="right">284</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>124</td>
+
+						<td class="right">
+				<a href=id4838>
+					2694
+				</a>
+			</td>
+			<td>
+				<a href=id4838>
+					Księgi metrykalne parafii rzymskokatolickiej Jankowa
+				</a>
+			</td>
+			<td>1786-1943</td>
+			<td class="right">470</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>125</td>
+
+						<td class="right">
+				<a href=id5007>
+					2704
+				</a>
+			</td>
+			<td>
+				<a href=id5007>
+					Księgi metrykalne parafii rzymskokatolickiej Janowice
+				</a>
+			</td>
+			<td>1843-1944</td>
+			<td class="right">518</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>126</td>
+
+						<td class="right">
+				<a href=id5837>
+					2726
+				</a>
+			</td>
+			<td>
+				<a href=id5837>
+					Księgi metrykalne parafii rzymskokatolickiej Januszkowice
+				</a>
+			</td>
+			<td>1814-1945</td>
+			<td class="right">712</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>127</td>
+
+						<td class="right">
+				<a href=id4880>
+					2769
+				</a>
+			</td>
+			<td>
+				<a href=id4880>
+					Księgi metrykalne parafii rzymskokatolickiej Jasienna
+				</a>
+			</td>
+			<td>1856-1921</td>
+			<td class="right">62</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>128</td>
+
+						<td class="right">
+				<a href=id4944>
+					2772
+				</a>
+			</td>
+			<td>
+				<a href=id4944>
+					Księgi metrykalne parafii rzymskokatolickiej Jasień
+				</a>
+			</td>
+			<td>1753-1944</td>
+			<td class="right">1529</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>129</td>
+
+						<td class="right">
+				<a href=id5893>
+					2783
+				</a>
+			</td>
+			<td>
+				<a href=id5893>
+					Księgi metrykalne parafii rzymskokatolickiej Jasło-Niegłowice
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">587</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>130</td>
+
+						<td class="right">
+				<a href=id5885>
+					2788
+				</a>
+			</td>
+			<td>
+				<a href=id5885>
+					Księgi metrykalne parafii rzymskokatolickiej Jasło-Fara
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">7898</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>131</td>
+
+						<td class="right">
+				<a href=id3881>
+					2790
+				</a>
+			</td>
+			<td>
+				<a href=id3881>
+					Księgi metrykalne parafii rzymskokatolickiej Jastkowice
+				</a>
+			</td>
+			<td>1784-1943</td>
+			<td class="right">1386</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>132</td>
+
+						<td class="right">
+				<a href=id4876>
+					2796
+				</a>
+			</td>
+			<td>
+				<a href=id4876>
+					Księgi metrykalne parafii rzymskokatolickiej Jastrzębia
+				</a>
+			</td>
+			<td>1677-1929</td>
+			<td class="right">1666</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>133</td>
+
+						<td class="right">
+				<a href=id3133>
+					2825
+				</a>
+			</td>
+			<td>
+				<a href=id3133>
+					Księgi metrykalne parafii rzymskokatolickiej Jata
+				</a>
+			</td>
+			<td>1784-1931</td>
+			<td class="right">961</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>134</td>
+
+						<td class="right">
+				<a href=id4746>
+					2839
+				</a>
+			</td>
+			<td>
+				<a href=id4746>
+					Księgi metrykalne parafii rzymskokatolickiej Jaworsko
+				</a>
+			</td>
+			<td>1784-1931</td>
+			<td class="right">492</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>135</td>
+
+						<td class="right">
+				<a href=id4702>
+					2841
+				</a>
+			</td>
+			<td>
+				<a href=id4702>
+					Księgi metrykalne parafii rzymskokatolickiej Jaworzna
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">393</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>136</td>
+
+						<td class="right">
+				<a href=id4757>
+					2864
+				</a>
+			</td>
+			<td>
+				<a href=id4757>
+					Księgi metrykalne parafii rzymskokatolickiej Jazowsko
+				</a>
+			</td>
+			<td>1786-1900</td>
+			<td class="right">1143</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>137</td>
+
+						<td class="right">
+				<a href=id3130>
+					2932
+				</a>
+			</td>
+			<td>
+				<a href=id3130>
+					Księgi metrykalne parafii rzymskokatolickiej Jeżowe
+				</a>
+			</td>
+			<td>1828-1940</td>
+			<td class="right">3038</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>138</td>
+
+						<td class="right">
+				<a href=id4243>
+					2944
+				</a>
+			</td>
+			<td>
+				<a href=id4243>
+					Księgi metrykalne Parafii Rzymskokatolickiej Jodłowa
+				</a>
+			</td>
+			<td>1679-1933</td>
+			<td class="right">2496</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>139</td>
+
+						<td class="right">
+				<a href=id4372>
+					2946
+				</a>
+			</td>
+			<td>
+				<a href=id4372>
+					Księgi metrykalne parafii rzymskokatolickiej Jodłownik
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">456</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>140</td>
+
+						<td class="right">
+				<a href=id4860>
+					2950
+				</a>
+			</td>
+			<td>
+				<a href=id4860>
+					Księgi metrykalne parafii rzymskokatolickiej Jodłówka Tuchowska
+				</a>
+			</td>
+			<td>1784-1922</td>
+			<td class="right">1260</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>141</td>
+
+						<td class="right">
+				<a href=id4273>
+					2951
+				</a>
+			</td>
+			<td>
+				<a href=id4273>
+					Księgi metrykalne parafii rzymskokatolickiej Jodłówka-Wałki
+				</a>
+			</td>
+			<td>1854-1944</td>
+			<td class="right">69</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>142</td>
+
+						<td class="right">
+				<a href=id4269>
+					2972
+				</a>
+			</td>
+			<td>
+				<a href=id4269>
+					Księgi metrykalne parafii rzymskokatolickiej Jurków
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">882</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>143</td>
+
+						<td class="right">
+				<a href=id4912>
+					2973
+				</a>
+			</td>
+			<td>
+				<a href=id4912>
+					Księgi metrykalne parafii rzymskokatolickiej Jurków
+				</a>
+			</td>
+			<td>1856-1944</td>
+			<td class="right">393</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>144</td>
+
+						<td class="right">
+				<a href=id4227>
+					3040
+				</a>
+			</td>
+			<td>
+				<a href=id4227>
+					Księgi metrykalne parafii rzymskokatolickiej Kamienica
+				</a>
+			</td>
+			<td>1796-1911</td>
+			<td class="right">770</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>145</td>
+
+						<td class="right">
+				<a href=id4261>
+					3043
+				</a>
+			</td>
+			<td>
+				<a href=id4261>
+					Księgi metrykalne parafii rzymskokatolickiej Kamienica Górna
+				</a>
+			</td>
+			<td>1828-1944</td>
+			<td class="right">306</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>146</td>
+
+						<td class="right">
+				<a href=id3938>
+					3056
+				</a>
+			</td>
+			<td>
+				<a href=id3938>
+					Księgi metrykalne Parafii Rzymskokatolickiej Kamień
+				</a>
+			</td>
+			<td>1784-1909</td>
+			<td class="right">1951</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>147</td>
+
+						<td class="right">
+				<a href=id4908>
+					3076
+				</a>
+			</td>
+			<td>
+				<a href=id4908>
+					Księgi metrykalne parafii rzymskokatolickiej Kamionka Mała
+				</a>
+			</td>
+			<td>1786-1935</td>
+			<td class="right">496</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>148</td>
+
+						<td class="right">
+				<a href=id4339>
+					3078
+				</a>
+			</td>
+			<td>
+				<a href=id4339>
+					Księgi metrykalne parafii rzymskokatolickiej Kamionka Wielka
+				</a>
+			</td>
+			<td>1717-1911</td>
+			<td class="right">915</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>149</td>
+
+						<td class="right">
+				<a href=id4915>
+					3081
+				</a>
+			</td>
+			<td>
+				<a href=id4915>
+					Księgi metrykalne parafii rzymskokatolickiej Kamionna
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">526</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>150</td>
+
+						<td class="right">
+				<a href=id4255>
+					3090
+				</a>
+			</td>
+			<td>
+				<a href=id4255>
+					Księgi metrykalne parafii rzymskokatolickiej Kanina
+				</a>
+			</td>
+			<td>1776-1944</td>
+			<td class="right">1167</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>151</td>
+
+						<td class="right">
+				<a href=id2455>
+					3175
+				</a>
+			</td>
+			<td>
+				<a href=id2455>
+					Akta stanu cywilnego parafii rzymskokatolickiej Kazanów Iłżecki
+				</a>
+			</td>
+			<td>1733-1795</td>
+			<td class="right">190</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>152</td>
+
+						<td class="right">
+				<a href=id4867>
+					3188
+				</a>
+			</td>
+			<td>
+				<a href=id4867>
+					Księgi metrykalne parafii rzymskokatolickiej Kąclowa
+				</a>
+			</td>
+			<td>1788-1921</td>
+			<td class="right">453</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>153</td>
+
+						<td class="right">
+				<a href=id4940>
+					3198
+				</a>
+			</td>
+			<td>
+				<a href=id4940>
+					Księgi metrykalne parafii rzymskokatolickiej Kąty
+				</a>
+			</td>
+			<td>1843-1944</td>
+			<td class="right">180</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>154</td>
+
+						<td class="right">
+				<a href=id4221>
+					3233
+				</a>
+			</td>
+			<td>
+				<a href=id4221>
+					Księgi metrykalne parafii rzymskokatolickiej Kicznia
+				</a>
+			</td>
+			<td>1786-1906</td>
+			<td class="right">204</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>155</td>
+
+						<td class="right">
+				<a href=id4315>
+					3271
+				</a>
+			</td>
+			<td>
+				<a href=id4315>
+					Księgi metrykalne parafii rzymskokatolickiej Kiełków
+				</a>
+			</td>
+			<td>1793-1944</td>
+			<td class="right">499</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>156</td>
+
+						<td class="right">
+				<a href=id4942>
+					3274
+				</a>
+			</td>
+			<td>
+				<a href=id4942>
+					Księgi metrykalne parafii rzymskokatolickiej Kierlikówka
+				</a>
+			</td>
+			<td>1784-1939</td>
+			<td class="right">393</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>157</td>
+
+						<td class="right">
+				<a href=id5067>
+					3341
+				</a>
+			</td>
+			<td>
+				<a href=id5067>
+					Księgi metrykalne parafii rzymskokatolickiej Kłaj
+				</a>
+			</td>
+			<td>1831-1944</td>
+			<td class="right">638</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>158</td>
+
+						<td class="right">
+				<a href=id5689>
+					3393
+				</a>
+			</td>
+			<td>
+				<a href=id5689>
+					Księgi metrykalne parafii rzymskokatolickiej Kobylanka
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">2307</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>159</td>
+
+						<td class="right">
+				<a href=id4267>
+					3432
+				</a>
+			</td>
+			<td>
+				<a href=id4267>
+					Księgi metrykalne Parafii Rzymskokatolickiej Kolbuszowa
+				</a>
+			</td>
+			<td>1640-1923</td>
+			<td class="right">6504</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>160</td>
+
+						<td class="right">
+				<a href=id4384>
+					3433
+				</a>
+			</td>
+			<td>
+				<a href=id4384>
+					Księgi metrykalne Parafii Rzymskokatolickiej Kolbuszowa Górna
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">1910</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>161</td>
+
+						<td class="right">
+				<a href=id5725>
+					3452
+				</a>
+			</td>
+			<td>
+				<a href=id5725>
+					Księgi metrykalne parafii rzymskokatolickiej Kołaczyce
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1789</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>162</td>
+
+						<td class="right">
+				<a href=id4320>
+					3575
+				</a>
+			</td>
+			<td>
+				<a href=id4320>
+					Księgi metrykalne parafii rzymskokatolickiej Korzeniów
+				</a>
+			</td>
+			<td>1855-1917</td>
+			<td class="right">72</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>163</td>
+
+						<td class="right">
+				<a href=id4879>
+					3576
+				</a>
+			</td>
+			<td>
+				<a href=id4879>
+					Księgi metrykalne parafii rzymskokatolickiej Korzenna
+				</a>
+			</td>
+			<td>1785-1924</td>
+			<td class="right">936</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>164</td>
+
+						<td class="right">
+				<a href=id4632>
+					3594
+				</a>
+			</td>
+			<td>
+				<a href=id4632>
+					Księgi metrykalne parafii rzymskokatolickiej Kosowy
+				</a>
+			</td>
+			<td>1906-1922</td>
+			<td class="right">28</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>165</td>
+
+						<td class="right">
+				<a href=id4954>
+					3676
+				</a>
+			</td>
+			<td>
+				<a href=id4954>
+					Księgi metrykalne parafii rzymskokatolickiej Kowalowa
+				</a>
+			</td>
+			<td>1847-1944</td>
+			<td class="right">185</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>166</td>
+
+						<td class="right">
+				<a href=id4375>
+					3824
+				</a>
+			</td>
+			<td>
+				<a href=id4375>
+					Księgi metrykalne parafii rzymskokatolickiej Krasne-Lasocice
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">699</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>167</td>
+
+						<td class="right">
+				<a href=id4716>
+					3869
+				</a>
+			</td>
+			<td>
+				<a href=id4716>
+					Księgi metrykalne parafii rzymskokatolickiej Krosna
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">389</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>168</td>
+
+						<td class="right">
+				<a href=id4209>
+					3889
+				</a>
+			</td>
+			<td>
+				<a href=id4209>
+					Księgi metrykalne parafii rzymskokatolickiej Krościenko nad Dunajcem
+				</a>
+			</td>
+			<td>1644-1930</td>
+			<td class="right">1209</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>169</td>
+
+						<td class="right">
+				<a href=id4264>
+					3911
+				</a>
+			</td>
+			<td>
+				<a href=id4264>
+					Księgi metrykalne parafii rzymskokatolickiej Królowa Górna
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">230</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>170</td>
+
+						<td class="right">
+				<a href=id4697>
+					3914
+				</a>
+			</td>
+			<td>
+				<a href=id4697>
+					Księgi metrykalne parafii rzymskokatolickiej Królówka
+				</a>
+			</td>
+			<td>1598-1944</td>
+			<td class="right">2986</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>171</td>
+
+						<td class="right">
+				<a href=id4877>
+					3932
+				</a>
+			</td>
+			<td>
+				<a href=id4877>
+					Księgi metrykalne parafii rzymskokatolickiej Krużlowa Wyżna
+				</a>
+			</td>
+			<td>1784-1937</td>
+			<td class="right">1027</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>172</td>
+
+						<td class="right">
+				<a href=id5760>
+					3933
+				</a>
+			</td>
+			<td>
+				<a href=id5760>
+					Księgi metrykalne parafii rzymskokatolickiej Kryg
+				</a>
+			</td>
+			<td>1843-1945</td>
+			<td class="right">593</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>173</td>
+
+						<td class="right">
+				<a href=id4997>
+					3937
+				</a>
+			</td>
+			<td>
+				<a href=id4997>
+					Księgi metrykalne parafii rzymskokatolickiej Krynica-Zdrój
+				</a>
+			</td>
+			<td>1885-1904</td>
+			<td class="right">85</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>174</td>
+
+						<td class="right">
+				<a href=id4707>
+					3961
+				</a>
+			</td>
+			<td>
+				<a href=id4707>
+					Księgi metrykalne parafii rzymskokatolickiej Krzeczów
+				</a>
+			</td>
+			<td>1841-1944</td>
+			<td class="right">315</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>175</td>
+
+						<td class="right">
+				<a href=id5141>
+					3996
+				</a>
+			</td>
+			<td>
+				<a href=id5141>
+					Księgi metrykalne parafii rzymskokatolickiej Krzywaczka
+				</a>
+			</td>
+			<td>1601-1945</td>
+			<td class="right">1639</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>176</td>
+
+						<td class="right">
+				<a href=id4864>
+					4007
+				</a>
+			</td>
+			<td>
+				<a href=id4864>
+					Księgi metrykalne parafii rzymskokatolickiej Krzyżanowice
+				</a>
+			</td>
+			<td>1777-1923</td>
+			<td class="right">1089</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>177</td>
+
+						<td class="right">
+				<a href=id4921>
+					4021
+				</a>
+			</td>
+			<td>
+				<a href=id4921>
+					Księgi metrykalne parafii rzymskokatolickiej Książnice
+				</a>
+			</td>
+			<td>1615-1919</td>
+			<td class="right">1874</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>178</td>
+
+						<td class="right">
+				<a href=id4657>
+					4064
+				</a>
+			</td>
+			<td>
+				<a href=id4657>
+					Księgi metrykalne parafii rzymskokatolickiej Kupno
+				</a>
+			</td>
+			<td>1788-1944</td>
+			<td class="right">1049</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>179</td>
+
+						<td class="right">
+				<a href=id4911>
+					4128
+				</a>
+			</td>
+			<td>
+				<a href=id4911>
+					Księgi metrykalne parafii rzymskokatolickiej Laskowa
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1146</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>180</td>
+
+						<td class="right">
+				<a href=id4703>
+					4188
+				</a>
+			</td>
+			<td>
+				<a href=id4703>
+					Księgi metrykalne parafii rzymskokatolickiej Leszczyna
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">482</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>181</td>
+
+						<td class="right">
+				<a href=id5003>
+					4226
+				</a>
+			</td>
+			<td>
+				<a href=id5003>
+					Księgi metrykalne parafii rzymskokatolickiej Lewniowa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">415</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>182</td>
+
+						<td class="right">
+				<a href=id4937>
+					4254
+				</a>
+			</td>
+			<td>
+				<a href=id4937>
+					Księgi metrykalne parafii rzymskokatolickiej Librantowa
+				</a>
+			</td>
+			<td>1828-1922</td>
+			<td class="right">153</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>183</td>
+
+						<td class="right">
+				<a href=id5717>
+					4255
+				</a>
+			</td>
+			<td>
+				<a href=id5717>
+					Księgi metrykalne parafii rzymskokatolickiej Libusza
+				</a>
+			</td>
+			<td>1756-1945</td>
+			<td class="right">1468</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>184</td>
+
+						<td class="right">
+				<a href=id4849>
+					4259
+				</a>
+			</td>
+			<td>
+				<a href=id4849>
+					Księgi metrykalne parafii rzymskokatolickiej Lichwin
+				</a>
+			</td>
+			<td>1784-1920</td>
+			<td class="right">500</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>185</td>
+
+						<td class="right">
+				<a href=id5028>
+					4276
+				</a>
+			</td>
+			<td>
+				<a href=id5028>
+					Księgi metrykalne parafii rzymskokatolickiej Limanowa
+				</a>
+			</td>
+			<td>1644-1932</td>
+			<td class="right">4478</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>186</td>
+
+						<td class="right">
+				<a href=id4700>
+					4309
+				</a>
+			</td>
+			<td>
+				<a href=id4700>
+					Księgi metrykalne parafii rzymskokatolickiej Lipnica Murowana
+				</a>
+			</td>
+			<td>1777-1944</td>
+			<td class="right">2782</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>187</td>
+
+						<td class="right">
+				<a href=id4901>
+					4310
+				</a>
+			</td>
+			<td>
+				<a href=id4901>
+					Księgi metrykalne parafii rzymskokatolickiej Lipnica Wielka (pow. nowosądecki)
+				</a>
+			</td>
+			<td>1698-1924</td>
+			<td class="right">1211</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>188</td>
+
+						<td class="right">
+				<a href=id4771>
+					4334
+				</a>
+			</td>
+			<td>
+				<a href=id4771>
+					Księgi metrykalne parafii rzymskokatolickiej Lisia Góra
+				</a>
+			</td>
+			<td>1680-1944</td>
+			<td class="right">4239</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>189</td>
+
+						<td class="right">
+				<a href=id4743>
+					4367
+				</a>
+			</td>
+			<td>
+				<a href=id4743>
+					Księgi metrykalne parafii rzymskokatolickiej Lubaszowa
+				</a>
+			</td>
+			<td>1847-1924</td>
+			<td class="right">139</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>190</td>
+
+						<td class="right">
+				<a href=id4263>
+					4375
+				</a>
+			</td>
+			<td>
+				<a href=id4263>
+					Księgi metrykalne parafii rzymskokatolickiej Lubcza
+				</a>
+			</td>
+			<td>1655-1944</td>
+			<td class="right">1825</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>191</td>
+
+						<td class="right">
+				<a href=id5872>
+					4377
+				</a>
+			</td>
+			<td>
+				<a href=id5872>
+					Księgi metrykalne parafii rzymskokatolickiej Lubenia
+				</a>
+			</td>
+			<td>1916-1945</td>
+			<td class="right">134</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>192</td>
+
+						<td class="right">
+				<a href=id4313>
+					4488
+				</a>
+			</td>
+			<td>
+				<a href=id4313>
+					Księgi metrykalne parafii rzymskokatolickiej Lubzina
+				</a>
+			</td>
+			<td>1634-1944</td>
+			<td class="right">1765</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>193</td>
+
+						<td class="right">
+				<a href=id5068>
+					4497
+				</a>
+			</td>
+			<td>
+				<a href=id5068>
+					Księgi metrykalne parafii rzymskokatolickiej Ludźmierz
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1461</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>194</td>
+
+						<td class="right">
+				<a href=id4237>
+					4500
+				</a>
+			</td>
+			<td>
+				<a href=id4237>
+					Księgi metrykalne parafii rzymskokatolickiej Luszowice
+				</a>
+			</td>
+			<td>1686-1936</td>
+			<td class="right">1983</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>195</td>
+
+						<td class="right">
+				<a href=id4900>
+					4570
+				</a>
+			</td>
+			<td>
+				<a href=id4900>
+					Księgi metrykalne parafii rzymskokatolickiej Łapczyca
+				</a>
+			</td>
+			<td>1784-1921</td>
+			<td class="right">1421</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>196</td>
+
+						<td class="right">
+				<a href=id4222>
+					4600
+				</a>
+			</td>
+			<td>
+				<a href=id4222>
+					Księgi metrykalne parafii rzymskokatolickiej Łącko
+				</a>
+			</td>
+			<td>1786-1917</td>
+			<td class="right">1815</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>197</td>
+
+						<td class="right">
+				<a href=id4322>
+					4604
+				</a>
+			</td>
+			<td>
+				<a href=id4322>
+					Księgi metrykalne Parafii Rzymskokatolickiej Łączki Brzeskie
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">553</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>198</td>
+
+						<td class="right">
+				<a href=id4738>
+					4615
+				</a>
+			</td>
+			<td>
+				<a href=id4738>
+					Księgi metrykalne parafii rzymskokatolickiej Łąkta Górna
+				</a>
+			</td>
+			<td>1834-1944</td>
+			<td class="right">285</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>199</td>
+
+						<td class="right">
+				<a href=id4305>
+					4638
+				</a>
+			</td>
+			<td>
+				<a href=id4305>
+					Księgi metrykalne parafii rzymskokatolickiej Łęg Tarnowski (Jurków)
+				</a>
+			</td>
+			<td>1777-1942</td>
+			<td class="right">2335</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>200</td>
+
+						<td class="right">
+				<a href=id4796>
+					4650
+				</a>
+			</td>
+			<td>
+				<a href=id4796>
+					Księgi metrykalne parafii rzymskokatolickiej Łękawica
+				</a>
+			</td>
+			<td>1762-1940</td>
+			<td class="right">1305</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>201</td>
+
+						<td class="right">
+				<a href=id4240>
+					4652
+				</a>
+			</td>
+			<td>
+				<a href=id4240>
+					Księgi metrykalne parafii rzymskokatolickiej Łęki Górne
+				</a>
+			</td>
+			<td>1767-1946</td>
+			<td class="right">1926</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>202</td>
+
+						<td class="right">
+				<a href=id4779>
+					4662
+				</a>
+			</td>
+			<td>
+				<a href=id4779>
+					Księgi metrykalne parafii rzymskokatolickiej Łętowice
+				</a>
+			</td>
+			<td>1784-1909</td>
+			<td class="right">479</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>203</td>
+
+						<td class="right">
+				<a href=id3884>
+					4664
+				</a>
+			</td>
+			<td>
+				<a href=id3884>
+					Księgi metrykalne parafii rzymskokatolickiej Łętownia
+				</a>
+			</td>
+			<td>1784-1891</td>
+			<td class="right">1007</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>204</td>
+
+						<td class="right">
+				<a href=id4858>
+					4669
+				</a>
+			</td>
+			<td>
+				<a href=id4858>
+					Księgi metrykalne parafii rzymskokatolickiej Łężkowice
+				</a>
+			</td>
+			<td>1785-1924</td>
+			<td class="right">1190</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>205</td>
+
+						<td class="right">
+				<a href=id5763>
+					4670
+				</a>
+			</td>
+			<td>
+				<a href=id5763>
+					Księgi metrykalne parafii rzymskokatolickiej Łężyny
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">769</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>206</td>
+
+						<td class="right">
+				<a href=id4994>
+					4689
+				</a>
+			</td>
+			<td>
+				<a href=id4994>
+					Księgi metrykalne parafii rzymskokatolickiej Łomnica Zdrój
+				</a>
+			</td>
+			<td>1786-1902</td>
+			<td class="right">653</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>207</td>
+
+						<td class="right">
+				<a href=id4770>
+					4716
+				</a>
+			</td>
+			<td>
+				<a href=id4770>
+					Księgi metrykalne parafii rzymskokatolickiej Łososina Dolna
+				</a>
+			</td>
+			<td>1676-1908</td>
+			<td class="right">1862</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>208</td>
+
+						<td class="right">
+				<a href=id4910>
+					4717
+				</a>
+			</td>
+			<td>
+				<a href=id4910>
+					Księgi metrykalne parafii rzymskokatolickiej Łososina Górna
+				</a>
+			</td>
+			<td>1600-1944</td>
+			<td class="right">2314</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>209</td>
+
+						<td class="right">
+				<a href=id4693>
+					4724
+				</a>
+			</td>
+			<td>
+				<a href=id4693>
+					Księgi metrykalne parafii rzymskokatolickiej Łowisko
+				</a>
+			</td>
+			<td>1833-1905</td>
+			<td class="right">320</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>210</td>
+
+						<td class="right">
+				<a href=id4998>
+					4818
+				</a>
+			</td>
+			<td>
+				<a href=id4998>
+					Księgi metrykalne parafii rzymskokatolickiej Łukowa
+				</a>
+			</td>
+			<td>1839-1924</td>
+			<td class="right">236</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>211</td>
+
+						<td class="right">
+				<a href=id4218>
+					4823
+				</a>
+			</td>
+			<td>
+				<a href=id4218>
+					Księgi metrykalne parafii rzymskokatolickiej Łukowica
+				</a>
+			</td>
+			<td>1784-1931</td>
+			<td class="right">1537</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>212</td>
+
+						<td class="right">
+				<a href=id4929>
+					4835
+				</a>
+			</td>
+			<td>
+				<a href=id4929>
+					Księgi metrykalne parafii rzymskokatolickiej Łużna
+				</a>
+			</td>
+			<td>1643-1930</td>
+			<td class="right">1290</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>213</td>
+
+						<td class="right">
+				<a href=id4799>
+					4837
+				</a>
+			</td>
+			<td>
+				<a href=id4799>
+					Księgi metrykalne parafii rzymskokatolickiej Łysa Góra
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">610</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>214</td>
+
+						<td class="right">
+				<a href=id4272>
+					4851
+				</a>
+			</td>
+			<td>
+				<a href=id4272>
+					Księgi metrykalne parafii rzymskokatolickiej Machowa
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">941</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>215</td>
+
+						<td class="right">
+				<a href=id3687>
+					4864
+				</a>
+			</td>
+			<td>
+				<a href=id3687>
+					Księgi metrykalne parafii rzymskokatolickiej Majdan Królewski
+				</a>
+			</td>
+			<td>1826-1943</td>
+			<td class="right">3612</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>216</td>
+
+						<td class="right">
+				<a href=id4798>
+					4967
+				</a>
+			</td>
+			<td>
+				<a href=id4798>
+					Księgi metrykalne parafii rzymskokatolickiej Maszkienice
+				</a>
+			</td>
+			<td>1784-1917</td>
+			<td class="right">590</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>217</td>
+
+						<td class="right">
+				<a href=id3940>
+					4973
+				</a>
+			</td>
+			<td>
+				<a href=id3940>
+					Księgi metrykalne parafii rzymskokatolickiej Mazury
+				</a>
+			</td>
+			<td>1828-1943</td>
+			<td class="right">507</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>218</td>
+
+						<td class="right">
+				<a href=id5714>
+					4992
+				</a>
+			</td>
+			<td>
+				<a href=id5714>
+					Księgi metrykalne parafii rzymskokatolickiej Medynia Głogowska
+				</a>
+			</td>
+			<td>1826-1889</td>
+			<td class="right">1257</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>219</td>
+
+						<td class="right">
+				<a href=id4310>
+					4996
+				</a>
+			</td>
+			<td>
+				<a href=id4310>
+					Księgi metrykalne parafii rzymskokatolickiej Męcina
+				</a>
+			</td>
+			<td>1776-1943</td>
+			<td class="right">1250</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>220</td>
+
+						<td class="right">
+				<a href=id4206>
+					4999
+				</a>
+			</td>
+			<td>
+				<a href=id4206>
+					Księgi metrykalne parafii rzymskokatolickiej Mędrzechów
+				</a>
+			</td>
+			<td>1785-1900</td>
+			<td class="right">1094</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>221</td>
+
+						<td class="right">
+				<a href=id4909>
+					5013
+				</a>
+			</td>
+			<td>
+				<a href=id4909>
+					Księgi metrykalne parafii rzymskokatolickiej Michalczowa
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">343</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>222</td>
+
+						<td class="right">
+				<a href=id4963>
+					5038
+				</a>
+			</td>
+			<td>
+				<a href=id4963>
+					Księgi metrykalne parafii rzymskokatolickiej Mielec, Ducha Świętego
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">483</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>223</td>
+
+						<td class="right">
+				<a href=id4752>
+					5039
+				</a>
+			</td>
+			<td>
+				<a href=id4752>
+					Księgi metrykalne parafii rzymskokatolickiej Mielec, Matki Bożej Nieustającej Pomocy
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">499</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>224</td>
+
+						<td class="right">
+				<a href=id4323>
+					5040
+				</a>
+			</td>
+			<td>
+				<a href=id4323>
+					Księgi metrykalne parafii rzymskokatolickiej Mielec-Rzochów
+				</a>
+			</td>
+			<td>1794-1944</td>
+			<td class="right">1088</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>225</td>
+
+						<td class="right">
+				<a href=id4984>
+					5041
+				</a>
+			</td>
+			<td>
+				<a href=id4984>
+					Księgi metrykalne parafii rzymskokatolickiej Mielec, św. Mateusza
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">2514</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>226</td>
+
+						<td class="right">
+				<a href=id4822>
+					5093
+				</a>
+			</td>
+			<td>
+				<a href=id4822>
+					Księgi metrykalne parafii rzymskokatolickiej Mikluszowice
+				</a>
+			</td>
+			<td>1595-1944</td>
+			<td class="right">4498</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>227</td>
+
+						<td class="right">
+				<a href=id4786>
+					5101
+				</a>
+			</td>
+			<td>
+				<a href=id4786>
+					Księgi metrykalne parafii rzymskokatolickiej Mikołajowice
+				</a>
+			</td>
+			<td>1784-1928</td>
+			<td class="right">384</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>228</td>
+
+						<td class="right">
+				<a href=id5757>
+					5177
+				</a>
+			</td>
+			<td>
+				<a href=id5757>
+					Księgi metrykalne Parafii Rzymskokatolickiej Mława
+				</a>
+			</td>
+			<td>1939-1945</td>
+			<td class="right">466</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>229</td>
+
+						<td class="right">
+				<a href=id4311>
+					5188
+				</a>
+			</td>
+			<td>
+				<a href=id4311>
+					Księgi metrykalne parafii rzymskokatolickiej Młyńczyska
+				</a>
+			</td>
+			<td>1784-1936</td>
+			<td class="right">585</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>230</td>
+
+						<td class="right">
+				<a href=id5024>
+					5208
+				</a>
+			</td>
+			<td>
+				<a href=id5024>
+					Księgi metrykalne parafii rzymskokatolickiej Modlnica Wielka
+				</a>
+			</td>
+			<td>1604-1944</td>
+			<td class="right">2051</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>231</td>
+
+						<td class="right">
+				<a href=id4987>
+					5214
+				</a>
+			</td>
+			<td>
+				<a href=id4987>
+					Księgi metrykalne parafii rzymskokatolickiej Mogilany
+				</a>
+			</td>
+			<td>1662-1944</td>
+			<td class="right">3408</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>232</td>
+
+						<td class="right">
+				<a href=id4704>
+					5219
+				</a>
+			</td>
+			<td>
+				<a href=id4704>
+					Księgi metrykalne parafii rzymskokatolickiej Mogilno
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1139</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>233</td>
+
+						<td class="right">
+				<a href=id4869>
+					5232
+				</a>
+			</td>
+			<td>
+				<a href=id4869>
+					Księgi metrykalne parafii rzymskokatolickiej Mokrzyska
+				</a>
+			</td>
+			<td>1784-1928</td>
+			<td class="right">121</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>234</td>
+
+						<td class="right">
+				<a href=id4114>
+					5245
+				</a>
+			</td>
+			<td>
+				<a href=id4114>
+					Księgi metrykalne parafii rzymskokatolickiej Morawica
+				</a>
+			</td>
+			<td>1640-1944</td>
+			<td class="right">402</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>235</td>
+
+						<td class="right">
+				<a href=id4843>
+					5266
+				</a>
+			</td>
+			<td>
+				<a href=id4843>
+					Księgi metrykalne parafii rzymskokatolickiej Moszczenica
+				</a>
+			</td>
+			<td>1784-1912</td>
+			<td class="right">1535</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>236</td>
+
+						<td class="right">
+				<a href=id4758>
+					5268
+				</a>
+			</td>
+			<td>
+				<a href=id4758>
+					Księgi metrykalne parafii rzymskokatolickiej Moszczenica Niżna
+				</a>
+			</td>
+			<td>1786-1903</td>
+			<td class="right">369</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>237</td>
+
+						<td class="right">
+				<a href=id4571>
+					5289
+				</a>
+			</td>
+			<td>
+				<a href=id4571>
+					Księgi metrykalne parafii rzymskokatolickiej Mrowla
+				</a>
+			</td>
+			<td>1787-1943</td>
+			<td class="right">945</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>238</td>
+
+						<td class="right">
+				<a href=id4830>
+					5300
+				</a>
+			</td>
+			<td>
+				<a href=id4830>
+					Księgi metrykalne parafii rzymskokatolickiej Mszanka
+				</a>
+			</td>
+			<td>1784-1904</td>
+			<td class="right">478</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>239</td>
+
+						<td class="right">
+				<a href=id5159>
+					5308
+				</a>
+			</td>
+			<td>
+				<a href=id5159>
+					Księgi metrykalne parafii rzymskokatolickiej Mucharz
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">2829</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>240</td>
+
+						<td class="right">
+				<a href=id5004>
+					5309
+				</a>
+			</td>
+			<td>
+				<a href=id5004>
+					Księgi metrykalne parafii rzymskokatolickiej Muchówka
+				</a>
+			</td>
+			<td>1806-1944</td>
+			<td class="right">172</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>241</td>
+
+						<td class="right">
+				<a href=id4760>
+					5319
+				</a>
+			</td>
+			<td>
+				<a href=id4760>
+					Księgi metrykalne parafii rzymskokatolickiej Muszyna
+				</a>
+			</td>
+			<td>1667-1908</td>
+			<td class="right">1944</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>242</td>
+
+						<td class="right">
+				<a href=id4899>
+					5339
+				</a>
+			</td>
+			<td>
+				<a href=id4899>
+					Księgi metrykalne parafii rzymskokatolickiej Mystków
+				</a>
+			</td>
+			<td>1828-1924</td>
+			<td class="right">527</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>243</td>
+
+						<td class="right">
+				<a href=id4312>
+					5368
+				</a>
+			</td>
+			<td>
+				<a href=id4312>
+					Księgi metrykalne parafii rzymskokatolickiej Nagoszyn
+				</a>
+			</td>
+			<td>1777-1924</td>
+			<td class="right">1757</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>244</td>
+
+						<td class="right">
+				<a href=id4327>
+					5401
+				</a>
+			</td>
+			<td>
+				<a href=id4327>
+					Księgi metrykalne parafii rzymskokatolickiej Nawojowa
+				</a>
+			</td>
+			<td>1683-1944</td>
+			<td class="right">3032</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>245</td>
+
+						<td class="right">
+				<a href=id5703>
+					5423
+				</a>
+			</td>
+			<td>
+				<a href=id5703>
+					Księgi metrykalne parafii rzymskokatolickiej Niechobrz
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1074</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>246</td>
+
+						<td class="right">
+				<a href=id5000>
+					5426
+				</a>
+			</td>
+			<td>
+				<a href=id5000>
+					Księgi metrykalne parafii rzymskokatolickiej Nieciecza
+				</a>
+			</td>
+			<td>1787-1901</td>
+			<td class="right">380</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>247</td>
+
+						<td class="right">
+				<a href=id4309>
+					5427
+				</a>
+			</td>
+			<td>
+				<a href=id4309>
+					Księgi metrykalne parafii rzymskokatolickiej Nieczajna Górna
+				</a>
+			</td>
+			<td>1786-1911</td>
+			<td class="right">633</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>248</td>
+
+						<td class="right">
+				<a href=id4999>
+					5429
+				</a>
+			</td>
+			<td>
+				<a href=id4999>
+					Księgi metrykalne parafii rzymskokatolickiej Niedomice
+				</a>
+			</td>
+			<td>1828-1903</td>
+			<td class="right">205</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>249</td>
+
+						<td class="right">
+				<a href=id4710>
+					5435
+				</a>
+			</td>
+			<td>
+				<a href=id4710>
+					Księgi metrykalne parafii rzymskokatolickiej Niedzieliska
+				</a>
+			</td>
+			<td>1835-1944</td>
+			<td class="right">465</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>250</td>
+
+						<td class="right">
+				<a href=id4957>
+					5436
+				</a>
+			</td>
+			<td>
+				<a href=id4957>
+					Księgi metrykalne parafii rzymskokatolickiej Niedźwiedza
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">348</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>251</td>
+
+						<td class="right">
+				<a href=id4874>
+					5473
+				</a>
+			</td>
+			<td>
+				<a href=id4874>
+					Księgi metrykalne parafii rzymskokatolickiej Nienadówka
+				</a>
+			</td>
+			<td>1779-1944</td>
+			<td class="right">1556</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>252</td>
+
+						<td class="right">
+				<a href=id5655>
+					5474
+				</a>
+			</td>
+			<td>
+				<a href=id5655>
+					Księgi metrykalne parafii rzymskokatolickiej Nienaszów
+				</a>
+			</td>
+			<td>1887-1945</td>
+			<td class="right">200</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>253</td>
+
+						<td class="right">
+				<a href=id4578>
+					5504
+				</a>
+			</td>
+			<td>
+				<a href=id4578>
+					Księgi metrykalne parafii rzymskokatolickiej Nisko
+				</a>
+			</td>
+			<td>1801-1944</td>
+			<td class="right">2026</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>254</td>
+
+						<td class="right">
+				<a href=id4236>
+					5507
+				</a>
+			</td>
+			<td>
+				<a href=id4236>
+					Księgi metrykalne Parafii Rzymskokatolickiej Niwiska
+				</a>
+			</td>
+			<td>1784-1924</td>
+			<td class="right">3363</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>255</td>
+
+						<td class="right">
+				<a href=id5632>
+					5514
+				</a>
+			</td>
+			<td>
+				<a href=id5632>
+					Księgi metrykalne parafii rzymskokatolickiej Nockowa
+				</a>
+			</td>
+			<td>1721-1945</td>
+			<td class="right">3479</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>256</td>
+
+						<td class="right">
+				<a href=id4345>
+					5527
+				</a>
+			</td>
+			<td>
+				<a href=id4345>
+					Księgi metrykalne parafii rzymskokatolickiej Nowa Jastrząbka
+				</a>
+			</td>
+			<td>1840-1910</td>
+			<td class="right">334</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>257</td>
+
+						<td class="right">
+				<a href=id4378>
+					5571
+				</a>
+			</td>
+			<td>
+				<a href=id4378>
+					Księgi metrykalne parafii rzymskokatolickiej Nowe Rybie
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1527</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>258</td>
+
+						<td class="right">
+				<a href=id4337>
+					5616
+				</a>
+			</td>
+			<td>
+				<a href=id4337>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Sącz-Zawada
+				</a>
+			</td>
+			<td>1786-1939</td>
+			<td class="right">735</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>259</td>
+
+						<td class="right">
+				<a href=id4363>
+					5621
+				</a>
+			</td>
+			<td>
+				<a href=id4363>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Sącz
+				</a>
+			</td>
+			<td>1671-1944</td>
+			<td class="right">6696</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>260</td>
+
+						<td class="right">
+				<a href=id4764>
+					5622
+				</a>
+			</td>
+			<td>
+				<a href=id4764>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Sącz-Dąbrówka Polska
+				</a>
+			</td>
+			<td>1867-1944</td>
+			<td class="right">169</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>261</td>
+
+						<td class="right">
+				<a href=id4247>
+					5623
+				</a>
+			</td>
+			<td>
+				<a href=id4247>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Sącz-Biegonice
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">810</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>262</td>
+
+						<td class="right">
+				<a href=id4730>
+					5630
+				</a>
+			</td>
+			<td>
+				<a href=id4730>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Targ
+				</a>
+			</td>
+			<td>1718-1944</td>
+			<td class="right">4050</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>263</td>
+
+						<td class="right">
+				<a href=id4931>
+					5637
+				</a>
+			</td>
+			<td>
+				<a href=id4931>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Wiśnicz
+				</a>
+			</td>
+			<td>1811-1922</td>
+			<td class="right">1720</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>264</td>
+
+						<td class="right">
+				<a href=id5677>
+					5638
+				</a>
+			</td>
+			<td>
+				<a href=id5677>
+					Księgi metrykalne parafii rzymskokatolickiej Nowy Żmigród
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2229</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>265</td>
+
+						<td class="right">
+				<a href=id4759>
+					5654
+				</a>
+			</td>
+			<td>
+				<a href=id4759>
+					Księgi metrykalne parafii rzymskokatolickiej Obidza
+				</a>
+			</td>
+			<td>1786-1906</td>
+			<td class="right">654</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>266</td>
+
+						<td class="right">
+				<a href=id4217>
+					5686
+				</a>
+			</td>
+			<td>
+				<a href=id4217>
+					Księgi metrykalne parafii rzymskokatolickiej Ochotnica Dolna
+				</a>
+			</td>
+			<td>1784-1901</td>
+			<td class="right">1577</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>267</td>
+
+						<td class="right">
+				<a href=id4365>
+					5689
+				</a>
+			</td>
+			<td>
+				<a href=id4365>
+					Księgi metrykalne parafii rzymskokatolickiej Ocieka
+				</a>
+			</td>
+			<td>1731-1944</td>
+			<td class="right">1394</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>268</td>
+
+						<td class="right">
+				<a href=id4260>
+					5696
+				</a>
+			</td>
+			<td>
+				<a href=id4260>
+					Księgi metrykalne parafii rzymskokatolickiej Odporyszów
+				</a>
+			</td>
+			<td>1781-1944</td>
+			<td class="right">1828</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>269</td>
+
+						<td class="right">
+				<a href=id4089>
+					5702
+				</a>
+			</td>
+			<td>
+				<a href=id4089>
+					Księgi metrykalne parafii rzymskokatolickiej Odrzykoń
+				</a>
+			</td>
+			<td>1784-1939</td>
+			<td class="right">2108</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>270</td>
+
+						<td class="right">
+				<a href=id4751>
+					5713
+				</a>
+			</td>
+			<td>
+				<a href=id4751>
+					Księgi metrykalne parafii rzymskokatolickiej Okocim
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1197</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>271</td>
+
+						<td class="right">
+				<a href=id4950>
+					5719
+				</a>
+			</td>
+			<td>
+				<a href=id4950>
+					Księgi metrykalne parafii rzymskokatolickiej Okulice
+				</a>
+			</td>
+			<td>1776-1944</td>
+			<td class="right">2260</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>272</td>
+
+						<td class="right">
+				<a href=id4367>
+					5741
+				</a>
+			</td>
+			<td>
+				<a href=id4367>
+					Księgi metrykalne parafii rzymskokatolickiej Olesno
+				</a>
+			</td>
+			<td>1719-1932</td>
+			<td class="right">2688</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>273</td>
+
+						<td class="right">
+				<a href=id4229>
+					5755
+				</a>
+			</td>
+			<td>
+				<a href=id4229>
+					Księgi metrykalne parafii rzymskokatolickiej Olszanka
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">73</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>274</td>
+
+						<td class="right">
+				<a href=id4713>
+					5792
+				</a>
+			</td>
+			<td>
+				<a href=id4713>
+					Księgi metrykalne parafii rzymskokatolickiej Olszyny k. Wojnicza
+				</a>
+			</td>
+			<td>1636-1944</td>
+			<td class="right">1293</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>275</td>
+
+						<td class="right">
+				<a href=id4734>
+					5793
+				</a>
+			</td>
+			<td>
+				<a href=id4734>
+					Księgi metrykalne parafii rzymskokatolickiej Olszyny k. Jasła
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1124</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>276</td>
+
+						<td class="right">
+				<a href=id4947>
+					5803
+				</a>
+			</td>
+			<td>
+				<a href=id4947>
+					Księgi metrykalne parafii rzymskokatolickiej Ołpiny
+				</a>
+			</td>
+			<td>1733-1944</td>
+			<td class="right">1920</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>277</td>
+
+						<td class="right">
+				<a href=id5626>
+					5902
+				</a>
+			</td>
+			<td>
+				<a href=id5626>
+					Księgi metrykalne parafii rzymskokatolickiej Osiek Jasielski
+				</a>
+			</td>
+			<td>1840-1945</td>
+			<td class="right">877</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>278</td>
+
+						<td class="right">
+				<a href=id5699>
+					5919
+				</a>
+			</td>
+			<td>
+				<a href=id5699>
+					Księgi metrykalne parafii rzymskokatolickiej Osobnica
+				</a>
+			</td>
+			<td>1868-1945</td>
+			<td class="right">733</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>279</td>
+
+						<td class="right">
+				<a href=id6>
+					5956d
+				</a>
+			</td>
+			<td>
+				<a href=id6>
+					Księgi metrykalne parafii rzymskokatolickiej Denków
+				</a>
+			</td>
+			<td>1676-1940</td>
+			<td class="right">5520</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>280</td>
+
+						<td class="right">
+				<a href=id4631>
+					5972
+				</a>
+			</td>
+			<td>
+				<a href=id4631>
+					Księgi metrykalne parafii rzymskokatolickiej Ostrowy Tuszowskie
+				</a>
+			</td>
+			<td>1670-1944</td>
+			<td class="right">2431</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>281</td>
+
+						<td class="right">
+				<a href=id4294>
+					5985
+				</a>
+			</td>
+			<td>
+				<a href=id4294>
+					Księgi metrykalne parafii rzymskokatolickiej Ostrów
+				</a>
+			</td>
+			<td>1777-1938</td>
+			<td class="right">622</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>282</td>
+
+						<td class="right">
+				<a href=id4244>
+					6029
+				</a>
+			</td>
+			<td>
+				<a href=id4244>
+					Księgi metrykalne parafii rzymskokatolickiej Otfinów
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">2271</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>283</td>
+
+						<td class="right">
+				<a href=id5858>
+					6049
+				</a>
+			</td>
+			<td>
+				<a href=id5858>
+					Księgi parafialne grekokatolickiej parafii Owczary (Rychwałd)
+				</a>
+			</td>
+			<td>XIX-XX wiek</td>
+			<td class="right">235</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>284</td>
+
+						<td class="right">
+				<a href=id5055>
+					6084
+				</a>
+			</td>
+			<td>
+				<a href=id5055>
+					Księgi metrykalne parafii rzymskokatolickiej Paleśnica
+				</a>
+			</td>
+			<td>1631-1944</td>
+			<td class="right">1286</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>285</td>
+
+						<td class="right">
+				<a href=id4907>
+					6124
+				</a>
+			</td>
+			<td>
+				<a href=id4907>
+					Księgi metrykalne parafii rzymskokatolickiej Pasierbiec
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">293</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>286</td>
+
+						<td class="right">
+				<a href=id4293>
+					6130
+				</a>
+			</td>
+			<td>
+				<a href=id4293>
+					Księgi metrykalne parafii rzymskokatolickiej Paszczyna
+				</a>
+			</td>
+			<td>1786-1937</td>
+			<td class="right">673</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>287</td>
+
+						<td class="right">
+				<a href=id5189>
+					6132
+				</a>
+			</td>
+			<td>
+				<a href=id5189>
+					Księgi metrykalne parafii rzymskokatolickiej Paszkówka (Pobiedr)
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">2924</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>288</td>
+
+						<td class="right">
+				<a href=id4936>
+					6135
+				</a>
+			</td>
+			<td>
+				<a href=id4936>
+					Księgi metrykalne parafii rzymskokatolickiej Paszyn
+				</a>
+			</td>
+			<td>1827-1937</td>
+			<td class="right">326</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>289</td>
+
+						<td class="right">
+				<a href=id4778>
+					6138
+				</a>
+			</td>
+			<td>
+				<a href=id4778>
+					Księgi metrykalne parafii rzymskokatolickiej Pawęzów
+				</a>
+			</td>
+			<td>1848-1902</td>
+			<td class="right">137</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>290</td>
+
+						<td class="right">
+				<a href=id3293>
+					6248
+				</a>
+			</td>
+			<td>
+				<a href=id3293>
+					Księgi metrykalne parafii rzymskokatolickiej Pilchów
+				</a>
+			</td>
+			<td>1832-1922</td>
+			<td class="right">269</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>291</td>
+
+						<td class="right">
+				<a href=id4919>
+					6254
+				</a>
+			</td>
+			<td>
+				<a href=id4919>
+					Księgi metrykalne parafii rzymskokatolickiej Pilzno
+				</a>
+			</td>
+			<td>1669-1944</td>
+			<td class="right">4754</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>292</td>
+
+						<td class="right">
+				<a href=id4834>
+					6281
+				</a>
+			</td>
+			<td>
+				<a href=id4834>
+					Księgi metrykalne parafii rzymskokatolickiej Piotrkowice
+				</a>
+			</td>
+			<td>1662-1941</td>
+			<td class="right">1581</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>293</td>
+
+						<td class="right">
+				<a href=id4658>
+					6294
+				</a>
+			</td>
+			<td>
+				<a href=id4658>
+					Księgi metrykalne parafii rzymskokatolickiej Piotrowice
+				</a>
+			</td>
+			<td>1685-1922</td>
+			<td class="right">1521</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>294</td>
+
+						<td class="right">
+				<a href=id4257>
+					6302
+				</a>
+			</td>
+			<td>
+				<a href=id4257>
+					Księgi metrykalne parafii rzymskokatolickiej Pisarzowa
+				</a>
+			</td>
+			<td>1696-1944</td>
+			<td class="right">1305</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>295</td>
+
+						<td class="right">
+				<a href=id4996>
+					6319
+				</a>
+			</td>
+			<td>
+				<a href=id4996>
+					Księgi metrykalne parafii rzymskokatolickiej Piwniczna-Zdrój
+				</a>
+			</td>
+			<td>1759-1900</td>
+			<td class="right">2045</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>296</td>
+
+						<td class="right">
+				<a href=id4737>
+					6328
+				</a>
+			</td>
+			<td>
+				<a href=id4737>
+					Księgi metrykalne parafii rzymskokatolickiej Pleśna
+				</a>
+			</td>
+			<td>1671-1944</td>
+			<td class="right">2190</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>297</td>
+
+						<td class="right">
+				<a href=id4718>
+					6384
+				</a>
+			</td>
+			<td>
+				<a href=id4718>
+					Księgi metrykalne parafii rzymskokatolickiej Pniów
+				</a>
+			</td>
+			<td>1784-1943</td>
+			<td class="right">1451</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>298</td>
+
+						<td class="right">
+				<a href=id4266>
+					6396
+				</a>
+			</td>
+			<td>
+				<a href=id4266>
+					Księgi metrykalne parafii rzymskokatolickiej Podegrodzie
+				</a>
+			</td>
+			<td>1651-1944</td>
+			<td class="right">3993</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>299</td>
+
+						<td class="right">
+				<a href=id4754>
+					6414
+				</a>
+			</td>
+			<td>
+				<a href=id4754>
+					Księgi metrykalne parafii rzymskokatolickiej Podole-Górowa
+				</a>
+			</td>
+			<td>1654-1937</td>
+			<td class="right">2158</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>300</td>
+
+						<td class="right">
+				<a href=id4968>
+					6429
+				</a>
+			</td>
+			<td>
+				<a href=id4968>
+					Księgi metrykalne parafii rzymskokatolickiej Pogórska Wola
+				</a>
+			</td>
+			<td>1837-1907</td>
+			<td class="right">554</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>301</td>
+
+						<td class="right">
+				<a href=id4893>
+					6434
+				</a>
+			</td>
+			<td>
+				<a href=id4893>
+					Księgi metrykalne parafii rzymskokatolickiej Pogwizdów
+				</a>
+			</td>
+			<td>1777-1921</td>
+			<td class="right">1051</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>302</td>
+
+						<td class="right">
+				<a href=id4836>
+					6464
+				</a>
+			</td>
+			<td>
+				<a href=id4836>
+					Księgi metrykalne parafii rzymskokatolickiej Polna
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">891</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>303</td>
+
+						<td class="right">
+				<a href=id5762>
+					6481
+				</a>
+			</td>
+			<td>
+				<a href=id5762>
+					Księgi metrykalne parafii rzymskokatolickiej Połomia
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1745</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>304</td>
+
+						<td class="right">
+				<a href=id4801>
+					6515
+				</a>
+			</td>
+			<td>
+				<a href=id4801>
+					Księgi metrykalne parafii rzymskokatolickiej Porąbka Uszewska
+				</a>
+			</td>
+			<td>1660-1938</td>
+			<td class="right">2356</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>305</td>
+
+						<td class="right">
+				<a href=id4952>
+					6523
+				</a>
+			</td>
+			<td>
+				<a href=id4952>
+					Księgi metrykalne parafii rzymskokatolickiej Poręba Radlna
+				</a>
+			</td>
+			<td>1790-1944</td>
+			<td class="right">1197</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>306</td>
+
+						<td class="right">
+				<a href=id4750>
+					6524
+				</a>
+			</td>
+			<td>
+				<a href=id4750>
+					Księgi metrykalne parafii rzymskokatolickiej Poręba Spytkowska
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1226</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>307</td>
+
+						<td class="right">
+				<a href=id4316>
+					6688
+				</a>
+			</td>
+			<td>
+				<a href=id4316>
+					Księgi metrykalne parafii rzymskokatolickiej Przecław
+				</a>
+			</td>
+			<td>1660-1944</td>
+			<td class="right">3043</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>308</td>
+
+						<td class="right">
+				<a href=id4252>
+					6691
+				</a>
+			</td>
+			<td>
+				<a href=id4252>
+					Księgi metrykalne parafii rzymskokatolickiej Przeczyca
+				</a>
+			</td>
+			<td>1784-1929</td>
+			<td class="right">1826</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>309</td>
+
+						<td class="right">
+				<a href=id4385>
+					6695
+				</a>
+			</td>
+			<td>
+				<a href=id4385>
+					Księgi metrykalne Parafii Rzymskokatolickiej Przedbórz
+				</a>
+			</td>
+			<td>1788-1921</td>
+			<td class="right">899</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>310</td>
+
+						<td class="right">
+				<a href=id4826>
+					6756
+				</a>
+			</td>
+			<td>
+				<a href=id4826>
+					Księgi metrykalne parafii rzymskokatolickiej Przybysławice
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">186</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>311</td>
+
+						<td class="right">
+				<a href=id5217>
+					6760
+				</a>
+			</td>
+			<td>
+				<a href=id5217>
+					Księgi metrykalne parafii rzymskokatolickiej Rzeszów-Przybyszówka
+				</a>
+			</td>
+			<td>1787-1945</td>
+			<td class="right">1234</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>312</td>
+
+						<td class="right">
+				<a href=id4745>
+					6761
+				</a>
+			</td>
+			<td>
+				<a href=id4745>
+					Księgi metrykalne parafii rzymskokatolickiej Przydonica
+				</a>
+			</td>
+			<td>1834-1900</td>
+			<td class="right">262</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>313</td>
+
+						<td class="right">
+				<a href=id4256>
+					6780
+				</a>
+			</td>
+			<td>
+				<a href=id4256>
+					Księgi metrykalne parafii rzymskokatolickiej Przyszowa
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">1299</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>314</td>
+
+						<td class="right">
+				<a href=id5167>
+					6797
+				</a>
+			</td>
+			<td>
+				<a href=id5167>
+					Księgi metrykalne parafii rzymskokatolickiej Pstrągowa
+				</a>
+			</td>
+			<td>1784-1900</td>
+			<td class="right">1827</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>315</td>
+
+						<td class="right">
+				<a href=id4878>
+					6809
+				</a>
+			</td>
+			<td>
+				<a href=id4878>
+					Księgi metrykalne parafii rzymskokatolickiej Ptaszkowa
+				</a>
+			</td>
+			<td>1766-1940</td>
+			<td class="right">644</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>316</td>
+
+						<td class="right">
+				<a href=id2970>
+					6883
+				</a>
+			</td>
+			<td>
+				<a href=id2970>
+					Księgi metrykalne parafii rzymskokatolickiej Racławice
+				</a>
+			</td>
+			<td>1826-1943</td>
+			<td class="right">1444</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>317</td>
+
+						<td class="right">
+				<a href=id4224>
+					6902
+				</a>
+			</td>
+			<td>
+				<a href=id4224>
+					Księgi metrykalne parafii rzymskokatolickiej Radgoszcz
+				</a>
+			</td>
+			<td>1663-1928</td>
+			<td class="right">2615</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>318</td>
+
+						<td class="right">
+				<a href=id4960>
+					6910
+				</a>
+			</td>
+			<td>
+				<a href=id4960>
+					Księgi metrykalne parafii rzymskokatolickiej Radłów
+				</a>
+			</td>
+			<td>1609-1944</td>
+			<td class="right">4286</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>319</td>
+
+						<td class="right">
+				<a href=id3273>
+					6969
+				</a>
+			</td>
+			<td>
+				<a href=id3273>
+					Księgi metrykalne parafii rzymskokatolickiej Radomyśl nad Sanem
+				</a>
+			</td>
+			<td>1780-1944</td>
+			<td class="right">2242</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>320</td>
+
+						<td class="right">
+				<a href=id4368>
+					6970
+				</a>
+			</td>
+			<td>
+				<a href=id4368>
+					Księgi metrykalne Parafii Rzymskokatolickiej Radomyśl Wielki
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1658</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>321</td>
+
+						<td class="right">
+				<a href=id4946>
+					7020
+				</a>
+			</td>
+			<td>
+				<a href=id4946>
+					Księgi metrykalne parafii rzymskokatolickiej Rajbrot
+				</a>
+			</td>
+			<td>1681-1925</td>
+			<td class="right">1748</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>322</td>
+
+						<td class="right">
+				<a href=id3083>
+					7031
+				</a>
+			</td>
+			<td>
+				<a href=id3083>
+					Księgi metrykalne parafii rzymskokatolickiej Raków
+				</a>
+			</td>
+			<td>1797-1910</td>
+			<td class="right">2903</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>323</td>
+
+						<td class="right">
+				<a href=id3144>
+					7036
+				</a>
+			</td>
+			<td>
+				<a href=id3144>
+					Księgi metrykalne parafii rzymskokatolickiej Raniżów
+				</a>
+			</td>
+			<td>1786-1925</td>
+			<td class="right">1522</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>324</td>
+
+						<td class="right">
+				<a href=id4854>
+					7149
+				</a>
+			</td>
+			<td>
+				<a href=id4854>
+					Księgi metrykalne parafii rzymskokatolickiej Ropa
+				</a>
+			</td>
+			<td>1784-1920</td>
+			<td class="right">1218</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>325</td>
+
+						<td class="right">
+				<a href=id5664>
+					7151
+				</a>
+			</td>
+			<td>
+				<a href=id5664>
+					Księgi metrykalne parafii rzymskokatolickiej Ropczyce-Fara
+				</a>
+			</td>
+			<td>1701-1945</td>
+			<td class="right">3574</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>326</td>
+
+						<td class="right">
+				<a href=id5886>
+					7194
+				</a>
+			</td>
+			<td>
+				<a href=id5886>
+					Księgi metrykalne parafii rzymskokatolickiej Rożnowice
+				</a>
+			</td>
+			<td>1684-1945</td>
+			<td class="right">2524</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>327</td>
+
+						<td class="right">
+				<a href=id4709>
+					7197
+				</a>
+			</td>
+			<td>
+				<a href=id4709>
+					Księgi metrykalne parafii rzymskokatolickiej Rożnów
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">1378</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>328</td>
+
+						<td class="right">
+				<a href=id4287>
+					7201
+				</a>
+			</td>
+			<td>
+				<a href=id4287>
+					Księgi metrykalne parafii rzymskokatolickiej Róża
+				</a>
+			</td>
+			<td>1784-1924</td>
+			<td class="right">1171</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>329</td>
+
+						<td class="right">
+				<a href=id4340>
+					7218
+				</a>
+			</td>
+			<td>
+				<a href=id4340>
+					Księgi metrykalne parafii rzymskokatolickiej Ruda
+				</a>
+			</td>
+			<td>1786-1902</td>
+			<td class="right">312</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>330</td>
+
+						<td class="right">
+				<a href=id3864>
+					7243
+				</a>
+			</td>
+			<td>
+				<a href=id3864>
+					Księgi metrykalne parafii rzymskokatolickiej Rudawa
+				</a>
+			</td>
+			<td>1570-1798</td>
+			<td class="right">1447</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>331</td>
+
+						<td class="right">
+				<a href=id4780>
+					7245
+				</a>
+			</td>
+			<td>
+				<a href=id4780>
+					Księgi metrykalne parafii rzymskokatolickiej Rudka
+				</a>
+			</td>
+			<td>1784-1931</td>
+			<td class="right">536</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>332</td>
+
+						<td class="right">
+				<a href=id5169>
+					7250
+				</a>
+			</td>
+			<td>
+				<a href=id5169>
+					Księgi metrykalne parafii rzymskokatolickiej Rudna Wielka
+				</a>
+			</td>
+			<td>1787-1920</td>
+			<td class="right">1028</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>333</td>
+
+						<td class="right">
+				<a href=id4825>
+					7267
+				</a>
+			</td>
+			<td>
+				<a href=id4825>
+					Księgi metrykalne parafii rzymskokatolickiej Rudy-Rysie
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">287</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>334</td>
+
+						<td class="right">
+				<a href=id4955>
+					7353
+				</a>
+			</td>
+			<td>
+				<a href=id4955>
+					Księgi metrykalne parafii rzymskokatolickiej Ryglice
+				</a>
+			</td>
+			<td>1654-1944</td>
+			<td class="right">3292</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>335</td>
+
+						<td class="right">
+				<a href=id4253>
+					7373
+				</a>
+			</td>
+			<td>
+				<a href=id4253>
+					Księgi metrykalne parafii rzymskokatolickiej Rytro
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">919</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>336</td>
+
+						<td class="right">
+				<a href=id4995>
+					7395
+				</a>
+			</td>
+			<td>
+				<a href=id4995>
+					Księgi metrykalne parafii rzymskokatolickiej Rzepiennik Biskupi
+				</a>
+			</td>
+			<td>1764-1944</td>
+			<td class="right">3380</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>337</td>
+
+						<td class="right">
+				<a href=id4715>
+					7396
+				</a>
+			</td>
+			<td>
+				<a href=id4715>
+					Księgi metrykalne parafii rzymskokatolickiej Rzepiennik Strzyżewski
+				</a>
+			</td>
+			<td>1849-1944</td>
+			<td class="right">367</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>338</td>
+
+						<td class="right">
+				<a href=id4755>
+					7397
+				</a>
+			</td>
+			<td>
+				<a href=id4755>
+					Księgi metrykalne parafii rzymskokatolickiej Rzepiennik Suchy
+				</a>
+			</td>
+			<td>1859-1944</td>
+			<td class="right">271</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>339</td>
+
+						<td class="right">
+				<a href=id5631>
+					7407
+				</a>
+			</td>
+			<td>
+				<a href=id5631>
+					Księgi metrykalne parafii rzymskokatolickiej Rzeszów, Chrystusa Króla
+				</a>
+			</td>
+			<td>1890-1945</td>
+			<td class="right">222</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>340</td>
+
+						<td class="right">
+				<a href=id4871>
+					7414
+				</a>
+			</td>
+			<td>
+				<a href=id4871>
+					Księgi metrykalne parafii rzymskokatolickiej Rzeszów-Staromieście
+				</a>
+			</td>
+			<td>1844-1944</td>
+			<td class="right">775</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>341</td>
+
+						<td class="right">
+				<a href=id4870>
+					7416
+				</a>
+			</td>
+			<td>
+				<a href=id4870>
+					Księgi metrykalne parafii rzymskokatolickiej Rzeszów-Słocina
+				</a>
+			</td>
+			<td>1850-1940</td>
+			<td class="right">549</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>342</td>
+
+						<td class="right">
+				<a href=id4706>
+					7421
+				</a>
+			</td>
+			<td>
+				<a href=id4706>
+					Księgi metrykalne parafii rzymskokatolickiej Rzezawa
+				</a>
+			</td>
+			<td>1752-1944</td>
+			<td class="right">3357</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>343</td>
+
+						<td class="right">
+				<a href=id5010>
+					7422
+				</a>
+			</td>
+			<td>
+				<a href=id5010>
+					Księgi metrykalne parafii rzymskokatolickiej Rzędzianowice
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">494</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>344</td>
+
+						<td class="right">
+				<a href=id4863>
+					7426
+				</a>
+			</td>
+			<td>
+				<a href=id4863>
+					Księgi metrykalne parafii rzymskokatolickiej Rzuchowa
+				</a>
+			</td>
+			<td>1784-1920</td>
+			<td class="right">254</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>345</td>
+
+						<td class="right">
+				<a href=id4208>
+					7448
+				</a>
+			</td>
+			<td>
+				<a href=id4208>
+					Księgi metrykalne parafii rzymskokatolickiej Samocice
+				</a>
+			</td>
+			<td>1839-1900</td>
+			<td class="right">154</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>346</td>
+
+						<td class="right">
+				<a href=id5625>
+					7450
+				</a>
+			</td>
+			<td>
+				<a href=id5625>
+					Księgi metrykalne parafii rzymskokatolickiej Samoklęski
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2092</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>347</td>
+
+						<td class="right">
+				<a href=id3924>
+					7486
+				</a>
+			</td>
+			<td>
+				<a href=id3924>
+					Księgi metrykalne Parafii Rzymskokatolickiej Sarzyna
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1983</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>348</td>
+
+						<td class="right">
+				<a href=id5786>
+					7516
+				</a>
+			</td>
+			<td>
+				<a href=id5786>
+					Księgi metrykalne parafii rzymskokatolickiej Sędziszów Małopolski
+				</a>
+			</td>
+			<td>1675-1945</td>
+			<td class="right">3191</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>349</td>
+
+						<td class="right">
+				<a href=id5842>
+					7518
+				</a>
+			</td>
+			<td>
+				<a href=id5842>
+					Księgi metrykalne parafii rzymskokatolickiej Sękowa
+				</a>
+			</td>
+			<td>1776-1945</td>
+			<td class="right">2111</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>350</td>
+
+						<td class="right">
+				<a href=id4761>
+					7541
+				</a>
+			</td>
+			<td>
+				<a href=id4761>
+					Księgi metrykalne parafii rzymskokatolickiej Siedlce
+				</a>
+			</td>
+			<td>1752-1902</td>
+			<td class="right">787</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>351</td>
+
+						<td class="right">
+				<a href=id4856>
+					7559
+				</a>
+			</td>
+			<td>
+				<a href=id4856>
+					Księgi metrykalne parafii rzymskokatolickiej Siedliska k. Bobowej
+				</a>
+			</td>
+			<td>1783-1920</td>
+			<td class="right">1488</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>352</td>
+
+						<td class="right">
+				<a href=id4225>
+					7561
+				</a>
+			</td>
+			<td>
+				<a href=id4225>
+					Księgi metrykalne parafii rzymskokatolickiej Siedliska-Bogusz
+				</a>
+			</td>
+			<td>1713-1928</td>
+			<td class="right">2230</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>353</td>
+
+						<td class="right">
+				<a href=id4851>
+					7563
+				</a>
+			</td>
+			<td>
+				<a href=id4851>
+					Księgi metrykalne parafii rzymskokatolickiej Siedliska Tuchowskie
+				</a>
+			</td>
+			<td>1796-1920</td>
+			<td class="right">613</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>354</td>
+
+						<td class="right">
+				<a href=id5807>
+					7574
+				</a>
+			</td>
+			<td>
+				<a href=id5807>
+					Księgi metrykalne parafii rzymskokatolickiej Sieklówka
+				</a>
+			</td>
+			<td>1781-1945</td>
+			<td class="right">925</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>355</td>
+
+						<td class="right">
+				<a href=id4736>
+					7589
+				</a>
+			</td>
+			<td>
+				<a href=id4736>
+					Księgi metrykalne parafii rzymskokatolickiej Siemiechów
+				</a>
+			</td>
+			<td>1657-1940</td>
+			<td class="right">1467</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>356</td>
+
+						<td class="right">
+				<a href=id4377>
+					7604
+				</a>
+			</td>
+			<td>
+				<a href=id4377>
+					Księgi metrykalne parafii rzymskokatolickiej Sienna
+				</a>
+			</td>
+			<td>1725-1942</td>
+			<td class="right">1232</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>357</td>
+
+						<td class="right">
+				<a href=id4793>
+					7610
+				</a>
+			</td>
+			<td>
+				<a href=id4793>
+					Księgi metrykalne parafii rzymskokatolickiej Siepraw
+				</a>
+			</td>
+			<td>1622-1945</td>
+			<td class="right">4120</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>358</td>
+
+						<td class="right">
+				<a href=id5656>
+					7648
+				</a>
+			</td>
+			<td>
+				<a href=id5656>
+					Księgi metrykalne parafii rzymskokatolickiej Skalnik
+				</a>
+			</td>
+			<td>1784-1925</td>
+			<td class="right">329</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>359</td>
+
+						<td class="right">
+				<a href=id4193>
+					7668
+				</a>
+			</td>
+			<td>
+				<a href=id4193>
+					Księgi metrykalne parafii rzymskokatolickiej Skawa
+				</a>
+			</td>
+			<td>1805-1944</td>
+			<td class="right">1663</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>360</td>
+
+						<td class="right">
+				<a href=id5132>
+					7669
+				</a>
+			</td>
+			<td>
+				<a href=id5132>
+					Księgi metrykalne parafii rzymskokatolickiej Skawica
+				</a>
+			</td>
+			<td>1810-1945</td>
+			<td class="right">1459</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>361</td>
+
+						<td class="right">
+				<a href=id4763>
+					7671
+				</a>
+			</td>
+			<td>
+				<a href=id4763>
+					Księgi metrykalne parafii rzymskokatolickiej Skawina
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1801</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>362</td>
+
+						<td class="right">
+				<a href=id4762>
+					7722
+				</a>
+			</td>
+			<td>
+				<a href=id4762>
+					Księgi metrykalne parafii rzymskokatolickiej Skrzydlna
+				</a>
+			</td>
+			<td>1668-1944</td>
+			<td class="right">1480</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>363</td>
+
+						<td class="right">
+				<a href=id4308>
+					7728
+				</a>
+			</td>
+			<td>
+				<a href=id4308>
+					Księgi metrykalne parafii rzymskokatolickiej Skrzyszów
+				</a>
+			</td>
+			<td>1786-1916</td>
+			<td class="right">409</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>364</td>
+
+						<td class="right">
+				<a href=id4790>
+					7730
+				</a>
+			</td>
+			<td>
+				<a href=id4790>
+					Księgi metrykalne parafii rzymskokatolickiej Skrzyszów
+				</a>
+			</td>
+			<td>1752-1924</td>
+			<td class="right">1658</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>365</td>
+
+						<td class="right">
+				<a href=id4275>
+					7764
+				</a>
+			</td>
+			<td>
+				<a href=id4275>
+					Księgi metrykalne parafii rzymskokatolickiej Słopnice
+				</a>
+			</td>
+			<td>1618-1944</td>
+			<td class="right">2772</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>366</td>
+
+						<td class="right">
+				<a href=id4259>
+					7766
+				</a>
+			</td>
+			<td>
+				<a href=id4259>
+					Księgi metrykalne parafii rzymskokatolickiej Słotowa
+				</a>
+			</td>
+			<td>1867-1944</td>
+			<td class="right">284</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>367</td>
+
+						<td class="right">
+				<a href=id4283>
+					7790
+				</a>
+			</td>
+			<td>
+				<a href=id4283>
+					Księgi metrykalne parafii rzymskokatolickiej Słupiec
+				</a>
+			</td>
+			<td>1786-1924</td>
+			<td class="right">623</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>368</td>
+
+						<td class="right">
+				<a href=id4861>
+					7843
+				</a>
+			</td>
+			<td>
+				<a href=id4861>
+					Księgi metrykalne parafii rzymskokatolickiej Sobolów
+				</a>
+			</td>
+			<td>1678-1928</td>
+			<td class="right">2127</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>369</td>
+
+						<td class="right">
+				<a href=id3922>
+					7880
+				</a>
+			</td>
+			<td>
+				<a href=id3922>
+					Księgi metrykalne Parafii Rzymskokatolickiej Sokołów Małopolski
+				</a>
+			</td>
+			<td>1784-1890</td>
+			<td class="right">2068</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>370</td>
+
+						<td class="right">
+				<a href=id3856>
+					7967
+				</a>
+			</td>
+			<td>
+				<a href=id3856>
+					Księgi metrykalne parafii rzymskokatolickiej Spie
+				</a>
+			</td>
+			<td>1773-1909</td>
+			<td class="right">3302</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>371</td>
+
+						<td class="right">
+				<a href=id4211>
+					7976
+				</a>
+			</td>
+			<td>
+				<a href=id4211>
+					Księgi metrykalne parafii rzymskokatolickiej Sromowce Niżne
+				</a>
+			</td>
+			<td>1788-1900</td>
+			<td class="right">193</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>372</td>
+
+						<td class="right">
+				<a href=id3934>
+					7981
+				</a>
+			</td>
+			<td>
+				<a href=id3934>
+					Księgi metrykalne parafii rzymskokatolickiej Stale
+				</a>
+			</td>
+			<td>1786-1917</td>
+			<td class="right">663</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>373</td>
+
+						<td class="right">
+				<a href=id4279>
+					7984
+				</a>
+			</td>
+			<td>
+				<a href=id4279>
+					Księgi metrykalne parafii rzymskokatolickiej Stalowa Wola-Rozwadów
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">2431</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>374</td>
+
+						<td class="right">
+				<a href=id3935>
+					7986
+				</a>
+			</td>
+			<td>
+				<a href=id3935>
+					Księgi metrykalne parafii rzymskokatolickiej Stalowa Wola
+				</a>
+			</td>
+			<td>1870-1943</td>
+			<td class="right">287</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>375</td>
+
+						<td class="right">
+				<a href=id3688>
+					8006
+				</a>
+			</td>
+			<td>
+				<a href=id3688>
+					Księgi metrykalne parafii rzymskokatolickiej Stany
+				</a>
+			</td>
+			<td>1784-1906</td>
+			<td class="right">1718</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>376</td>
+
+						<td class="right">
+				<a href=id4348>
+					8009
+				</a>
+			</td>
+			<td>
+				<a href=id4348>
+					Księgi metrykalne parafii rzymskokatolickiej Stara Jastrząbka
+				</a>
+			</td>
+			<td>1785-1924</td>
+			<td class="right">705</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>377</td>
+
+						<td class="right">
+				<a href=id36>
+					8036d
+				</a>
+			</td>
+			<td>
+				<a href=id36>
+					Księgi metrykalne parafii rzymskokatolickiej Opatów
+				</a>
+			</td>
+			<td>1700-1924</td>
+			<td class="right">6367</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>378</td>
+
+						<td class="right">
+				<a href=id4343>
+					8061
+				</a>
+			</td>
+			<td>
+				<a href=id4343>
+					Księgi metrykalne parafii rzymskokatolickiej Stare Żukowice
+				</a>
+			</td>
+			<td>1837-1914</td>
+			<td class="right">800</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>379</td>
+
+						<td class="right">
+				<a href=id4265>
+					8100
+				</a>
+			</td>
+			<td>
+				<a href=id4265>
+					Księgi metrykalne parafii rzymskokatolickiej Stary Sącz
+				</a>
+			</td>
+			<td>1775-1944</td>
+			<td class="right">3457</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>380</td>
+
+						<td class="right">
+				<a href=id4705>
+					8106
+				</a>
+			</td>
+			<td>
+				<a href=id4705>
+					Księgi metrykalne parafii rzymskokatolickiej Stary Wiśnicz
+				</a>
+			</td>
+			<td>1644-1944</td>
+			<td class="right">2441</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>381</td>
+
+						<td class="right">
+				<a href=id5759>
+					8109
+				</a>
+			</td>
+			<td>
+				<a href=id5759>
+					Księgi metrykalne parafii rzymskokatolickiej Stary Żmigród
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1182</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>382</td>
+
+						<td class="right">
+				<a href=id4928>
+					8113
+				</a>
+			</td>
+			<td>
+				<a href=id4928>
+					Księgi metrykalne parafii rzymskokatolickiej Staszkówka
+				</a>
+			</td>
+			<td>1595-1935</td>
+			<td class="right">1276</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>383</td>
+
+						<td class="right">
+				<a href=id5873>
+					8166
+				</a>
+			</td>
+			<td>
+				<a href=id5873>
+					Księgi metrykalne parafii rzymskokatolickiej Straszydle
+				</a>
+			</td>
+			<td>1784-1925</td>
+			<td class="right">770</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>384</td>
+
+						<td class="right">
+				<a href=id4971>
+					8177
+				</a>
+			</td>
+			<td>
+				<a href=id4971>
+					Księgi metrykalne parafii rzymskokatolickiej Stróża
+				</a>
+			</td>
+			<td>1786-1937</td>
+			<td class="right">1246</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>385</td>
+
+						<td class="right">
+				<a href=id4855>
+					8180
+				</a>
+			</td>
+			<td>
+				<a href=id4855>
+					Księgi metrykalne parafii rzymskokatolickiej Stróże
+				</a>
+			</td>
+			<td>1786-1920</td>
+			<td class="right">510</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>386</td>
+
+						<td class="right">
+				<a href=id4904>
+					8183
+				</a>
+			</td>
+			<td>
+				<a href=id4904>
+					Księgi metrykalne parafii rzymskokatolickiej Stróżna
+				</a>
+			</td>
+			<td>1865-1924</td>
+			<td class="right">219</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>387</td>
+
+						<td class="right">
+				<a href=id4922>
+					8221
+				</a>
+			</td>
+			<td>
+				<a href=id4922>
+					Księgi metrykalne parafii rzymskokatolickiej Strzelce Wielkie
+				</a>
+			</td>
+			<td>1782-1944</td>
+			<td class="right">1327</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>388</td>
+
+						<td class="right">
+				<a href=id5481>
+					8239
+				</a>
+			</td>
+			<td>
+				<a href=id5481>
+					Księgi metrykalne parafii rzymskokatolickiej Strzyżów
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2384</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>389</td>
+
+						<td class="right">
+				<a href=id4712>
+					8268
+				</a>
+			</td>
+			<td>
+				<a href=id4712>
+					Księgi metrykalne parafii rzymskokatolickiej Sufczyn
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1031</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>390</td>
+
+						<td class="right">
+				<a href=id4953>
+					8334
+				</a>
+			</td>
+			<td>
+				<a href=id4953>
+					Księgi metrykalne parafii rzymskokatolickiej Swoszowa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">512</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>391</td>
+
+						<td class="right">
+				<a href=id4792>
+					8348
+				</a>
+			</td>
+			<td>
+				<a href=id4792>
+					Księgi metrykalne parafii rzymskokatolickiej Szaflary
+				</a>
+			</td>
+			<td>1676-1944</td>
+			<td class="right">3834</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>392</td>
+
+						<td class="right">
+				<a href=id4839>
+					8350
+				</a>
+			</td>
+			<td>
+				<a href=id4839>
+					Księgi metrykalne parafii rzymskokatolickiej Szalowa
+				</a>
+			</td>
+			<td>1699-1944</td>
+			<td class="right">1045</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>393</td>
+
+						<td class="right">
+				<a href=id4314>
+					8363
+				</a>
+			</td>
+			<td>
+				<a href=id4314>
+					Księgi metrykalne parafii rzymskokatolickiej Szarwark
+				</a>
+			</td>
+			<td>1786-1917</td>
+			<td class="right">576</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>394</td>
+
+						<td class="right">
+				<a href=id4210>
+					8371
+				</a>
+			</td>
+			<td>
+				<a href=id4210>
+					Księgi metrykalne parafii rzymskokatolickiej Szczawnica
+				</a>
+			</td>
+			<td>1788-1900</td>
+			<td class="right">1075</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>395</td>
+
+						<td class="right">
+				<a href=id4853>
+					8446
+				</a>
+			</td>
+			<td>
+				<a href=id4853>
+					Księgi metrykalne parafii rzymskokatolickiej Szczepanowice
+				</a>
+			</td>
+			<td>1785-1920</td>
+			<td class="right">995</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>396</td>
+
+						<td class="right">
+				<a href=id4708>
+					8448
+				</a>
+			</td>
+			<td>
+				<a href=id4708>
+					Księgi metrykalne parafii rzymskokatolickiej Szczepanów
+				</a>
+			</td>
+			<td>1642-1944</td>
+			<td class="right">4700</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>397</td>
+
+						<td class="right">
+				<a href=id4238>
+					8458
+				</a>
+			</td>
+			<td>
+				<a href=id4238>
+					Księgi metrykalne parafii rzymskokatolickiej Szczucin
+				</a>
+			</td>
+			<td>1748-1903</td>
+			<td class="right">1805</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>398</td>
+
+						<td class="right">
+				<a href=id4939>
+					8463
+				</a>
+			</td>
+			<td>
+				<a href=id4939>
+					Księgi metrykalne parafii rzymskokatolickiej Szczurowa
+				</a>
+			</td>
+			<td>1662-1924</td>
+			<td class="right">3320</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>399</td>
+
+						<td class="right">
+				<a href=id4374>
+					8468
+				</a>
+			</td>
+			<td>
+				<a href=id4374>
+					Księgi metrykalne parafii rzymskokatolickiej Szczyrzyc
+				</a>
+			</td>
+			<td>1726-1944</td>
+			<td class="right">1973</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>400</td>
+
+						<td class="right">
+				<a href=id5805>
+					8479
+				</a>
+			</td>
+			<td>
+				<a href=id5805>
+					Księgi metrykalne parafii rzymskokatolickiej Szebnie
+				</a>
+			</td>
+			<td>1873-1925</td>
+			<td class="right">342</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>401</td>
+
+						<td class="right">
+				<a href=id4828>
+					8487
+				</a>
+			</td>
+			<td>
+				<a href=id4828>
+					Księgi metrykalne parafii rzymskokatolickiej Szerzyny
+				</a>
+			</td>
+			<td>1636-1944</td>
+			<td class="right">1344</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>402</td>
+
+						<td class="right">
+				<a href=id4376>
+					8543
+				</a>
+			</td>
+			<td>
+				<a href=id4376>
+					Księgi metrykalne parafii rzymskokatolickiej Szyk
+				</a>
+			</td>
+			<td>1685-1929</td>
+			<td class="right">917</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>403</td>
+
+						<td class="right">
+				<a href=id4831>
+					8550
+				</a>
+			</td>
+			<td>
+				<a href=id4831>
+					Księgi metrykalne parafii rzymskokatolickiej Szymbark
+				</a>
+			</td>
+			<td>1776-1944</td>
+			<td class="right">1147</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>404</td>
+
+						<td class="right">
+				<a href=id4797>
+					8557
+				</a>
+			</td>
+			<td>
+				<a href=id4797>
+					Księgi metrykalne parafii rzymskokatolickiej Szynwałd
+				</a>
+			</td>
+			<td>1599-1924</td>
+			<td class="right">1577</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>405</td>
+
+						<td class="right">
+				<a href=id5812>
+					8666
+				</a>
+			</td>
+			<td>
+				<a href=id5812>
+					Księgi metrykalne parafii rzymskokatolickiej Święcany
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1326</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>406</td>
+
+						<td class="right">
+				<a href=id4615>
+					8689
+				</a>
+			</td>
+			<td>
+				<a href=id4615>
+					Księgi metrykalne parafii rzymskokatolickiej Świlcza
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">2174</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>407</td>
+
+						<td class="right">
+				<a href=id4338>
+					8690
+				</a>
+			</td>
+			<td>
+				<a href=id4338>
+					Księgi metrykalne parafii rzymskokatolickiej Świniarsko
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">341</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>408</td>
+
+						<td class="right">
+				<a href=id8>
+					8710d
+				</a>
+			</td>
+			<td>
+				<a href=id8>
+					Księgi metrykalne parafii rzymskokatolickiej w Tarczynie
+				</a>
+			</td>
+			<td>1663-1792</td>
+			<td class="right">1418</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>409</td>
+
+						<td class="right">
+				<a href=id4070>
+					8729
+				</a>
+			</td>
+			<td>
+				<a href=id4070>
+					Księgi metrykalne parafii rzymskokatolickiej Tarnobrzeg
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1101</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>410</td>
+
+						<td class="right">
+				<a href=id4071>
+					8731
+				</a>
+			</td>
+			<td>
+				<a href=id4071>
+					Księgi metrykalne Parafii Rzymskokatolickiej Miechocin
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">2977</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>411</td>
+
+						<td class="right">
+				<a href=id5834>
+					8742
+				</a>
+			</td>
+			<td>
+				<a href=id5834>
+					Księgi metrykalne parafii rzymskokatolickiej Tarnowiec
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">2520</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>412</td>
+
+						<td class="right">
+				<a href=id3872>
+					8746
+				</a>
+			</td>
+			<td>
+				<a href=id3872>
+					Księgi metrykalne parafii rzymskokatolickiej Tarnowska Wola
+				</a>
+			</td>
+			<td>1826-1943</td>
+			<td class="right">279</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>413</td>
+
+						<td class="right">
+				<a href=id4361>
+					8761
+				</a>
+			</td>
+			<td>
+				<a href=id4361>
+					Księgi metrykalne parafii rzymskokatolickiej Narodzenia NMP w Tarnowie
+				</a>
+			</td>
+			<td>1683-1944</td>
+			<td class="right">14065</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>414</td>
+
+						<td class="right">
+				<a href=id4766>
+					8795
+				</a>
+			</td>
+			<td>
+				<a href=id4766>
+					Księgi metrykalne parafii rzymskokatolickiej Tęgoborze
+				</a>
+			</td>
+			<td>1776-1944</td>
+			<td class="right">1541</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>415</td>
+
+						<td class="right">
+				<a href=id4733>
+					8882
+				</a>
+			</td>
+			<td>
+				<a href=id4733>
+					Księgi metrykalne parafii rzymskokatolickiej Tropie
+				</a>
+			</td>
+			<td>1616-1944</td>
+			<td class="right">1984</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>416</td>
+
+						<td class="right">
+				<a href=id4967>
+					8895
+				</a>
+			</td>
+			<td>
+				<a href=id4967>
+					Księgi metrykalne parafii rzymskokatolickiej Trzciana
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">715</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>417</td>
+
+						<td class="right">
+				<a href=id4916>
+					8896
+				</a>
+			</td>
+			<td>
+				<a href=id4916>
+					Księgi metrykalne parafii rzymskokatolickiej Trzciana
+				</a>
+			</td>
+			<td>1706-1944</td>
+			<td class="right">1042</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>418</td>
+
+						<td class="right">
+				<a href=id5840>
+					8897
+				</a>
+			</td>
+			<td>
+				<a href=id5840>
+					Księgi metrykalne parafii rzymskokatolickiej Trzciana
+				</a>
+			</td>
+			<td>1850-1945</td>
+			<td class="right">324</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>419</td>
+
+						<td class="right">
+				<a href=id5657>
+					8903
+				</a>
+			</td>
+			<td>
+				<a href=id5657>
+					Księgi metrykalne parafii rzymskokatolickiej Trzcinica
+				</a>
+			</td>
+			<td>1776-1945</td>
+			<td class="right">1213</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>420</td>
+
+						<td class="right">
+				<a href=id4875>
+					8932
+				</a>
+			</td>
+			<td>
+				<a href=id4875>
+					Księgi metrykalne parafii rzymskokatolickiej Trzeboś
+				</a>
+			</td>
+			<td>1786-1890</td>
+			<td class="right">911</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>421</td>
+
+						<td class="right">
+				<a href=id5616>
+					8933
+				</a>
+			</td>
+			<td>
+				<a href=id5616>
+					Księgi metrykalne parafii rzymskokatolickiej Trzebownisko
+				</a>
+			</td>
+			<td>1894-1945</td>
+			<td class="right">75</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>422</td>
+
+						<td class="right">
+				<a href=id4776>
+					8941
+				</a>
+			</td>
+			<td>
+				<a href=id4776>
+					Księgi metrykalne parafii rzymskokatolickiej Trzemeśnia
+				</a>
+			</td>
+			<td>1712-1944</td>
+			<td class="right">2183</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>423</td>
+
+						<td class="right">
+				<a href=id4062>
+					8945
+				</a>
+			</td>
+			<td>
+				<a href=id4062>
+					Księgi metrykalne parafii rzymskokatolickiej Trześń
+				</a>
+			</td>
+			<td>1784-1946</td>
+			<td class="right">2234</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>424</td>
+
+						<td class="right">
+				<a href=id4277>
+					8947
+				</a>
+			</td>
+			<td>
+				<a href=id4277>
+					Księgi metrykalne parafii rzymskokatolickiej Trzetrzewina
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">1058</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>425</td>
+
+						<td class="right">
+				<a href=id4633>
+					8949
+				</a>
+			</td>
+			<td>
+				<a href=id4633>
+					Księgi metrykalne parafii rzymskokatolickiej Trzęsówka
+				</a>
+			</td>
+			<td>1778-1944</td>
+			<td class="right">2375</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>426</td>
+
+						<td class="right">
+				<a href=id4951>
+					8960
+				</a>
+			</td>
+			<td>
+				<a href=id4951>
+					Księgi metrykalne parafii rzymskokatolickiej Tuchów
+				</a>
+			</td>
+			<td>1724-1944</td>
+			<td class="right">2992</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>427</td>
+
+						<td class="right">
+				<a href=id4837>
+					8998
+				</a>
+			</td>
+			<td>
+				<a href=id4837>
+					Księgi metrykalne parafii rzymskokatolickiej Turza
+				</a>
+			</td>
+			<td>1718-1920</td>
+			<td class="right">948</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>428</td>
+
+						<td class="right">
+				<a href=id5835>
+					9029
+				</a>
+			</td>
+			<td>
+				<a href=id5835>
+					Księgi metrykalne parafii rzymskokatolickiej Tyczyn
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">2886</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>429</td>
+
+						<td class="right">
+				<a href=id4242>
+					9034
+				</a>
+			</td>
+			<td>
+				<a href=id4242>
+					Księgi metrykalne parafii rzymskokatolickiej Tylicz
+				</a>
+			</td>
+			<td>1785-1929</td>
+			<td class="right">341</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>430</td>
+
+						<td class="right">
+				<a href=id4215>
+					9035
+				</a>
+			</td>
+			<td>
+				<a href=id4215>
+					Księgi metrykalne parafii rzymskokatolickiej Tylmanowa
+				</a>
+			</td>
+			<td>1756-1901</td>
+			<td class="right">1391</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>431</td>
+
+						<td class="right">
+				<a href=id4274>
+					9038
+				</a>
+			</td>
+			<td>
+				<a href=id4274>
+					Księgi metrykalne parafii rzymskokatolickiej Tymbark
+				</a>
+			</td>
+			<td>1785-1944</td>
+			<td class="right">2330</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>432</td>
+
+						<td class="right">
+				<a href=id4913>
+					9041
+				</a>
+			</td>
+			<td>
+				<a href=id4913>
+					Księgi metrykalne parafii rzymskokatolickiej Tymowa
+				</a>
+			</td>
+			<td>1777-1921</td>
+			<td class="right">920</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>433</td>
+
+						<td class="right">
+				<a href=id4906>
+					9063
+				</a>
+			</td>
+			<td>
+				<a href=id4906>
+					Księgi metrykalne parafii rzymskokatolickiej Ujanowice
+				</a>
+			</td>
+			<td>1662-1944</td>
+			<td class="right">1812</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>434</td>
+
+						<td class="right">
+				<a href=id5732>
+					9086
+				</a>
+			</td>
+			<td>
+				<a href=id5732>
+					Księgi metrykalne Parafii Rzymskokatolickiej Uniejów
+				</a>
+			</td>
+			<td>1753-1783</td>
+			<td class="right">242</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>435</td>
+
+						<td class="right">
+				<a href=id4753>
+					9114
+				</a>
+			</td>
+			<td>
+				<a href=id4753>
+					Księgi metrykalne parafii rzymskokatolickiej Uszew
+				</a>
+			</td>
+			<td>1777-1944</td>
+			<td class="right">1969</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>436</td>
+
+						<td class="right">
+				<a href=id4983>
+					9118
+				</a>
+			</td>
+			<td>
+				<a href=id4983>
+					Księgi metrykalne parafii rzymskokatolickiej Uście Solne
+				</a>
+			</td>
+			<td>1728-1944</td>
+			<td class="right">1776</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>437</td>
+
+						<td class="right">
+				<a href=id4353>
+					9131
+				</a>
+			</td>
+			<td>
+				<a href=id4353>
+					Księgi metrykalne parafii rzymskokatolickiej Wadowice Górne
+				</a>
+			</td>
+			<td>1787-1827</td>
+			<td class="right">120</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>438</td>
+
+						<td class="right">
+				<a href=id3112>
+					9179
+				</a>
+			</td>
+			<td>
+				<a href=id3112>
+					Księgi metrykalne parafii rzymskokatolickiej Warka
+				</a>
+			</td>
+			<td>1617-1808</td>
+			<td class="right">1266</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>439</td>
+
+						<td class="right">
+				<a href=id140>
+					9217d
+				</a>
+			</td>
+			<td>
+				<a href=id140>
+					Księgi metrykalne parafii rzymskokatolickiej św. Anny w Warszawie (Wilanów)
+				</a>
+			</td>
+			<td>1737-1948</td>
+			<td class="right">3349</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>440</td>
+
+						<td class="right">
+				<a href=id4>
+					9243d
+				</a>
+			</td>
+			<td>
+				<a href=id4>
+					Księgi metrykalne parafii rzymskokatolickiej Św. Krzyża w Warszawie
+				</a>
+			</td>
+			<td>1627-1945</td>
+			<td class="right">22615</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>441</td>
+
+						<td class="right">
+				<a href=id5792>
+					9319
+				</a>
+			</td>
+			<td>
+				<a href=id5792>
+					Księgi metrykalne parafii rzymskokatolickiej Warzyce
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1850</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>442</td>
+
+						<td class="right">
+				<a href=id4570>
+					9362
+				</a>
+			</td>
+			<td>
+				<a href=id4570>
+					Księgi metrykalne parafii rzymskokatolickiej Werynia
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">906</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>443</td>
+
+						<td class="right">
+				<a href=id4317>
+					9403
+				</a>
+			</td>
+			<td>
+				<a href=id4317>
+					Księgi metrykalne Parafii Rzymskokatolickiej Widełka
+				</a>
+			</td>
+			<td>1784-1889</td>
+			<td class="right">887</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>444</td>
+
+						<td class="right">
+				<a href=id4948>
+					9430
+				</a>
+			</td>
+			<td>
+				<a href=id4948>
+					Księgi metrykalne parafii rzymskokatolickiej Wielka Wieś
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">478</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>445</td>
+
+						<td class="right">
+				<a href=id4920>
+					9444
+				</a>
+			</td>
+			<td>
+				<a href=id4920>
+					Księgi metrykalne parafii rzymskokatolickiej Wielogłowy
+				</a>
+			</td>
+			<td>1647-1935</td>
+			<td class="right">2206</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>446</td>
+
+						<td class="right">
+				<a href=id4773>
+					9486
+				</a>
+			</td>
+			<td>
+				<a href=id4773>
+					Księgi metrykalne parafii rzymskokatolickiej Wierzchosławice
+				</a>
+			</td>
+			<td>1797-1944</td>
+			<td class="right">913</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>447</td>
+
+						<td class="right">
+				<a href=id4785>
+					9511
+				</a>
+			</td>
+			<td>
+				<a href=id4785>
+					Księgi metrykalne parafii rzymskokatolickiej Wietrzychowice
+				</a>
+			</td>
+			<td>1687-1915</td>
+			<td class="right">2760</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>448</td>
+
+						<td class="right">
+				<a href=id4290>
+					9514
+				</a>
+			</td>
+			<td>
+				<a href=id4290>
+					Księgi metrykalne parafii rzymskokatolickiej Wiewiórka
+				</a>
+			</td>
+			<td>1784-1942</td>
+			<td class="right">863</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>449</td>
+
+						<td class="right">
+				<a href=id4419>
+					9517
+				</a>
+			</td>
+			<td>
+				<a href=id4419>
+					Księgi metrykalne parafii rzymskokatolickiej Więcławice Stare
+				</a>
+			</td>
+			<td>1641-1944</td>
+			<td class="right">7260</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>450</td>
+
+						<td class="right">
+				<a href=id4862>
+					9535
+				</a>
+			</td>
+			<td>
+				<a href=id4862>
+					Księgi metrykalne parafii rzymskokatolickiej Wilczyska
+				</a>
+			</td>
+			<td>1777-1922</td>
+			<td class="right">1155</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>451</td>
+
+						<td class="right">
+				<a href=id4373>
+					9545
+				</a>
+			</td>
+			<td>
+				<a href=id4373>
+					Księgi metrykalne parafii rzymskokatolickiej Wilkowisko
+				</a>
+			</td>
+			<td>1762-1904</td>
+			<td class="right">653</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>452</td>
+
+						<td class="right">
+				<a href=id3147>
+					9571
+				</a>
+			</td>
+			<td>
+				<a href=id3147>
+					Księgi metrykalne parafii rzymskokatolickiej Wiskitki
+				</a>
+			</td>
+			<td>1754-1932</td>
+			<td class="right">420</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>453</td>
+
+						<td class="right">
+				<a href=id3740>
+					9587
+				</a>
+			</td>
+			<td>
+				<a href=id3740>
+					Księgi metrykalne parafii rzymskokatolickiej Wiśniowa
+				</a>
+			</td>
+			<td>1629-1943</td>
+			<td class="right">3580</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>454</td>
+
+						<td class="right">
+				<a href=id5731>
+					9600
+				</a>
+			</td>
+			<td>
+				<a href=id5731>
+					Akta parafii rzymskokatolickiej Zwiastowania NMP Witków
+				</a>
+			</td>
+			<td>1768-XIX w.</td>
+			<td class="right">206</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>455</td>
+
+						<td class="right">
+				<a href=id3146>
+					9653
+				</a>
+			</td>
+			<td>
+				<a href=id3146>
+					Księgi metrykalne parafii rzymskokatolickiej Wodynie
+				</a>
+			</td>
+			<td>1871-1925</td>
+			<td class="right">1654</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>456</td>
+
+						<td class="right">
+				<a href=id4941>
+					9662
+				</a>
+			</td>
+			<td>
+				<a href=id4941>
+					Księgi metrykalne parafii rzymskokatolickiej Wojakowa
+				</a>
+			</td>
+			<td>1612-1944</td>
+			<td class="right">1553</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>457</td>
+
+						<td class="right">
+				<a href=id4775>
+					9678
+				</a>
+			</td>
+			<td>
+				<a href=id4775>
+					Księgi metrykalne parafii rzymskokatolickiej Wojnicz
+				</a>
+			</td>
+			<td>1757-1924</td>
+			<td class="right">3126</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>458</td>
+
+						<td class="right">
+				<a href=id4829>
+					9700
+				</a>
+			</td>
+			<td>
+				<a href=id4829>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Łużańska
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">475</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>459</td>
+
+						<td class="right">
+				<a href=id4205>
+					9701
+				</a>
+			</td>
+			<td>
+				<a href=id4205>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Mędrzechowska
+				</a>
+			</td>
+			<td>1843-1900</td>
+			<td class="right">161</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>460</td>
+
+						<td class="right">
+				<a href=id4220>
+					9706
+				</a>
+			</td>
+			<td>
+				<a href=id4220>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Piskulina
+				</a>
+			</td>
+			<td>1786-1907</td>
+			<td class="right">574</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>461</td>
+
+						<td class="right">
+				<a href=id4748>
+					9707
+				</a>
+			</td>
+			<td>
+				<a href=id4748>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Przemykowska
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">589</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>462</td>
+
+						<td class="right">
+				<a href=id5665>
+					9712
+				</a>
+			</td>
+			<td>
+				<a href=id5665>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Raniżowska
+				</a>
+			</td>
+			<td>1786-1922</td>
+			<td class="right">1307</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>463</td>
+
+						<td class="right">
+				<a href=id4747>
+					9714
+				</a>
+			</td>
+			<td>
+				<a href=id4747>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Rogowska
+				</a>
+			</td>
+			<td>1842-1944</td>
+			<td class="right">133</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>464</td>
+
+						<td class="right">
+				<a href=id3689>
+					9715
+				</a>
+			</td>
+			<td>
+				<a href=id3689>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Rusinowska
+				</a>
+			</td>
+			<td>1840-1943</td>
+			<td class="right">695</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>465</td>
+
+						<td class="right">
+				<a href=id5001>
+					9717
+				</a>
+			</td>
+			<td>
+				<a href=id5001>
+					Księgi metrykalne parafii rzymskokatolickiej Wola Rzędzińska
+				</a>
+			</td>
+			<td>1811-1910</td>
+			<td class="right">1557</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>466</td>
+
+						<td class="right">
+				<a href=id5802>
+					9769
+				</a>
+			</td>
+			<td>
+				<a href=id5802>
+					Księgi metrykalne parafii rzymskokatolickiej Wójtowa
+				</a>
+			</td>
+			<td>1777-1945</td>
+			<td class="right">948</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>467</td>
+
+						<td class="right">
+				<a href=id4203>
+					9776
+				</a>
+			</td>
+			<td>
+				<a href=id4203>
+					Księgi metrykalne parafii rzymskokatolickiej Wólka Niedźwiedzka
+				</a>
+			</td>
+			<td>1777-1920</td>
+			<td class="right">382</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>468</td>
+
+						<td class="right">
+				<a href=id7>
+					9880d
+				</a>
+			</td>
+			<td>
+				<a href=id7>
+					Księgi metrykalne parafii rzymskokatolickiej Wszechświęte
+				</a>
+			</td>
+			<td>1810-1909</td>
+			<td class="right">2587</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>469</td>
+
+						<td class="right">
+				<a href=id4528>
+					9917
+				</a>
+			</td>
+			<td>
+				<a href=id4528>
+					Księgi metrykalne Parafii Rzymskokatolickiej Wysoka Głogowska
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">982</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>470</td>
+
+						<td class="right">
+				<a href=id5857>
+					9918
+				</a>
+			</td>
+			<td>
+				<a href=id5857>
+					Księgi metrykalne parafii rzymskokatolickiej Wysoka Strzyżowska
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1498</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>471</td>
+
+						<td class="right">
+				<a href=id4805>
+					9953
+				</a>
+			</td>
+			<td>
+				<a href=id4805>
+					Księgi metrykalne parafii rzymskokatolickiej Zabawa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">990</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>472</td>
+
+						<td class="right">
+				<a href=id5619>
+					9957
+				</a>
+			</td>
+			<td>
+				<a href=id5619>
+					Księgi metrykalne parafii rzymskokatolickiej Zabierzów
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">817</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>473</td>
+
+						<td class="right">
+				<a href=id5887>
+					9965
+				</a>
+			</td>
+			<td>
+				<a href=id5887>
+					Księgi metrykalne parafii rzymskokatolickiej Zaborów
+				</a>
+			</td>
+			<td>1900-1925</td>
+			<td class="right">88</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>474</td>
+
+						<td class="right">
+				<a href=id4918>
+					9967
+				</a>
+			</td>
+			<td>
+				<a href=id4918>
+					Księgi metrykalne parafii rzymskokatolickiej Zaborów
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">1292</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>475</td>
+
+						<td class="right">
+				<a href=id4234>
+					9972
+				</a>
+			</td>
+			<td>
+				<a href=id4234>
+					Księgi metrykalne parafii rzymskokatolickiej Zabrnie
+				</a>
+			</td>
+			<td>1786-1924</td>
+			<td class="right">734</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>476</td>
+
+						<td class="right">
+				<a href=id4223>
+					9999
+				</a>
+			</td>
+			<td>
+				<a href=id4223>
+					Księgi metrykalne parafii rzymskokatolickiej Zabrzeż
+				</a>
+			</td>
+			<td>1786-1936</td>
+			<td class="right">418</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>477</td>
+
+						<td class="right">
+				<a href=id4777>
+					10004
+				</a>
+			</td>
+			<td>
+				<a href=id4777>
+					Księgi metrykalne parafii rzymskokatolickiej Zaczarnie
+				</a>
+			</td>
+			<td>1846-1901</td>
+			<td class="right">305</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>478</td>
+
+						<td class="right">
+				<a href=id5801>
+					10005
+				</a>
+			</td>
+			<td>
+				<a href=id5801>
+					Księgi metrykalne parafii rzymskokatolickiej Zaczernie
+				</a>
+			</td>
+			<td>1908-1945</td>
+			<td class="right">203</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>479</td>
+
+						<td class="right">
+				<a href=id4930>
+					10019
+				</a>
+			</td>
+			<td>
+				<a href=id4930>
+					Księgi metrykalne parafii rzymskokatolickiej Zagórzany
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">842</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>480</td>
+
+						<td class="right">
+				<a href=id4794>
+					10032
+				</a>
+			</td>
+			<td>
+				<a href=id4794>
+					Księgi metrykalne parafii rzymskokatolickiej Zakliczyn nad Dunajcem
+				</a>
+			</td>
+			<td>1681-1944</td>
+			<td class="right">6024</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>481</td>
+
+						<td class="right">
+				<a href=id4956>
+					10058
+				</a>
+			</td>
+			<td>
+				<a href=id4956>
+					Księgi metrykalne parafii rzymskokatolickiej Zalasowa
+				</a>
+			</td>
+			<td>1774-1934</td>
+			<td class="right">1297</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>482</td>
+
+						<td class="right">
+				<a href=id4347>
+					10068
+				</a>
+			</td>
+			<td>
+				<a href=id4347>
+					Księgi metrykalne parafii rzymskokatolickiej Zalipie
+				</a>
+			</td>
+			<td>1786-1901</td>
+			<td class="right">574</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>483</td>
+
+						<td class="right">
+				<a href=id5660>
+					10070
+				</a>
+			</td>
+			<td>
+				<a href=id5660>
+					Księgi metrykalne parafii rzymskokatolickiej Załęże
+				</a>
+			</td>
+			<td>1784-1945</td>
+			<td class="right">1248</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>484</td>
+
+						<td class="right">
+				<a href=id3004>
+					10107
+				</a>
+			</td>
+			<td>
+				<a href=id3004>
+					Księgi metrykalne parafii rzymskokatolickiej Zarzecze
+				</a>
+			</td>
+			<td>1825-1944</td>
+			<td class="right">870</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>485</td>
+
+						<td class="right">
+				<a href=id4292>
+					10112
+				</a>
+			</td>
+			<td>
+				<a href=id4292>
+					Księgi metrykalne parafii rzymskokatolickiej Zasów
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">3235</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>486</td>
+
+						<td class="right">
+				<a href=id4241>
+					10116
+				</a>
+			</td>
+			<td>
+				<a href=id4241>
+					Księgi metrykalne parafii rzymskokatolickiej Zawada k. Dębicy
+				</a>
+			</td>
+			<td>1791-1943</td>
+			<td class="right">1294</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>487</td>
+
+						<td class="right">
+				<a href=id4847>
+					10168
+				</a>
+			</td>
+			<td>
+				<a href=id4847>
+					Księgi metrykalne parafii rzymskokatolickiej Zborowice
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">939</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>488</td>
+
+						<td class="right">
+				<a href=id4970>
+					10178
+				</a>
+			</td>
+			<td>
+				<a href=id4970>
+					Księgi metrykalne parafii rzymskokatolickiej Zbylitowska Góra
+				</a>
+			</td>
+			<td>1751-1903</td>
+			<td class="right">1233</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>489</td>
+
+						<td class="right">
+				<a href=id4765>
+					10180
+				</a>
+			</td>
+			<td>
+				<a href=id4765>
+					Księgi metrykalne parafii rzymskokatolickiej Zbyszyce
+				</a>
+			</td>
+			<td>1786-1942</td>
+			<td class="right">256</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>490</td>
+
+						<td class="right">
+				<a href=id4711>
+					10182
+				</a>
+			</td>
+			<td>
+				<a href=id4711>
+					Księgi metrykalne parafii rzymskokatolickiej Zdrochec
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">565</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>491</td>
+
+						<td class="right">
+				<a href=id807>
+					10190
+				</a>
+			</td>
+			<td>
+				<a href=id807>
+					Akta stanu cywilnego Parafii Rzymskokatolickiej Zdziarzec
+				</a>
+			</td>
+			<td>1786-1945</td>
+			<td class="right">1041</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>492</td>
+
+						<td class="right">
+				<a href=id5186>
+					10205
+				</a>
+			</td>
+			<td>
+				<a href=id5186>
+					Księgi metrykalne parafii rzymskokatolickiej Zembrzyce
+				</a>
+			</td>
+			<td>1699-1945</td>
+			<td class="right">2250</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>493</td>
+
+						<td class="right">
+				<a href=id5621>
+					10217
+				</a>
+			</td>
+			<td>
+				<a href=id5621>
+					Księgi metrykalne parafii rzymskokatolickiej Zgłobień
+				</a>
+			</td>
+			<td>1777-1886</td>
+			<td class="right">1342</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>494</td>
+
+						<td class="right">
+				<a href=id4318>
+					10224
+				</a>
+			</td>
+			<td>
+				<a href=id4318>
+					Księgi metrykalne parafii rzymskokatolickiej Zgórsko
+				</a>
+			</td>
+			<td>1847-1944</td>
+			<td class="right">1116</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>495</td>
+
+						<td class="right">
+				<a href=id5002>
+					10270
+				</a>
+			</td>
+			<td>
+				<a href=id5002>
+					Księgi metrykalne parafii rzymskokatolickiej Złota
+				</a>
+			</td>
+			<td>1765-1944</td>
+			<td class="right">761</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>496</td>
+
+						<td class="right">
+				<a href=id4233>
+					10302
+				</a>
+			</td>
+			<td>
+				<a href=id4233>
+					Księgi metrykalne parafii rzymskokatolickiej Zwiernik
+				</a>
+			</td>
+			<td>1735-1913</td>
+			<td class="right">840</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>497</td>
+
+						<td class="right">
+				<a href=id5875>
+					10307
+				</a>
+			</td>
+			<td>
+				<a href=id5875>
+					Księgi metrykalne parafii rzymskokatolickiej Rzeszów-Zwięczyca
+				</a>
+			</td>
+			<td>1871-1945</td>
+			<td class="right">362</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>498</td>
+
+						<td class="right">
+				<a href=id4772>
+					10328
+				</a>
+			</td>
+			<td>
+				<a href=id4772>
+					Księgi metrykalne parafii rzymskokatolickiej Żabno
+				</a>
+			</td>
+			<td>1784-1903</td>
+			<td class="right">1016</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>499</td>
+
+						<td class="right">
+				<a href=id5814>
+					10342
+				</a>
+			</td>
+			<td>
+				<a href=id5814>
+					Księgi metrykalne parafii rzymskokatolickiej Żarnowa
+				</a>
+			</td>
+			<td>1784-1925</td>
+			<td class="right">534</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>500</td>
+
+						<td class="right">
+				<a href=id4740>
+					10356
+				</a>
+			</td>
+			<td>
+				<a href=id4740>
+					Księgi metrykalne parafii rzymskokatolickiej Żbikowice
+				</a>
+			</td>
+			<td>1787-1944</td>
+			<td class="right">501</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>501</td>
+
+						<td class="right">
+				<a href=id4735>
+					10366
+				</a>
+			</td>
+			<td>
+				<a href=id4735>
+					Księgi metrykalne parafii rzymskokatolickiej Żegocina
+				</a>
+			</td>
+			<td>1610-1944</td>
+			<td class="right">2821</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>502</td>
+
+						<td class="right">
+				<a href=id4949>
+					10376
+				</a>
+			</td>
+			<td>
+				<a href=id4949>
+					Księgi metrykalne parafii rzymskokatolickiej Żelazówka
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">540</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>503</td>
+
+						<td class="right">
+				<a href=id4251>
+					10382
+				</a>
+			</td>
+			<td>
+				<a href=id4251>
+					Księgi metrykalne parafii rzymskokatolickiej Żeleźnikowa
+				</a>
+			</td>
+			<td>1642-1944</td>
+			<td class="right">1355</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>504</td>
+
+						<td class="right">
+				<a href=id4250>
+					10385
+				</a>
+			</td>
+			<td>
+				<a href=id4250>
+					Księgi metrykalne parafii rzymskokatolickiej Żelichów
+				</a>
+			</td>
+			<td>1786-1930</td>
+			<td class="right">347</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>505</td>
+
+						<td class="right">
+				<a href=id4741>
+					10399
+				</a>
+			</td>
+			<td>
+				<a href=id4741>
+					Księgi metrykalne parafii rzymskokatolickiej Żmiąca
+				</a>
+			</td>
+			<td>1786-1944</td>
+			<td class="right">492</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>506</td>
+
+						<td class="right">
+				<a href=id4714>
+					10446
+				</a>
+			</td>
+			<td>
+				<a href=id4714>
+					Księgi metrykalne parafii rzymskokatolickiej Żurowa
+				</a>
+			</td>
+			<td>1784-1944</td>
+			<td class="right">919</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>507</td>
+
+						<td class="right">
+				<a href=id4295>
+					10457
+				</a>
+			</td>
+			<td>
+				<a href=id4295>
+					Księgi metrykalne parafii rzymskokatolickiej Żyraków
+				</a>
+			</td>
+			<td>1843-1944</td>
+			<td class="right">409</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>508</td>
+
+						<td class="right">
+				<a href=id5913>
+					10473
+				</a>
+			</td>
+			<td>
+				<a href=id5913>
+					Księgi metrykalne parafii rzymskokatolickiej Żyznów
+				</a>
+			</td>
+			<td>1784-1897</td>
+			<td class="right">765</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>509</td>
+
+						<td class="right">
+				<a href=id5838>
+					11054
+				</a>
+			</td>
+			<td>
+				<a href=id5838>
+					Księgi metrykalne parafii rzymskokatolickiej Głogów Małopolski (Rogoźnik)
+				</a>
+			</td>
+			<td>1875-1925</td>
+			<td class="right">19</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>510</td>
+
+						<td class="right">
+				<a href=id5642>
+					11094
+				</a>
+			</td>
+			<td>
+				<a href=id5642>
+					Księgi metrykalne parafii rzymskokatolickiej Łączki Kucharskie
+				</a>
+			</td>
+			<td>1721-1945</td>
+			<td class="right">2345</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>511</td>
+
+						<td class="right">
+				<a href=id4767>
+					11095
+				</a>
+			</td>
+			<td>
+				<a href=id4767>
+					Akta stanu cywilnego parafii rzymskokatolickiej Rzeszów-Fara
+				</a>
+			</td>
+			<td>1777-1944</td>
+			<td class="right">9896</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>512</td>
+
+						<td class="right">
+				<a href=id4677>
+					11230
+				</a>
+			</td>
+			<td>
+				<a href=id4677>
+					Księgi metrykalne parafii greckokatolickiej Krzeszów nad Sanem
+				</a>
+			</td>
+			<td>1810-1874</td>
+			<td class="right">1657</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>513</td>
+
+						<td class="right">
+				<a href=id4486>
+					11938
+				</a>
+			</td>
+			<td>
+				<a href=id4486>
+					Księgi metrykalne Parafii Rzymskokatolickiej Kijów
+				</a>
+			</td>
+			<td>1874-1917</td>
+			<td class="right">790</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>514</td>
+
+						<td class="right">
+				<a href=id4607>
+					11972
+				</a>
+			</td>
+			<td>
+				<a href=id4607>
+					Księgi metrykalne parafii rzymskokatolickiej Motowidłówka
+				</a>
+			</td>
+			<td>1874-1917</td>
+			<td class="right">896</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>515</td>
+
+						<td class="right">
+				<a href=id4681>
+					12102
+				</a>
+			</td>
+			<td>
+				<a href=id4681>
+					Księgi metrykalne parafii prawosławnej Krzeszów nad Sanem
+				</a>
+			</td>
+			<td>1878-1943</td>
+			<td class="right">1668</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>516</td>
+
+						<td class="right">
+				<a href=id5488>
+					12194
+				</a>
+			</td>
+			<td>
+				<a href=id5488>
+					Księgi metrykalne parafii ewangelickiej Budowo
+				</a>
+			</td>
+			<td>1838-1944</td>
+			<td class="right">1508</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>517</td>
+
+						<td class="right">
+				<a href=id5816>
+					12228
+				</a>
+			</td>
+			<td>
+				<a href=id5816>
+					Księgi metrykalne parafii rzymskokatolickiej Kołomyja-Mariahilf
+				</a>
+			</td>
+			<td>1784-1900</td>
+			<td class="right">66</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>518</td>
+
+						<td class="right">
+				<a href=id5510>
+					50000
+				</a>
+			</td>
+			<td>
+				<a href=id5510>
+					Urząd Stanu Cywilnego Witków
+				</a>
+			</td>
+			<td>1874-1945</td>
+			<td class="right">6498</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>519</td>
+
+						<td class="right">
+				<a href=id4685>
+					99900
+				</a>
+			</td>
+			<td>
+				<a href=id4685>
+					Księgi parafialne w parafiach archidiecezji krakowskiej
+				</a>
+			</td>
+			<td></td>
+			<td class="right">3631</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>520</td>
+
+						<td class="right">
+				<a href=id5617>
+					99901
+				</a>
+			</td>
+			<td>
+				<a href=id5617>
+					Księgi parafialne w parafiach diecezji rzeszowskiej
+				</a>
+			</td>
+			<td></td>
+			<td class="right">4504</td>
+		</tr>
+			<tr onmouseover="this.bgColor='#D0E0C0'" onmouseout="this.bgColor=''">
+			<td>521</td>
+
+						<td class="right">
+				<a href=id5836>
+					99902
+				</a>
+			</td>
+			<td>
+				<a href=id5836>
+					Księgi parafialne w parafiach diecezji tarnowskiej
+				</a>
+			</td>
+			<td>1663-1668</td>
+			<td class="right">42</td>
+		</tr>
+	</table>
+	</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+
+													<div class="center">
+								<a href="https://genealodzy.pl/donate-pol"><img src="images/donate.jpg" alt="donate"></a><br>
+								<span class="darkslateblue">&copy; 2010-2026
+									<a href="http://genealodzy.pl">Polskie Towarzystwo Genealogiczne</a>
+								::
+								<script>
+									user = 'skanoteka';
+									site = "genealodzy.pl";
+									document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+									document.write('Administrator<\/a> ');
+								</script>
+								::
+								</span>
+							</div>
+											</td>
+				</tr>
+
+			</table>
+		</div>
+
+	</body>
+</html>

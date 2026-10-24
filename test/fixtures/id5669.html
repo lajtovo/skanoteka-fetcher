@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Skanoteka - Baza skanów dokumentów o wartości genealogicznej</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:image" content="https://skanoteka.genealodzy.pl/images/PTG_Logo_Skanoteka_pl_PL_200.png" />
+<meta name="author" content="Genealodzy.PL Genealogia">
+<meta name="copyright" content="Copyright (c) 2006-2026 Polskie Towarzystwo Genealogiczne">
+<meta name="description" content="Baza skanów dokumentów o wartości genealogicznej.">
+<meta name="revisit-after" content="1 days">
+<link rel="canonical" href="https://skanoteka.genealodzy.pl">
+<link rel="stylesheet" href="style/style.css?=v6" type="text/css">
+<link rel="stylesheet" href="style/ajaxcss.css?=v2" type="text/css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?=v2">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?=v2">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?=v2">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="shortcut icon" href="/images/favicon.ico?=v2">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<style>
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	background: #f3e2e7;
+	border: 1px solid #c5c5c5;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	background: #f3d0e7;
+	border: 1px solid #c5c5c5;
+	color: black;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 0px 0px;
+	background: none;
+}
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+	background-image: url("https://code.jquery.com/ui/1.13.2/themes/base/images/ui-icons_444444_256x240.png");
+}
+
+:root
+{
+	--background-image-url: url('/images/back-pink.gif');
+}</style><link rel="shortcut icon" href="images/favicon.ico">
+
+		<script async src="https://platform.twitter.com/widgets.js"></script>
+		<script src="ajax/ajaxcore.js"></script>
+		<script src="ajax/ajax.js"></script>
+		<script src="style/centeredpop.js"></script>
+		<script>
+			var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22184319-1']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+var ga = document.createElement('script');
+ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+		</script>
+			</head>
+
+	<body id="body">
+		<script src="/cookies_komunikat.js"></script>
+		<div>
+			<br>
+			<table style="border-collapse: collapse; width: 1000px; margin: 0 auto; border: 1px solid rgb(100,100,100)">
+				<tr>
+					<td class="head">
+													<a href="/" target="_self" title="https://metryki.genealodzy.pl/">
+								<img style="display: block;max-width: 1000px" src=/images/PTG_Banner_Skanoteka-OPP_pl_PL.png?v3 alt="metryki.genealodzy.pl" title="metryki.genealodzy.pl"></a>
+											</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+													<div class="center">
+
+								<table border="0" cellpadding="0" cellspacing="0" width="98%">
+									<tr>
+										<td width="100%">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td width="230" class="left valign-middle">
+																											</td>
+													<td width="220" class="valign-middle">
+														<div id="fb-root"></div>
+														<script>
+															(function (d, s, id) {
+var js,
+fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) 
+return;
+
+
+js = d.createElement(s);
+js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+														</script>
+														<div class="fb-share-button" data-href="https://skanoteka.genealodzy.pl" data-layout="button"></div>
+														<a href="https://twitter.com/intent/tweet?button_hashtag=Skanoteka&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Projekt digitalizacji i indeksacji metryk" data-url="https://skanoteka.genealodzy.pl" data-show-count="false"></a>
+
+													</td>
+													<td width="400" class="valign-middle">
+														<a href="https://genealodzy.pl"><img class="valign-sub" src="images/navhome.gif" width="20" height="20" alt="Genealodzy.PL" title="Genealodzy.PL"></a>
+&nbsp;&nbsp;&nbsp;
+<a href="/"><img class="valign-sub" src="images/navmapa.gif" width="20" height="20" alt="Strona główna" title="Strona główna"></a>
+<a href="https://geneteka.genealodzy.pl/plany.php"><img src="images/navplany.gif" class="valign-sub" width="20" height="20" alt="Zasoby w trakcie indeksacji" title="Zasoby w trakcie indeksacji"></a>
+<a href="https://geneteka.genealodzy.pl/jak-indeksowac-U-Z.php"><img src="images/navhelp.gif" class="valign-sub" width="20" height="20" alt="Jak indeksować" title="Jak indeksować"></a>
+<a href="opjk"><img src="images/navjak.gif" class="valign-sub" width="20" height="20" alt="Jak wyszukiwać" title="Jak wyszukiwać"></a>
+<a href="https://genealodzy.pl/donate-pol"><img src="images/navdonate.gif" class="valign-sub" width="20" height="20" alt="Jak wspomóc" title="Jak wspomóc"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/?op=lang&amp;lang=pl_PL"><img src="images/flag-pol.png" class="valign-middle" alt="flag-pol.png" width="30" height="16" title="polski"></a>
+<a href="/?op=lang&amp;lang=en_EN"><img src="images/flag-eng.png" class="valign-middle" alt="flag-eng.png" width="30" height="16" title="english"></a>
+													</td>
+													<td></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+											</td>
+				</tr>
+
+				<tr>
+					<td>
+								<table width="100%">
+		<tr>
+			<td width="65%" valign="top">
+				<span class="grey">Województwo:
+											małopolskie
+										Powiat:
+											 gorlicki
+									</span>
+				<br>Zespół:
+				<span class="brown">
+					274
+				</span>
+				<span class="bold">
+					Księgi metrykalne parafii rzymskokatolickiej Biecz-Fara
+					<a href="opozespole-id5669">O zespole</a>
+				</span>
+				<span class="center">
+					<p>
+						<span class="grey">Wybierz jednostkę z bloku po prawej stronie</span>
+					</p>
+					<p>
+													Autorzy zdjęć wybranego zespołu:<br><br><pre>Szymon Nowak
+Mateusz Reczek</pre>
+											</p>
+				</span>
+			</td>
+			<td width="35%" class="right-table" valign="top">
+
+				<div class="center">
+					Jednostki i katalogi zespołu
+				</div>
+
+				<table width="100%" class="sygnatury-right">
+					<tr>
+						<td class="top" align="right">L.p.</td>
+						<td class="top" align="center">Jednostka</td>
+						<td class="top">Opis</td>
+						<td class="top">Info</td>
+						<td class="top right">Plików</td>
+					</tr>
+
+																	<tr>
+							<td class=bad align="right">1</td>
+							
+							<td align="center">
+								<a href=id5669-sy3500>3500</a>
+							</td>
+							<td class=bad>U-1777-1785</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	82
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">2</td>
+							
+							<td align="center">
+								<a href=id5669-sy3505>3505</a>
+							</td>
+							<td class=bad>U-1784-1826-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	58
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">3</td>
+							
+							<td align="center">
+								<a href=id5669-sy3510>3510</a>
+							</td>
+							<td class=bad>U-1827-1849-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	28
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">4</td>
+							
+							<td align="center">
+								<a href=id5669-sy3515>3515</a>
+							</td>
+							<td class=bad>U-1849-1864-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	27
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">5</td>
+							
+							<td align="center">
+								<a href=id5669-sy3520>3520</a>
+							</td>
+							<td class=bad>U-1890-1925-Biecz Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	207
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">6</td>
+							
+							<td align="center">
+								<a href=id5669-sy3525>3525</a>
+							</td>
+							<td class=bad>U-1784-1836-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	33
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">7</td>
+							
+							<td align="center">
+								<a href=id5669-sy3530>3530</a>
+							</td>
+							<td class=bad>U-1836-1859-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	15
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">8</td>
+							
+							<td align="center">
+								<a href=id5669-sy3535>3535</a>
+							</td>
+							<td class=bad>U-1860-1910-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	52
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">9</td>
+							
+							<td align="center">
+								<a href=id5669-sy3540>3540</a>
+							</td>
+							<td class=bad>U-1911-1925-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	16
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">10</td>
+							
+							<td align="center">
+								<a href=id5669-sy3545>3545</a>
+							</td>
+							<td class=bad>U-1784-1849-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	34
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">11</td>
+							
+							<td align="center">
+								<a href=id5669-sy3550>3550</a>
+							</td>
+							<td class=bad>U-1852-1890-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	33
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">12</td>
+							
+							<td align="center">
+								<a href=id5669-sy3555>3555</a>
+							</td>
+							<td class=bad>U-1890-1925-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	31
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">13</td>
+							
+							<td align="center">
+								<a href=id5669-sy3560>3560</a>
+							</td>
+							<td class=bad>U-1784-1805-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	64
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">14</td>
+							
+							<td align="center">
+								<a href=id5669-sy3565>3565</a>
+							</td>
+							<td class=bad>U-1805-1843-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	106
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">15</td>
+							
+							<td align="center">
+								<a href=id5669-sy3570>3570</a>
+							</td>
+							<td class=bad>U-1843-1860-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	52
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">16</td>
+							
+							<td align="center">
+								<a href=id5669-sy3575>3575</a>
+							</td>
+							<td class=bad>U-1860-1875-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	88
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">17</td>
+							
+							<td align="center">
+								<a href=id5669-sy3580>3580</a>
+							</td>
+							<td class=bad>U-1875-1885-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	55
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">18</td>
+							
+							<td align="center">
+								<a href=id5669-sy3585>3585</a>
+							</td>
+							<td class=bad>U-1784-1810-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	66
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">19</td>
+							
+							<td align="center">
+								<a href=id5669-sy3590>3590</a>
+							</td>
+							<td class=bad>U-1810-1836-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	59
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">20</td>
+							
+							<td align="center">
+								<a href=id5669-sy3595>3595</a>
+							</td>
+							<td class=bad>U-1836-1849-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	28
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">21</td>
+							
+							<td align="center">
+								<a href=id5669-sy3600>3600</a>
+							</td>
+							<td class=bad>U-1849-1858-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	27
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">22</td>
+							
+							<td align="center">
+								<a href=id5669-sy3605>3605</a>
+							</td>
+							<td class=bad>U-1858-1888-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	120
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">23</td>
+							
+							<td align="center">
+								<a href=id5669-sy3610>3610</a>
+							</td>
+							<td class=bad>U-1888-1925-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	155
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">24</td>
+							
+							<td align="center">
+								<a href=id5669-sy3615>3615</a>
+							</td>
+							<td class=bad>U-1784-1852-Załawie</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	21
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">25</td>
+							
+							<td align="center">
+								<a href=id5669-sy4500>4500</a>
+							</td>
+							<td class=bad>M-1784-1877-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	57
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">26</td>
+							
+							<td align="center">
+								<a href=id5669-sy4505>4505</a>
+							</td>
+							<td class=bad>M-1890-1945-Biecz Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	142
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">27</td>
+							
+							<td align="center">
+								<a href=id5669-sy4510>4510</a>
+							</td>
+							<td class=bad>M-1784-1945-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	60
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">28</td>
+							
+							<td align="center">
+								<a href=id5669-sy4515>4515</a>
+							</td>
+							<td class=bad>M-1784-1934-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	57
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">29</td>
+							
+							<td align="center">
+								<a href=id5669-sy4520>4520</a>
+							</td>
+							<td class=bad>M-1935-1945-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	10
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">30</td>
+							
+							<td align="center">
+								<a href=id5669-sy4525>4525</a>
+							</td>
+							<td class=bad>M-1784-1846-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	57
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">31</td>
+							
+							<td align="center">
+								<a href=id5669-sy4530>4530</a>
+							</td>
+							<td class=bad>M-1847-1860-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	28
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">32</td>
+							
+							<td align="center">
+								<a href=id5669-sy4535>4535</a>
+							</td>
+							<td class=bad>M-1860-1895-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	78
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">33</td>
+							
+							<td align="center">
+								<a href=id5669-sy4540>4540</a>
+							</td>
+							<td class=bad>M-1784-1852-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	55
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">34</td>
+							
+							<td align="center">
+								<a href=id5669-sy4545>4545</a>
+							</td>
+							<td class=bad>M-1853-1880-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	43
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">35</td>
+							
+							<td align="center">
+								<a href=id5669-sy4550>4550</a>
+							</td>
+							<td class=bad>M-1880-1917-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	64
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">36</td>
+							
+							<td align="center">
+								<a href=id5669-sy4555>4555</a>
+							</td>
+							<td class=bad>M-1918-1945-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	54
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">37</td>
+							
+							<td align="center">
+								<a href=id5669-sy4560>4560</a>
+							</td>
+							<td class=bad>M-1786-1850-Załawie</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	13
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">38</td>
+							
+							<td align="center">
+								<a href=id5669-sy5500>5500</a>
+							</td>
+							<td class=bad>Z-1784-1848-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	50
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">39</td>
+							
+							<td align="center">
+								<a href=id5669-sy5505>5505</a>
+							</td>
+							<td class=bad>Z-1849-1880-Biecz</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	34
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">40</td>
+							
+							<td align="center">
+								<a href=id5669-sy5510>5510</a>
+							</td>
+							<td class=bad>Z-1882-1930-Biecz Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	139
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">41</td>
+							
+							<td align="center">
+								<a href=id5669-sy5515>5515</a>
+							</td>
+							<td class=bad>Z-1890-1945-Biecz Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	108
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">42</td>
+							
+							<td align="center">
+								<a href=id5669-sy5530>5530</a>
+							</td>
+							<td class=bad>Z-1785-1903-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	57
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">43</td>
+							
+							<td align="center">
+								<a href=id5669-sy5535>5535</a>
+							</td>
+							<td class=bad>Z-1910-1945-Klęczany</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	14
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">44</td>
+							
+							<td align="center">
+								<a href=id5669-sy5540>5540</a>
+							</td>
+							<td class=bad>Z-1784-1872-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	28
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">45</td>
+							
+							<td align="center">
+								<a href=id5669-sy5545>5545</a>
+							</td>
+							<td class=bad>Z-1873-1941-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	25
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">46</td>
+							
+							<td align="center">
+								<a href=id5669-sy5550>5550</a>
+							</td>
+							<td class=bad>Z-1942-1945-Korczyna</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	5
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">47</td>
+							
+							<td align="center">
+								<a href=id5669-sy5555>5555</a>
+							</td>
+							<td class=bad>Z-1784-1826-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	52
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">48</td>
+							
+							<td align="center">
+								<a href=id5669-sy5560>5560</a>
+							</td>
+							<td class=bad>Z-1827-1842-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	32
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">49</td>
+							
+							<td align="center">
+								<a href=id5669-sy5565>5565</a>
+							</td>
+							<td class=bad>Z-1842-1854-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	27
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">50</td>
+							
+							<td align="center">
+								<a href=id5669-sy5570>5570</a>
+							</td>
+							<td class=bad>Z-1855-1882-Przedmieście</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	59
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">51</td>
+							
+							<td align="center">
+								<a href=id5669-sy5575>5575</a>
+							</td>
+							<td class=bad>Z-1784-1832-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	56
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">52</td>
+							
+							<td align="center">
+								<a href=id5669-sy5580>5580</a>
+							</td>
+							<td class=bad>Z-1836-1851-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	27
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">53</td>
+							
+							<td align="center">
+								<a href=id5669-sy5585>5585</a>
+							</td>
+							<td class=bad>Z-1852-1888-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	62
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">54</td>
+							
+							<td align="center">
+								<a href=id5669-sy5590>5590</a>
+							</td>
+							<td class=bad>Z-1888-1945-Strzeszyn</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	100
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">55</td>
+							
+							<td align="center">
+								<a href=id5669-sy5600>5600</a>
+							</td>
+							<td class=bad>Z-1793-1821-Załawie</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	6
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">56</td>
+							
+							<td align="center">
+								<a href=id5669-sy6500>6500</a>
+							</td>
+							<td class=bad>UMZ-1882-1886</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	137
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">57</td>
+							
+							<td align="center">
+								<a href=id5669-sy7000>7000</a>
+							</td>
+							<td class=bad>Zapowiedzi 1826-1850</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	53
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">58</td>
+							
+							<td align="center">
+								<a href=id5669-sy7005>7005</a>
+							</td>
+							<td class=bad>Zapowiedzi 1850-1864</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	67
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">59</td>
+							
+							<td align="center">
+								<a href=id5669-sy7010>7010</a>
+							</td>
+							<td class=bad>Zapowiedzi 1865-1888</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	129
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">60</td>
+							
+							<td align="center">
+								<a href=id5669-sy7015>7015</a>
+							</td>
+							<td class=bad>Zapowiedzi 1888-1909</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	175
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">61</td>
+							
+							<td align="center">
+								<a href=id5669-sy7020>7020</a>
+							</td>
+							<td class=bad>Zapowiedzi 1910-1939</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	227
+															</td>
+						</tr>
+																	<tr>
+							<td class=bad align="right">62</td>
+							
+							<td align="center">
+								<a href=id5669-sy7025>7025</a>
+							</td>
+							<td class=bad>Zapowiedzi 1940-1945</td>
+							<td title="">
+																																
+							</td>
+							<td class=bad align="right">
+																	56
+															</td>
+						</tr>
+									</table>
+
+									<a href="opza-ar9">powrót do archiwum</a>
+							</td>
+		</tr>
+	</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="pasek2">
+
+													<div class="center">
+								<a href="https://genealodzy.pl/donate-pol"><img src="images/donate.jpg" alt="donate"></a><br>
+								<span class="darkslateblue">&copy; 2010-2026
+									<a href="http://genealodzy.pl">Polskie Towarzystwo Genealogiczne</a>
+								::
+								<script>
+									user = 'skanoteka';
+									site = "genealodzy.pl";
+									document.write('<a href=\"mailto:' + user + '@' + site + '\">');
+									document.write('Administrator<\/a> ');
+								</script>
+								::
+								</span>
+							</div>
+											</td>
+				</tr>
+
+			</table>
+		</div>
+
+	</body>
+</html>

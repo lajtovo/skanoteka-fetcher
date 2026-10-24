@@ -1,0 +1,17 @@
+{
+  "name": "skanoteka-fetcher",
+  "version": "1.0.0",
+  "description": "Lokalne narzędzie do przeszukiwania i pobierania skanów metryk z Skanoteki (skanoteka.genealodzy.pl)",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "skanoteka": "./bin/skanoteka.mjs"
+  },
+  "scripts": {
+    "start": "node bin/skanoteka.mjs serve",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
