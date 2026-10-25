@@ -3,6 +3,7 @@ import { loadConfig, applyPoliteMode, expandHome } from '../lib/config.mjs';
 import * as cache from '../lib/cache.mjs';
 import { search, parseLataRanges } from '../lib/search.mjs';
 import { downloadSelection, estimateDownload } from '../lib/download.mjs';
+import { startServer } from '../lib/server.mjs';
 
 function parseArgs(argv) {
   const positional = [];
@@ -266,6 +267,13 @@ async function main() {
 
   if (command === 'download') {
     return cmdDownload(flags, config);
+  }
+
+  if (command === 'serve') {
+    const port = Number(flags.port || config.port);
+    await startServer(port);
+    console.log(`Skanoteka Fetcher nasłuchuje na http://127.0.0.1:${port}`);
+    return;
   }
 
   console.error(

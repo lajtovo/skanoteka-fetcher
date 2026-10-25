@@ -1,4 +1,7 @@
 node_modules/
-cache/
+.claude/
+config.json
+cache/*.json
+cache/*.progress.json
+skany/
 *.log
-.claude/settings.local.json

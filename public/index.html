@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skanoteka Fetcher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Skanoteka Fetcher
+  <span class="sub">Przeszukiwanie i pobieranie skanów metryk z archiwum „Parafia" (skanoteka.genealodzy.pl)</span>
+</h1>
+
+<section class="panel" id="status-panel">
+  <div class="row between">
+    <div id="status-text" class="muted">Wczytywanie stanu…</div>
+    <div class="row" id="status-actions"></div>
+  </div>
+  <div id="build-progress" class="hidden" style="margin-top:10px">
+    <div class="progress-bar-track"><div class="progress-bar-fill" id="build-bar" style="width:0%"></div></div>
+    <div class="muted" id="build-text" style="font-size:0.85rem"></div>
+  </div>
+</section>
+
+<section class="panel" id="search-panel">
+  <div class="search-controls">
+    <div class="row">
+      <input type="text" id="q" placeholder="Miejscowość albo nazwa parafii… (np. Ruda Kameralna, Biecz-Fara)" autocomplete="off">
+      <input type="text" id="lata" placeholder="Lata, np. 1850-1900, 1920">
+    </div>
+    <fieldset id="typy">
+      <label><input type="checkbox" value="U"> Urodzenia</label>
+      <label><input type="checkbox" value="M"> Małżeństwa</label>
+      <label><input type="checkbox" value="Z"> Zgony</label>
+      <label><input type="checkbox" value="UMZ"> UMZ</label>
+      <label><input type="checkbox" value="Zapowiedzi"> Zapowiedzi</label>
+      <label><input type="checkbox" value="INNE"> Inne</label>
+    </fieldset>
+  </div>
+</section>
+
+<div id="results-summary"></div>
+<div id="results"></div>
+
+<div id="cart" class="hidden">
+  <div class="summary" id="cart-summary"></div>
+  <input type="text" id="cart-dir" placeholder="Folder docelowy">
+  <button id="cart-clear">Wyczyść wybór</button>
+  <button class="primary" id="cart-download">Pobierz</button>
+</div>
+
+<div id="progress-overlay" class="hidden" style="position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;padding:20px;z-index:10">
+  <div class="panel" style="max-width:640px;width:100%;max-height:85vh;overflow:auto;background:var(--bg-panel)">
+    <div class="row between">
+      <strong id="progress-title">Pobieranie…</strong>
+      <button class="danger" id="progress-cancel">Anuluj</button>
+    </div>
+    <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-bar" style="width:0%"></div></div>
+    <div class="muted" id="progress-stats" style="font-size:0.85rem;margin-bottom:8px"></div>
+    <div id="progress-panel"></div>
+    <div id="progress-done" class="hidden" style="margin-top:12px">
+      <button class="primary" id="progress-close">Zamknij</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
