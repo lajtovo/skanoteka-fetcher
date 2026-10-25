@@ -6,6 +6,9 @@ Lokalne narzędzie do przeszukiwania i pobierania skanów metryk z [Skanoteki](h
 
 Pełne rozpoznanie serwisu, decyzje projektowe i uzasadnienia — zob. [PLAN.md](./PLAN.md).
 
+> **Nie jesteś programistą?** Zobacz [INSTRUKCJA.md](./INSTRUKCJA.md) — odpalenie
+> krok po kroku, bez terminala-fu, z opisem co kliknąć.
+
 ## Wymagania
 
 - Node.js ≥ 20 (testowane na v26). Zero zależności zewnętrznych — nie potrzeba `npm install`.
