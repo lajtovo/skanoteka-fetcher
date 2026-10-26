@@ -93,12 +93,20 @@ Powinna się pokazać strona programu.
    rozwinąć, i zaznacz checkboxy przy interesujących Cię zbiorach (Urodzenia/
    Małżeństwa/Zgony, lata).
 4. Na dole ekranu pojawi się pasek z liczbą wybranych plików i szacowanym
-   rozmiarem. Możesz zmienić folder, do którego się pobierze (domyślnie to
-   folder `skany` wewnątrz tego projektu).
+   rozmiarem. Domyślnie pliki pobiorą się do folderu `skany` wewnątrz tego
+   projektu — żeby wybrać inny, kliknij **„Przeglądaj…"** i wskaż folder w
+   okienku, które się otworzy (jak przy zapisywaniu dowolnego pliku).
 5. Kliknij **„Pobierz"**. Zobaczysz postęp na żywo. Możesz anulować w każdej
    chwili.
 6. Po zakończeniu pliki znajdziesz w podanym folderze, podzielone na
-   podfoldery: parafia → rodzaj akt → miejscowość i lata.
+   podfoldery: parafia → rodzaj akt → miejscowość (lata), np.
+   `Filipowice/Urodzenia/Ruda Kameralna (1849-1885)`.
+   Jeśli któryś skan się nie pobierze (np. chwilowy problem z serwerem),
+   program sam próbuje ponownie kilka razy w odstępach kilku-kilkunastu
+   sekund. Gdyby mimo to coś zostało, w folderze tej jednostki znajdziesz
+   plik **`_bledy.txt`** z listą brakujących skanów i co z tym zrobić —
+   najprościej: zaznacz tę samą jednostkę jeszcze raz i kliknij „Pobierz"
+   ponownie, dociągnie się tylko to, czego nie udało się ściągnąć.
 
 ---
 

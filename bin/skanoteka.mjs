@@ -237,7 +237,7 @@ async function cmdDownload(flags, config) {
     `\n\nGotowe. Pobrano ${totalDone}, pominięto ${totalSkipped}, błędów ${totalErr}.`
   );
   if (totalErr) {
-    console.log('\nBłędy:');
+    console.log('\nBłędy (lista też zapisana w _bledy.txt w folderze jednostki):');
     for (const r of results) {
       for (const b of r.bledy) console.log(`  id${r.zespolId}-sy${r.sy} ${b.plik || ''}: ${b.powod}`);
     }

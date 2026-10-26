@@ -94,18 +94,35 @@ z indeksu, albo UI.
 <pobieranieDir>/
 └── Filipowice/
     ├── Urodzenia/
-    │   ├── Filipowice_1854-1900_z1809-sy3500/
+    │   ├── Filipowice (1854-1900)/
     │   │   ├── 001.jpg … 116.jpg
     │   │   ├── _opis.txt         ← czytelny opis (parafia, lata, źródło…)
     │   │   └── _metadane.json    ← to samo maszynowo
-    │   └── Ruda Kameralna_1849-1885_z1809-sy3505/
+    │   └── Ruda Kameralna (1849-1885)/
     ├── Malzenstwa/
     └── Zgony/
 ```
 
-Szablon jest konfigurowalny w `config.json` (`szablonFolderu`). Pobieranie jest
-wznawialne: przerwane (Ctrl-C) albo ponowione pobranie pomija pliki, które już są
-na dysku i są poprawnymi JPEG-ami; dociąga tylko brakujące/uszkodzone.
+Nazwa folderu jest celowo "czysta" — bez kodów zespołu/sygnatury. Pełne dane
+techniczne (numer zespołu, sygnatura, URL źródłowy) i tak są w `_opis.txt` i
+`_metadane.json`. W bardzo rzadkim przypadku, gdy dwie różne jednostki
+wylądowałyby pod identyczną nazwą (np. w zbiorczych zespołach diecezjalnych,
+gdzie numery sygnatur powtarzają się między „seriami"), narzędzie automatycznie
+dokleja rozróżnik (` - sy3505`) tylko tej jednej, kolidującej jednostce —
+sprawdza to po `_metadane.json`, więc nigdy nie wymiesza dwóch różnych zbiorów
+pod jedną nazwą.
+
+Szablon jest konfigurowalny w `config.json` (`szablonFolderu`, placeholdery:
+`{parafia}`, `{typNazwa}`, `{miejscowosc}`, `{lataLabel}`, `{nrZespolu}`, `{sy}`).
+
+Pobieranie jest wznawialne: przerwane (Ctrl-C) albo ponowione pobranie pomija
+pliki, które już są na dysku i są poprawnymi JPEG-ami; dociąga tylko
+brakujące/uszkodzone. Pliki, które się nie udało pobrać, są automatycznie
+ponawiane w kilku "falach" z rosnącym odstępem (natychmiast, 2 s, 8 s, 20 s) —
+jeśli mimo to coś zostanie, lista trafia do pliku **`_bledy.txt`** w folderze
+tej jednostki (nazwa pliku + przyczyna + co zrobić), żeby przetrwała zamknięcie
+serwera i dała się ogarnąć ręcznie. Ponowne pobranie tej samej jednostki
+automatycznie usunie `_bledy.txt`, jeśli przy kolejnej próbie wszystko się uda.
 
 ## Konfiguracja (`config.json`)
 

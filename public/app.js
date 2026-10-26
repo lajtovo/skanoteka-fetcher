@@ -324,6 +324,20 @@ function updateCart() {
   summary.textContent = `Wybrano ${n} jednostek · ${plikow} plików · ~${fmtMB(bajty)}`;
 }
 
+document.getElementById('cart-browse').onclick = async () => {
+  const btn = document.getElementById('cart-browse');
+  btn.disabled = true;
+  try {
+    const result = await api('/api/pick-folder', { method: 'POST' });
+    if (result.path) document.getElementById('cart-dir').value = result.path;
+    // result.cancelled -> użytkownik zamknął okno, nic nie robimy
+  } catch (err) {
+    alert(`Nie udało się otworzyć okna wyboru folderu — wklej ścieżkę ręcznie.\n(${err.message})`);
+  } finally {
+    btn.disabled = false;
+  }
+};
+
 document.getElementById('cart-clear').onclick = () => {
   state.selection.clear();
   updateCart();
@@ -402,6 +416,11 @@ function openProgress(jobId, estimate, baseDir) {
       if (job.stan === 'zrobione' && job.result) {
         const paths = [...new Set(job.result.map((r) => r.dir).filter(Boolean))];
         document.getElementById('progress-panel').textContent += `\n\nZapisano do:\n${paths.join('\n')}`;
+        if (job.postep.bledy.length) {
+          document.getElementById('progress-panel').textContent +=
+            `\n\nNie udało się pobrać ${job.postep.bledy.length} plik(ów) — lista i szczegóły są też\n` +
+            `zapisane w pliku _bledy.txt w folderze danej jednostki.`;
+        }
       }
       if (job.error) {
         document.getElementById('progress-panel').textContent += `\n\nBłąd: ${job.error}`;
